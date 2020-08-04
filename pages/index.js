@@ -2,167 +2,63 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="w-full">
       <Head>
         <title>Up To Us</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1 className="title">
-          Up To Us
-        </h1>
-
-        <p className="description">
-          up to us is a collective of Gen Z creators fixing some of the biggest problems facing our generation
-        </p>
+        <section style={{backgroundImage: "url('hero.png')"}}>
+          <div className="p-24 max-w-screen-md mx-auto text-white flex flex-col items-center text-center">
+            <img className="w-36" src="/logo.svg" />
+            <h1 className="text-4xl mt-16">
+              WHO WE ARE
+            </h1>
+            <p className="text-2xl mt-2">
+              up to us is a collective of Gen Z creators fixing some of the biggest problems facing our generation
+            </p>
+            <h1 className="text-4xl mt-16">
+              WHAT WE STAND FOR
+            </h1>
+            <p className="text-2xl description mt-2">
+              We don’t want to let our future be decided by others. We want to make change by turning our voices into votes. Our generation will save the world. It’s up to us.
+            </p>
+          </div>
+        </section>
+        <section className="max-w-screen-md mx-auto flex flex-col items-center justify-center">
+          <h1 className="text-4xl mt-12">
+            WHAT WE DO:
+          </h1>
+          <div className="my-16 flex flex-col items-center md:flex-row-reverse">
+            <img className="w-36 h-auto" src="/inspire.svg" />
+            <div className="md:pr-10">
+              <h2 className="text-4xl text-center md:text-left">INSPIRE</h2>
+              <p className="w-64 text-center md:text-left">Building a new way to register & motivate Gen Z to vote.</p>
+            </div>
+          </div>
+          <div className="my-16 flex flex-col items-center md:flex-row">
+            <img className="w-36 h-auto" src="/activate.svg" />
+            <div className="md:pl-10">
+              <h2 className="text-4xl text-center md:text-left">ACTIVATE</h2>
+              <p className="w-64 text-center md:text-left">Working with the most influential creators to activate their audiences to take action.</p>
+            </div>
+          </div>
+          <div className="my-16 flex flex-col items-center md:flex-row-reverse">
+            <img className="w-36 h-auto" src="/educate.svg" />
+            <div className="md:pr-10">
+              <h2 className="text-4xl text-center md:text-left">EDUCATE</h2>
+              <p className="w-64 text-center md:text-left">Providing content that leads to direct action & steers the conversation.</p>
+            </div>
+          </div>
+          <a className="mb-16 text-4xl">
+            WANT TO HELP? CONTACT US
+          </a>
+        </section>
+        <footer className="w-full p-16" style={{backgroundImage: "url('footer.png')"}}>
+          <p className="text-center text-white">© 2020 Up To Us</p>
+        </footer>
       </main>
-
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
     </div>
   )
 }
