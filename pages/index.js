@@ -51,7 +51,7 @@ export default function Home() {
               <p className="w-64 text-center md:text-left">Providing content that leads to direct action & steers the conversation.</p>
             </div>
           </div>
-          <a className="mb-16 text-4xl">
+          <a href="https://forms.gle/MTCuJ5spGmekjbgT9" className="mb-16 text-4xl">
             WANT TO HELP? CONTACT US
           </a>
         </section>
