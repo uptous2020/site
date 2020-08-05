@@ -5,7 +5,7 @@ export default function Home() {
     <div className="w-full">
       <Head>
         <title>Up To Us</title>
-        <link rel="icon" href="/faviconuptous.svg" />
+        <link rel="icon" href="/faviconuptous.ico" />
       </Head>
 
       <main>
