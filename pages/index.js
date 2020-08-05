@@ -4,13 +4,13 @@ export default function Home() {
   return (
     <div className="w-full">
       <Head>
-        <title>Up To Us 2020</title>
+        <title>Up To Us</title>
         <link rel="icon" href="/faviconuptous.svg" />
       </Head>
 
       <main>
         <section style={{backgroundImage: "url('hero.png')"}}>
-          <div className="p-24 max-w-screen-md mx-auto text-white flex flex-col items-center text-center">
+          <div className="p-10 max-w-screen-md mx-auto text-white flex flex-col items-center text-center">
             <img className="h-64" src="/up_to_us_logo_white.svg" />
             <h1 className="text-4xl mt-16">
               WHO WE ARE
