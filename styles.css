@@ -1,6 +1,19 @@
+@font-face {
+  font-family: 'Monument';
+  src: url('assets/MonumentExtended-Regular.woff');
+}
+@font-face {
+  font-family: 'Silka';
+  src: url('assets/silkamono-regular-webfont.woff');
+}
+
+h1, h2, a { font-family: 'Monument'; }
+p { font-family: 'Silka'; }
+
 /* purgecss start ignore */
 @tailwind base;
 @tailwind components;
 /* purgecss end ignore */
 
 @tailwind utilities;
+
