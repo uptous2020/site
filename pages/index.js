@@ -10,7 +10,7 @@ export default function Home() {
 
       <main>
         <section style={{backgroundImage: "url('hero.png')"}}>
-          <div className="p-10 max-w-screen-md mx-auto text-white flex flex-col items-center text-center">
+          <div className="p-12 max-w-screen-md mx-auto text-white flex flex-col items-center text-center">
             <img className="h-64" src="/up_to_us_logo_white.svg" />
             <h1 className="text-4xl mt-16">
               WHO WE ARE
