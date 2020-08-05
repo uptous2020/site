@@ -51,8 +51,8 @@ export default function Home() {
               <p className="w-64 text-center md:text-left">Providing content that leads to direct action & steers the conversation.</p>
             </div>
           </div>
-          <a href="https://forms.gle/MTCuJ5spGmekjbgT9" className="mb-16 text-4xl">
-            WANT TO HELP? CONTACT US
+          <a id="contact" href="https://forms.gle/MTCuJ5spGmekjbgT9" className="mb-16 text-4xl">
+            <div id="under">WANT TO HELP? CONTACT US</div>
           </a>
         </section>
         <footer className="w-full p-16" style={{backgroundImage: "url('footer.png')"}}>

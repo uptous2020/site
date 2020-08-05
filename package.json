@@ -10,9 +10,21 @@
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "autoprefixer": "^9.8.6",
-    "next": "9.3.5",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
+    "next": "^9.5.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "tailwindcss": "^1.6.2"
-  }
+  },
+  "description": "This is a starter template for [Learn Next.js](https://nextjs.org/learn).",
+  "main": "postcss.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uptous2020/site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uptous2020/site/issues"
+  },
+  "homepage": "https://github.com/uptous2020/site#readme"
 }

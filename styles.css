@@ -10,10 +10,17 @@
 h1, h2, a { font-family: 'Monument'; }
 p { font-family: 'Silka'; }
 
+/*contact styling*/
+#contact{
+  text-decoration: underline;
+  background: linear-gradient(#ff7a01, #ff9900, #ffd509);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* purgecss start ignore */
 @tailwind base;
 @tailwind components;
 /* purgecss end ignore */
-
 @tailwind utilities;
 
