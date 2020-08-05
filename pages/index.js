@@ -12,22 +12,22 @@ export default function Home() {
         <section style={{backgroundImage: "url('hero.png')"}}>
           <div className="p-12 max-w-screen-md mx-auto text-white flex flex-col items-center text-center">
             <img className="h-64" src="/up_to_us_logo_white.svg" />
-            <h1 className="text-4xl mt-16">
+            <h1 className="text-3xl mt-16">
               WHO WE ARE
             </h1>
             <p className="text-2xl mt-2">
               up to us is a collective of Gen Z creators fixing some of the biggest problems facing our generation.
             </p>
-            <h1 className="text-4xl mt-16">
+            <h1 className="text-3xl mt-16">
               WHAT WE STAND FOR
             </h1>
-            <p className="text-2xl description mt-2">
-              we don’t want to let our future be decided by others. we want to make a change by turning our voices into votes. our generation will save the world. it’s up to us.
+            <p className="text-2xl description mt-2 pb-4">
+              we don’t want to let our future be decided by others. we want to make a change by turning our voices into votes. our generation will save the world.<br></br>it’s up to us.
             </p>
           </div>
         </section>
         <section className="max-w-screen-md mx-auto flex flex-col items-center justify-center">
-          <h1 className="text-4xl mt-12">
+          <h1 className="text-4xl mt-16">
             WHAT WE DO
           </h1>
           <div className="my-16 flex flex-col items-center md:flex-row-reverse">
