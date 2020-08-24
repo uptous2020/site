@@ -38,10 +38,9 @@ export default function Contact() {
               CONTACT US
             </h1>
             <br></br>
-            <div className="iframe-container">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeDwBJ3sYS68_DOb2PGR-l_dTj8T5kYWzaGLVe4DCHgeS32eg/viewform?embedded=true" width="640" height="765" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-            </div>
-           
+          </div>
+          <div className="iframe-container">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeDwBJ3sYS68_DOb2PGR-l_dTj8T5kYWzaGLVe4DCHgeS32eg/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
           </div>
         </section>
         <footer className="w-full p-6" style={{backgroundImage: "url('footer.png')"}}>
