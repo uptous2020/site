@@ -115,7 +115,7 @@ export default function Home() {
           <a class="dbox-donation-button" style={{background: "#000000 url(https://d1iczxrky3cnb2.cloudfront.net/red_logo.png) no-repeat 37px;color: #fff;text-decoration: none;font-family: Verdana,sans-serif;display: inline-block;font-size: 16px;padding: 15px 38px;padding-left: 75px;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;box-shadow: 0 1px 0 0 #1f5a89;text-shadow: 0 1px rgba(0, 0, 0, 0.3)"}} href="https://donorbox.org/up-to-us">Donate</a> <br></br><br></br><br></br> */}
         <br></br>
         </section>
-        <footer className="w-full p-8" style={{backgroundImage: "url('footer.png')"}}>
+        <footer className="w-full p-6" style={{backgroundImage: "url('footer.png')"}}>
           <p className="text-center text-white">© 2020 Up To Us</p>
         </footer>
       </main>
