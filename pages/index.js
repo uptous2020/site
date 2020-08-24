@@ -37,9 +37,9 @@ export default function Home() {
                 {/* name and logo */}
                   <div class="flex md:flex-row flex-col justify-between">
                       <div class="flex justify-center md:justify-start ">
-                        <img class="object-center pt-2 md:pb-0 pb-2 mt-0 ml-6 w-8 h-16" src="/logowhite.svg" href="2020upto.us"></img>
+                        <img class="object-center mt-1 pt-3 md:pb-0 pb-2 ml-6 w-8 h-12" src="/logowhite.svg" href="2020upto.us"></img>
                         <div>
-                            <a class="inline-block text-white text-3l no-underline hover:text-gray-200 hover:text-underline py-6 px-2 " href="https://2020upto.us">up to us</a>
+                            <a class="inline-block text-white text-3l no-underline hover:text-gray-200 hover:text-underline py-6 px-1 " href="https://2020upto.us">up to us</a>
                         </div>
                       </div> 
                       <div>  
