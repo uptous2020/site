@@ -64,7 +64,7 @@ export default function Home() {
             <h1 className="text-2xl md:text-4xl mt-20 md:mt-16">
               WHO WE ARE
             </h1>
-            <p className="mx-48 md:mx-0 text-xl md:text-2xl mt-2">
+            <p className="px-0 lg:px-56 text-xl md:text-2xl mt-2">
               up to us is a collective of Gen Z creators fixing some of the biggest problems facing our generation.
             </p>
             <h1 className="text-2xl md:text-4xl mt-12 md:mt-16">
