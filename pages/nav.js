@@ -1,39 +1,18 @@
 import Head from 'next/head'
-
 export default function Home() {
   return (
-    <div className="w-full">
+    <div>
       <Head>
         <title>Up To Us</title>
         <link rel="icon" href="/faviconuptous.ico" />
       </Head>
 
       <main>
-        <section style={{backgroundImage: "url('hero.png')"}}>
-        {/* <nav className="p-0 pr-6 mt-0 fixed w-full z-10 top-0" style={{backgroundImage: "url('hero.png')"}}> */}
-                {/* name and logo */}
-                  {/* <div class="flex lg:flex-row justify-between md:flex-col sm:flex-col">
-                      <div class="flex"> */}
-                        {/* <img class="object-center pt-4 mt-0 ml-6 w-8 h-16" src="assets/logowhite.svg"></img> */}
-                            {/* <a class="ml-6 inline-block text-white text-3l no-underline hover:text-gray-200 hover:text-underline py-6 px-2 " href="https://2020upto.us">up to us</a>
-                      </div> 
-                      <div class="flex flex-row">  
-                        <ul>
-                          <li class="inline-block py-1 px-4 text-white text-2xl no-underline hover:text-gray-200 hover:text-underline">
-                            <script type="text/javascript" defer src="https://donorbox.org/install-popup-button.js"></script>
-                            <a class="dbox-donation-button" style={{background: "#000000) no-repeat 37px;color: #E69538;text-decoration: none;font-family: 'Monument';display: inline-block;font-size: 16px;padding: 15px 38px;padding-left: 75px;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;"}} href="https://donorbox.org/up-to-us">DONATE</a>
-                          </li>
-                          <li class="mr-3">
-                            <a class="inline-block text-white text-3l no-underline hover:text-gray-200 hover:text-underline py-6 px-2 " href="https://forms.gle/MTCuJ5spGmekjbgT9">CONTACT US</a>
-                          </li>
-                        </ul>
-                      </div>
-                  </div>
-            </nav> */}
-
-{/*nav bar testing*/}
-
-<nav className="p-0 pr-6 mt-0 fixed w-full z-10 top-0" style={{backgroundImage: "url('hero.png')"}}>
+      <section style={{backgroundImage: "url('hero.png')"}}>
+          <div className="p-12 w-full mx-auto text-white flex flex-col items-center text-center">
+            <img className="h-64 mt-16" src="/up_to_us_logo_white.svg" />
+            {/* nav bar */}
+              <nav className="p-0 pr-6 mt-0 fixed w-full z-10 top-0" style={{backgroundImage: "url('hero.png')"}}>
                 {/* name and logo */}
                   <div class="flex flex-row justify-between">
                       <div class="flex items-center">
@@ -55,12 +34,6 @@ export default function Home() {
                       </div>
                   </div>
             </nav>
-
-
-
-
-          <div className="p-12 mx-auto text-white flex flex-col items-center text-center">
-            <img className="h-64 mt-6" src="/up_to_us_logo_white.svg" />
             <h1 className="text-3xl mt-16">
               WHO WE ARE
             </h1>
@@ -80,7 +53,7 @@ export default function Home() {
             WHAT WE DO:
           </h1>
           <div className="my-16 flex flex-col items-center md:flex-row-reverse">
-            <img className="w-36 ml-12 h-auto" src="/inspire.svg" />
+            <img className="w-36 h-auto ml-10" src="/inspire.svg" />
             <div className="md:pr-4=">
               <h2 className="text-4xl text-center md:text-left">INSPIRE</h2>
               <p className="w-64 text-center md:text-left">building a new way to register & motivate Gen Z to vote</p>
@@ -101,20 +74,25 @@ export default function Home() {
             </div>
           </div>
           
-          
-          
-          {/* <a id="contact" href="https://forms.gle/MTCuJ5spGmekjbgT9" className="mx-8 text-center text-3xl">
-              WANT TO HELP?
-          </a>
-          <a id="contact" href="https://forms.gle/MTCuJ5spGmekjbgT9" className="mb-16 text-center text-3xl">
-              CONTACT US
-          </a>
-         
+      
 
-          <script type="text/javascript" defer src="https://donorbox.org/install-popup-button.js"></script>
-          <a class="dbox-donation-button" style={{background: "#000000 url(https://d1iczxrky3cnb2.cloudfront.net/red_logo.png) no-repeat 37px;color: #fff;text-decoration: none;font-family: Verdana,sans-serif;display: inline-block;font-size: 16px;padding: 15px 38px;padding-left: 75px;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;box-shadow: 0 1px 0 0 #1f5a89;text-shadow: 0 1px rgba(0, 0, 0, 0.3)"}} href="https://donorbox.org/up-to-us">Donate</a> <br></br><br></br><br></br> */}
-        <br></br>
-        </section>
+
+
+     
+  {/* container */}
+	<div class="container shadow-lg mx-auto bg-white mt-8 md:mt-18">
+	</div>
+
+  {/* JS snippet to get the nav toggle working properly */}
+	{/* <script>
+		  document.getElementById('nav-toggle').onclick = function(){
+			document.getElementById("nav-content").classList.toggle("hidden");
+		}
+	</script> */}
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeDwBJ3sYS68_DOb2PGR-l_dTj8T5kYWzaGLVe4DCHgeS32eg/viewform?embedded=true" width="640" height="765" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  
+    </section>
         <footer className="w-full p-8" style={{backgroundImage: "url('footer.png')"}}>
           <p className="text-center text-white">© 2020 Up To Us</p>
         </footer>
@@ -122,4 +100,5 @@ export default function Home() {
     </div>
   )
 }
+
 
