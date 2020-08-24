@@ -1,4 +1,6 @@
 import Head from 'next/head'
+// import '../styles.css';
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -34,7 +36,7 @@ export default function Home() {
 {/*nav bar testing*/}
 
 <nav className="p-0 pr-6 mt-0 fixed w-full z-10 top-0" style={{backgroundImage: "url('hero.png')"}}>
-                {/* name and logo */}
+                {/* nav bar*/}
                   <div class="flex md:flex-row flex-col justify-between">
                       <div class="flex justify-center md:justify-start ">
                         <img class="object-center mt-1 pt-3 md:pb-0 pb-2 ml-6 w-8 h-12" src="/logowhite.svg" href="2020upto.us"></img>
@@ -44,12 +46,13 @@ export default function Home() {
                       </div> 
                       <div>  
                         <ul class="mb-4 flex flex-row  justify-evenly md:justify-between text-sm md:text-base md:pt-6 md:mr-4">
-                        <li class="ml-4 mr-2 md:mr-10 no-underline hover:text-gray-200 hover:text-underline">
+                        <li class="text-orange-100 ml-4 mr-2 md:mr-10 no-underline hover:text-gray-200 hover:text-underline">
                             <script type="text/javascript" defer src="https://donorbox.org/install-popup-button.js"></script>
                             <a class="dbox-donation-button" style={{background: "#000000) no-repeat 37px;color: #E69538;text-decoration: none;font-family: 'Monument';"}} href="https://donorbox.org/up-to-us">DONATE</a>
                           </li>
                           <li>
-                            <a class=" text-white no-underline hover:text-gray-200 hover:text-underline" href="https://forms.gle/MTCuJ5spGmekjbgT9">CONTACT US</a>
+                            <Link href="/contact"><a class=" text-white no-underline hover:text-gray-200 hover:text-underline">CONTACT US</a></Link>
+                            {/* <a class=" text-white no-underline hover:text-gray-200 hover:text-underline" href="https://forms.gle/MTCuJ5spGmekjbgT9">CONTACT US</a> */}
                           </li>
                         </ul>
                       </div>
