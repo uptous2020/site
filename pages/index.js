@@ -12,28 +12,8 @@ export default function Home() {
 
       <main>
         <section style={{backgroundImage: "url('hero.png')"}}>
-        {/* <nav className="p-0 pr-6 mt-0 fixed w-full z-10 top-0" style={{backgroundImage: "url('hero.png')"}}> */}
-                {/* name and logo */}
-                  {/* <div class="flex lg:flex-row justify-between md:flex-col sm:flex-col">
-                      <div class="flex"> */}
-                        {/* <img class="object-center pt-4 mt-0 ml-6 w-8 h-16" src="assets/logowhite.svg"></img> */}
-                            {/* <a class="ml-6 inline-block text-white text-3l no-underline hover:text-gray-200 hover:text-underline py-6 px-2 " href="https://2020upto.us">up to us</a>
-                      </div> 
-                      <div class="flex flex-row">  
-                        <ul>
-                          <li class="inline-block py-1 px-4 text-white text-2xl no-underline hover:text-gray-200 hover:text-underline">
-                            <script type="text/javascript" defer src="https://donorbox.org/install-popup-button.js"></script>
-                            <a class="dbox-donation-button" style={{background: "#000000) no-repeat 37px;color: #E69538;text-decoration: none;font-family: 'Monument';display: inline-block;font-size: 16px;padding: 15px 38px;padding-left: 75px;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;"}} href="https://donorbox.org/up-to-us">DONATE</a>
-                          </li>
-                          <li class="mr-3">
-                            <a class="inline-block text-white text-3l no-underline hover:text-gray-200 hover:text-underline py-6 px-2 " href="https://forms.gle/MTCuJ5spGmekjbgT9">CONTACT US</a>
-                          </li>
-                        </ul>
-                      </div>
-                  </div>
-            </nav> */}
-
-{/*nav bar testing*/}
+        
+{/*nav bar*/}
 
 <nav className="p-0 pr-6 mt-0 fixed w-full z-10 top-0" style={{backgroundImage: "url('hero.png')"}}>
                 {/* nav bar*/}
@@ -52,7 +32,6 @@ export default function Home() {
                           </li>
                           <li>
                             <Link href="/contact"><a class=" text-white no-underline hover:text-gray-200 hover:text-underline">CONTACT US</a></Link>
-                            {/* <a class=" text-white no-underline hover:text-gray-200 hover:text-underline" href="https://forms.gle/MTCuJ5spGmekjbgT9">CONTACT US</a> */}
                           </li>
                         </ul>
                       </div>
@@ -103,19 +82,6 @@ export default function Home() {
               <p className="w-64 text-center md:text-left">providing content that leads to direct action & steers the conversation</p>
             </div>
           </div>
-          
-          
-          
-          {/* <a id="contact" href="https://forms.gle/MTCuJ5spGmekjbgT9" className="mx-8 text-center text-3xl">
-              WANT TO HELP?
-          </a>
-          <a id="contact" href="https://forms.gle/MTCuJ5spGmekjbgT9" className="mb-16 text-center text-3xl">
-              CONTACT US
-          </a>
-         
-
-          <script type="text/javascript" defer src="https://donorbox.org/install-popup-button.js"></script>
-          <a class="dbox-donation-button" style={{background: "#000000 url(https://d1iczxrky3cnb2.cloudfront.net/red_logo.png) no-repeat 37px;color: #fff;text-decoration: none;font-family: Verdana,sans-serif;display: inline-block;font-size: 16px;padding: 15px 38px;padding-left: 75px;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;box-shadow: 0 1px 0 0 #1f5a89;text-shadow: 0 1px rgba(0, 0, 0, 0.3)"}} href="https://donorbox.org/up-to-us">Donate</a> <br></br><br></br><br></br> */}
         <br></br>
         </section>
         <footer className="w-full p-6" style={{backgroundImage: "url('footer.png')"}}>

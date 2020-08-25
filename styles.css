@@ -24,18 +24,3 @@ p { font-family: 'Silka'; }
 /* purgecss end ignore */
 @tailwind utilities;
 
-/* .iframe-container {
-  max-width: 90%;
-}
-
-.body {
-  max-width: 100%;
-} */
-/* .iframe-container iframe {
-   border: 0;
-   height: 100%;
-   left: 0;
-   position: absolute;
-   top: 0;
-   width: 90%;
-} */
