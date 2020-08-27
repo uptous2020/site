@@ -85,7 +85,24 @@ export default function Home() {
         <br></br>
         </section>
         <footer className="w-full p-6" style={{backgroundImage: "url('footer.png')"}}>
-          <p className="text-center text-white">© 2020 Up To Us</p>
+          <p className="justify-center text-center text-white">© 2020 Up To Us</p>
+          <div class="flex justify-center">
+            <div class="text-center px-4 py-2 m-2">
+              <a href="https://www.tiktok.com/@2020uptous">
+                <img src="tiktok.svg" alt="tiktok"></img>
+              </a>
+            </div>
+            <div class="text-center px-4 py-2 m-2">
+              <a href="https://www.instagram.com/2020uptous">
+                <img src="instagram.svg" alt="tiktok"></img>
+              </a>
+            </div>
+            <div class="text-center py-2 m-2">
+              <a href="https://twitter.com/2020uptous">
+                <img src="twitter.svg" alt="tiktok"></img>
+              </a>
+            </div>
+          </div>
         </footer>
       </main>
     </div>
