@@ -32,7 +32,6 @@ export default function Contact() {
             </div>
           </nav>
           <div className="p-6 text-white flex flex-col items-center text-center">
-            {/* <img className="hidden md:block h-64 mt-16 md:mt-6" src="/up_to_us_logo_white.svg" /> */}
             <h1 className="text-white text-2xl md:text-4xl mt-20 md:mt-16">
               CONTACT US
             </h1>
@@ -52,12 +51,12 @@ export default function Contact() {
             </div>
             <div className="text-center px-4 py-2 m-2">
               <a href="https://www.instagram.com/2020uptous">
-                <img src="instagram.svg" alt="tiktok"></img>
+                <img src="instagram.svg" alt="instagram"></img>
               </a>
             </div>
             <div className="text-center py-2 m-2">
               <a href="https://twitter.com/2020uptous">
-                <img src="twitter.svg" alt="tiktok"></img>
+                <img src="twitter.svg" alt="twitter"></img>
               </a>
             </div>
           </div>

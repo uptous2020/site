@@ -86,12 +86,12 @@ export default function Home() {
             </div>
             <div className="text-center px-4 py-2 m-2">
               <a href="https://www.instagram.com/2020uptous">
-                <img src="instagram.svg" alt="tiktok"></img>
+                <img src="instagram.svg" alt="instagram"></img>
               </a>
             </div>
             <div className="text-center py-2 m-2">
               <a href="https://twitter.com/2020uptous">
-                <img src="twitter.svg" alt="tiktok"></img>
+                <img src="twitter.svg" alt="twitter"></img>
               </a>
             </div>
           </div>
