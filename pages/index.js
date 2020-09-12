@@ -26,7 +26,7 @@ export default function Home() {
                     <a className="dbox-donation-button" style={{ background: "#000000) no-repeat 37px;color: #E69538;text-decoration: none; font-family: 'Monument'" }} href="https://donorbox.org/up-to-us">DONATE</a>
                   </li>
                   <li>
-                    <Link href="/about"><a className=" text-white ml-4 mr-2 md:mr-10 no-underline hover:text-gray-200 hover:text-underline">ABOUT US</a></Link>
+                    <Link href="/team"><a className=" text-white ml-4 mr-2 md:mr-10 no-underline hover:text-gray-200 hover:text-underline">TEAM</a></Link>
                   </li>
                   <li>
                     <Link href="/contact"><a className=" text-white no-underline hover:text-gray-200 hover:text-underline">CONTACT US</a></Link>

@@ -52,13 +52,6 @@ export default function About() {
                     </a>
                   </li>
                   <li>
-                    <Link href="/about">
-                      <a className=" text-white ml-4 mr-2 md:mr-10 no-underline hover:text-gray-200 hover:text-underline">
-                        TEAM
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
                     <Link href="/contact">
                       <a className=" text-white no-underline hover:text-gray-200 hover:text-underline">
                         CONTACT US

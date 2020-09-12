@@ -25,7 +25,7 @@ export default function Contact() {
                     <a className="dbox-donation-button" style={{ background: "#000000) no-repeat 37px;color: #E69538;text-decoration: none;font-family: 'Monument'" }} href="https://donorbox.org/up-to-us">DONATE</a>
                   </li>
                   <li>
-                    <Link href="/contact"><a className="text-white no-underline hover:text-gray-200 hover:text-underline">CONTACT US</a></Link>
+                    <Link href="/team"><a className="text-white no-underline hover:text-gray-200 hover:text-underline">TEAM</a></Link>
                   </li>
                 </ul>
               </div>
