@@ -116,7 +116,7 @@ export default function About() {
               </div>
 
               <h2 className="">Hanna</h2>
-              <h3 className="mb-4">Creator, Head of Something</h3>
+              <h3 className="mb-4">Head of Content</h3>
               <p className="mb-1 w-3/5 text-center">
               She does content. What does that mean for Up to Us? Depends on the day, but always includes producing, social media, content strategy and the website — somehow she always manages to work in a car or two. 
               </p>
