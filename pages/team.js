@@ -691,7 +691,7 @@ export default function About() {
             <div className="mt-16 flex flex-col items-center">
               <div className="w-40 h-40 m-4">
                 <img
-                  src="/profiles/nik.jpg"
+                  src="/profiles/nik.JPG"
                   className="flex text-center"
                   Image
                 ></img>
