@@ -614,10 +614,7 @@ export default function About() {
               <h2 className="">Aaron Son</h2>
               <h3 className="mb-4">Developer</h3>
               <p className="mb-1 w-3/5 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque fermentum diam elit, eu tristique lectus lacinia
-                et. Duis nec lacus mauris. Duis porttitor placerat euismod.
-                Nullam vitae erat erat. Mauris condimentum pellentesque
+              Aaron is an engineer building software to transform subscription e-commerce at Scoutside.
               </p>
               <div className="flex justify-center mb-4">
                 <div className="text-center py-2 m-2">
@@ -691,7 +688,7 @@ export default function About() {
             <div className="mt-16 flex flex-col items-center">
               <div className="w-40 h-40 m-4">
                 <img
-                  src="/profiles/nik.JPG"
+                  src="/profiles/nik.png"
                   className="flex text-center"
                   Image
                 ></img>
