@@ -340,8 +340,8 @@ export default function About() {
                 ></img>
               </div>
 
-              <h2 className="">Anisha</h2>
-              <h3 className="mb-4">Developer</h3>
+              <h2 className="">Anisha Sunkerneni</h2>
+              <h3 className="mb-4">Developer + Outreach/Content</h3>
               <p className="mb-1 w-3/5 text-center">
                 Anisha is a web developer and ex-medical student. She's passionate about design, medicine, technology and developing products that bring people together. Anisha enjoys asking questions that make people think.
               </p>
@@ -387,7 +387,7 @@ export default function About() {
               </div>
 
               <h2 className="">Eshita</h2>
-              <h3 className="mb-4">Developer + Content + Outreach</h3>
+              <h3 className="mb-4">Developer + Outreach/Content</h3>
               <p className="mb-1 w-3/5 text-center">
               Eshita is a Data Analyst at Shareworks by Morgan Stanley. 
               </p>
@@ -691,13 +691,13 @@ export default function About() {
             <div className="mt-16 flex flex-col items-center">
               <div className="w-40 h-40 m-4">
                 <img
-                  src="/profiles/nik.png"
+                  src="/profiles/nik.jpg"
                   className="flex text-center"
                   Image
                 ></img>
               </div>
 
-              <h2 className="">Nik Huebecker</h2>
+              <h2 className="">Nikolas Huebecker</h2>
               <h3 className="mb-4">Developer</h3>
               <p className="mb-1 w-3/5 text-center">
               Nikolas is an entreprenuer and engineer currently working on a stealth startup.
