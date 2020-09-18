@@ -20,13 +20,45 @@ export default function Contact() {
               </div>
               <div>
                 <ul className="mb-4 flex flex-row  justify-evenly md:justify-between text-sm md:text-base md:pt-6 md:mr-4">
-                  <li className="text-orange-100 ml-4 mr-2 md:mr-10 no-underline hover:text-gray-200 hover:text-underline">
-                    <script type="text/javascript" defer src="https://donorbox.org/install-popup-button.js"></script>
-                    <a className="dbox-donation-button" style={{ background: "#000000) no-repeat 37px;color: #E69538;text-decoration: none;font-family: 'Monument'" }} href="https://donorbox.org/up-to-us">DONATE</a>
+                  <li>
+                    <Link href="/about">
+                      <a className=" text-white no-underline ml-4 mr-2 md:mr-10 hover:text-gray-200 hover:text-underline">
+                        ABOUT
+                      </a>
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/team"><a className="text-white no-underline hover:text-gray-200 hover:text-underline">TEAM</a></Link>
+                    <Link href="/team">
+                      <a className=" text-white no-underline ml-4 mr-2 md:mr-10 hover:text-gray-200 hover:text-underline">
+                        TEAM
+                      </a>
+                    </Link>
                   </li>
+                  <li>
+                    <Link href="/contact">
+                      <a className=" text-white no-underline ml-4 mr-2 md:mr-10 hover:text-gray-200 hover:text-underline">
+                        CONTACT
+                      </a>
+                    </Link>
+                  </li>
+                  <li className="text-orange-100 ml-4 mr-2 md:mr-10 no-underline hover:text-gray-200 hover:text-underline">
+                    <script
+                      type="text/javascript"
+                      defer
+                      src="https://donorbox.org/install-popup-button.js"
+                    ></script>
+                    <a
+                      className="dbox-donation-button"
+                      style={{
+                        background:
+                          "#000000) no-repeat 37px;color: #E69538;text-decoration: none;font-family: 'Monument'",
+                      }}
+                      href="https://donorbox.org/up-to-us"
+                    >
+                      DONATE
+                    </a>
+                  </li>
+                  
                 </ul>
               </div>
             </div>
@@ -42,7 +74,17 @@ export default function Contact() {
           </div>
         </section>
         <footer className="w-full p-6" style={{ backgroundImage: "url('footer.png')" }}>
-          <p className="justify-center text-center text-white">© 2020 Up To Us</p>
+        <div className="flex flex-row justify-center">
+            <p className="justify-center text-center text-white">© 2020 Up To Us</p>
+            <p className="justify-center text-center text-white ml-6"> | </p>
+            <li>
+                      <Link href="/rules">
+                        <a className=" text-white mr-2 md:mr-10 no-underline hover:text-gray-200 hover:text-underline" >
+                          Rules
+                        </a>
+                      </Link>
+            </li>
+          </div>
           <div className="flex justify-center">
             <div className="text-center px-4 py-2 m-2">
               <a href="https://www.tiktok.com/@2020uptous">
