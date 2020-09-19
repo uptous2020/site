@@ -34,13 +34,13 @@ export default function About() {
               </div>
               <div>
                 <ul className="mb-4 flex flex-row  justify-evenly md:justify-between text-sm md:text-base md:pt-6 md:mr-4">
-                  <li>
+                  {/* <li>
                     <Link href="/about">
                       <a className=" text-white no-underline ml-4 mr-2 md:mr-10 hover:text-gray-200 hover:text-underline">
                         ABOUT
                       </a>
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="/team">
                       <a className=" text-white no-underline ml-4 mr-2 md:mr-10 hover:text-gray-200 hover:text-underline">
