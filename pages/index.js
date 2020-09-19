@@ -1,5 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Navbar from '../components/Navbar.js'
+import HeroHeading from '../components/atoms/HeroHeading.js'
+import styled from "@emotion/styled";
 
 export default function Home() {
   return (
@@ -11,74 +14,12 @@ export default function Home() {
 
       <main>
         <section style={{ backgroundImage: "url('hero.png')" }}>
-          <nav className="p-0 pr-6 mt-0 fixed w-full z-10 top-0" style={{ backgroundImage: "url('hero.png')" }}>
-            <div className="flex md:flex-row flex-col justify-between">
-              <div className="flex justify-center md:justify-start ">
-                <img className="object-center mt-1 pt-3 md:pb-0 pb-2 ml-6 w-8 h-12" src="/logowhite.svg" href="2020upto.us"></img>
-                <div>
-                  <a className="inline-block text-white text-3l no-underline hover:text-gray-200 hover:text-underline py-6 px-1 " href="https://2020upto.us">up to us</a>
-                </div>
-              </div>
-              <div>
-                <ul className="mb-4 flex flex-row  justify-evenly md:justify-between text-sm md:text-base md:pt-6 md:mr-4">
-                  {/* <li>
-                    <Link href="/about">
-                      <a className=" text-white no-underline ml-4 mr-2 md:mr-10 hover:text-gray-200 hover:text-underline">
-                        ABOUT
-                      </a>
-                    </Link>
-                  </li> */}
-                  <li>
-                    <Link href="/team">
-                      <a className=" text-white no-underline ml-4 mr-2 md:mr-10 hover:text-gray-200 hover:text-underline">
-                        TEAM
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/contact">
-                      <a className=" text-white no-underline ml-4 mr-2 md:mr-10 hover:text-gray-200 hover:text-underline">
-                        CONTACT
-                      </a>
-                    </Link>
-                  </li>
-                  <li className="text-orange-100 ml-4 mr-2 md:mr-10 no-underline hover:text-gray-200 hover:text-underline">
-                    <script
-                      type="text/javascript"
-                      defer
-                      src="https://donorbox.org/install-popup-button.js"
-                    ></script>
-                    <a
-                      className="dbox-donation-button"
-                      style={{
-                        background:
-                          "#000000) no-repeat 37px;color: #E69538;text-decoration: none;font-family: 'Monument'",
-                      }}
-                      href="https://donorbox.org/up-to-us"
-                    >
-                      DONATE
-                    </a>
-                  </li>
-                  
-                </ul>
-              </div>
-            </div>
-          </nav>
-
+          <Navbar/>
+          
           <div className="p-12 mx-auto text-white flex flex-col items-center text-center">
-            <img className="hidden md:block h-64 mt-16 md:mt-6" src="/up_to_us_logo_white.svg" />
-            <h1 className="text-2xl md:text-4xl mt-20 md:mt-16">
-              WHO WE ARE
-            </h1>
-            <p className="px-0 lg:px-56 text-xl md:text-2xl mt-2">
-              up to us is a collective of Gen Z creators fixing some of the biggest problems facing our generation.
-            </p>
-            <h1 className="text-2xl md:text-4xl mt-12 md:mt-16">
-              WHAT WE STAND FOR
-            </h1>
-            <p className="text-xl md:text-2xl description mt-2 pb-4">
-              we don’t want to let our future be decided by others. we want to make a change by turning our voices into votes. our generation will save the world.<br></br>it’s up to us.
-            </p>
+            <HeroHeading>Test</HeroHeading>
+            <h1>Hello World</h1>
+            <div className='rainbowText'>Test</div>
           </div>
         </section>
         <section className="mx-auto flex flex-col items-center justify-center">
@@ -142,4 +83,3 @@ export default function Home() {
     </div>
   )
 }
-

@@ -1,7 +1,61 @@
+import {useEffect} from 'react';
 import Head from "next/head";
 import Link from "next/link";
+import data from './teamcsv.json'
+
+const SocialLink = ({link,icon})=>(
+  <div className="text-center py-2 m-2">
+      <a href="https://www.linkedin.com/in/conor-o-shea/">
+        <img src="linkedin_black.svg" alt="linkedin"></img>
+      </a>
+  </div>  
+)
+
+const alts = ['LinkedIn','Instagram','TikTok','GitHub','Twitter']
+const icons = ['linkedin_black.svg','instagram_black.svg','tiktok_black.svg','github_black.svg','twitter_black.svg']
+const components = alts.map((alt,i)=>(link)=><SocialLink/>)
+
+const TeamMember = ({teamObject})=>{
+  return (
+  <div className="flex flex-col items-center">
+    <div className="w-40 h-40 m-4">
+      <img
+        src="/profiles/conor.jpg"
+        className="flex text-center"
+        Image
+      ></img>
+    </div>
+
+    <h2 className="">Conor</h2>
+    <h3 className="mb-4">Founder</h3>
+    <p className="mb-1 w-3/5 text-center">
+    Conor just wants Gen Z to vote. Before founding Up to Us, he lead Product Marketing at Tesla, helped lead Growth at Citizen, and interned for Senator Elizabeth Warren.
+    </p>
+    <div className="flex justify-center mb-4">
+      
+      <div className="text-center px-4 py-2 m-2">
+        <a href="https://www.instagram.com/cnoshea">
+          <img src="instagram_black.svg" alt="instagram"></img>
+        </a>
+      </div>
+      <div className="text-center py-2 m-2">
+        <a href="https://twitter.com/con060">
+          <img src="twitter_black.svg" alt="twitter"></img>
+        </a>
+      </div>
+    </div>
+  </div>)
+}
 
 export default function About() {
+  const getData = async ()=>{
+    console.log(data)
+  }
+
+  useEffect(()=>{
+    getData()
+  },[])
+
   return (
     <div>
       <Head>
@@ -89,38 +143,7 @@ export default function About() {
             actually vote.
           </p>
           <div className="mx-auto sm:grid grid-cols-1 w-full md: grid-cols-2 w-2/3">
-            <div className="flex flex-col items-center">
-              <div className="w-40 h-40 m-4">
-                <img
-                  src="/profiles/conor.jpg"
-                  className="flex text-center"
-                  Image
-                ></img>
-              </div>
-
-              <h2 className="">Conor</h2>
-              <h3 className="mb-4">Founder</h3>
-              <p className="mb-1 w-3/5 text-center">
-              Conor just wants Gen Z to vote. Before founding Up to Us, he lead Product Marketing at Tesla, helped lead Growth at Citizen, and interned for Senator Elizabeth Warren.
-              </p>
-              <div className="flex justify-center mb-4">
-                <div className="text-center py-2 m-2">
-                  <a href="https://www.linkedin.com/in/conor-o-shea/">
-                    <img src="linkedin_black.svg" alt="linkedin"></img>
-                  </a>
-                </div>
-                <div className="text-center px-4 py-2 m-2">
-                  <a href="https://www.instagram.com/cnoshea">
-                    <img src="instagram_black.svg" alt="instagram"></img>
-                  </a>
-                </div>
-                <div className="text-center py-2 m-2">
-                  <a href="https://twitter.com/con060">
-                    <img src="twitter_black.svg" alt="twitter"></img>
-                  </a>
-                </div>
-              </div>
-            </div>
+            
             <div className="flex flex-col items-center">
               <div className="w-40 h-40 m-4">
                 <img
