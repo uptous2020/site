@@ -7,8 +7,8 @@
   src: url('assets/silkamono-regular-webfont.woff');
 }
 
-h1, h2, a { font-family: 'Monument' }
-p { font-family: 'Silka' }
+h1, h2, a, h5 { font-family: 'Monument' }
+p, h6 { font-family: 'Silka' }
 
 /*contact styling*/
 #contact{
