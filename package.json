@@ -8,11 +8,17 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "autoprefixer": "^9.8.6",
+    "dotenv": "^8.2.0",
+    "mapbox-gl": "^1.12.0",
     "next": "^9.5.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-map-gl": "^5.2.8",
+    "react-mapbox-gl": "^4.8.6",
     "tailwindcss": "^1.6.2"
   },
   "description": "This is a starter template for [Learn Next.js](https://nextjs.org/learn).",
