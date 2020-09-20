@@ -1,7 +1,19 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import {useState, useEffect} from 'react'
 
-export default function Navbar(){
+export default function Navbar() {
+  const [currentPage, setCurrentPage] = useState("/")
+  const pages = ["/team", "/contact"];
+  
+  useEffect(() => {
+    // get the current route, log it to console for testing
+    setCurrentPage(window.location.pathname)
+    console.log(`The current pages are ${pages}`)
+    console.log(
+      `the page is ${currentPage} and the window is ${window.location.pathname}`
+    );
+  })
   return (
     <nav className="p-0 pr-6 mt-0 fixed w-full z-10 top-0" style={{ backgroundImage: "url('hero.png')" }}>
     <div className="flex md:flex-row flex-col justify-between">
@@ -20,20 +32,22 @@ export default function Navbar(){
               </a>
             </Link>
           </li> */}
-          <li>
-            <Link href="/team">
-              <a className=" text-white no-underline ml-4 mr-2 md:mr-10 hover:text-gray-200 hover:text-underline">
-                TEAM
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact">
-              <a className=" text-white no-underline ml-4 mr-2 md:mr-10 hover:text-gray-200 hover:text-underline">
-                CONTACT
-              </a>
-            </Link>
-          </li>
+            {
+              pages.filter((page) => {
+                if (page == currentPage) {
+                  return false
+                }
+                return true
+              }).map((pageRoute, ID) => (
+                  <li key={ID}>
+                  <Link href={`${pageRoute}`}>
+                      <a className=" text-white no-underline ml-4 mr-2 md:mr-10 hover:text-gray-200 hover:text-underline">
+                      {pageRoute.slice(1, pageRoute.length).toUpperCase()}
+                      </a>
+                    </Link>
+                  </li>)
+              )
+          }
           <li className="text-orange-100 ml-4 mr-2 md:mr-10 no-underline hover:text-gray-200 hover:text-underline">
             <script
               type="text/javascript"
