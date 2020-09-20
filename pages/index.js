@@ -1,9 +1,11 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Navbar from '../components/Navbar.js'
-import HeroHeading from '../components/atoms/HeroHeading.js'
+
+
 
 export default function Home() {
+  
   return (
     <div>
       <Head>
@@ -17,7 +19,7 @@ export default function Home() {
           
           <div className="p-12 mx-auto text-white flex flex-col items-center text-center">
           <div></div>
-            <div className='rainbowText'>Test</div>
+            <div className='rainbowText'>999,999</div>
           </div>
         </section>
         <section className="mx-auto flex flex-col items-center justify-center">
