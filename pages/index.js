@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Navbar from '../components/Navbar.js'
 import HeroHeading from '../components/atoms/HeroHeading.js'
-import styled from "@emotion/styled";
 
 export default function Home() {
   return (
@@ -17,8 +16,7 @@ export default function Home() {
           <Navbar/>
           
           <div className="p-12 mx-auto text-white flex flex-col items-center text-center">
-            <HeroHeading>Test</HeroHeading>
-            <h1>Hello World</h1>
+          <div></div>
             <div className='rainbowText'>Test</div>
           </div>
         </section>
