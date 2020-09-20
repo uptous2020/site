@@ -30,6 +30,7 @@ export default class Map extends Component {
 
     this.state = {
       viewport: {
+        cHeight: props.cHeight,
         latitude: 40,
         longitude: -100,
         zoom: 3,
@@ -104,15 +105,14 @@ export default class Map extends Component {
       startTime,
       endTime,
     } = this.state;
-
+    console.log(viewport)
     return (
-      <div style={{ height: "100%", position: "relative" }}>
+      <div>
         <MapGL
           {...viewport}
           width="100%"
-          height="100%"
+          height={viewport.cHeight}
           mapStyle="mapbox://styles/mapbox/dark-v9"
-          onViewportChange={this._onViewportChange}
           mapboxApiAccessToken={MAPBOX_TOKEN}
         >
           {data && (

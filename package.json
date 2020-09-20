@@ -12,6 +12,7 @@
     "@emotion/styled": "^10.0.27",
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "autoprefixer": "^9.8.6",
+    "d3-request": "^1.0.6",
     "dotenv": "^8.2.0",
     "mapbox-gl": "^1.12.0",
     "next": "^9.5.1",

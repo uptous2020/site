@@ -1,6 +1,49 @@
 import Head from "next/head";
 import Link from "next/link";
+import Map from "../components/molecules/map";
 import Navbar from "../components/Navbar.js";
+import MapGL, { Source, Layer } from "react-map-gl";
+
+const MAPBOX_TOKEN =
+  "pk.eyJ1IjoibmRuZWlnaGJvciIsImEiOiJja2Y5eWkzY3MwOGQ5MnVxam40NGh2dmZuIn0.osqI6UBYhSjjLjPJP7gtmQ"; 
+
+
+const LandingContent = (props) => {
+  const { visible } = props;
+  
+  const mapView = <>
+  <div className="w-full h-20 mt-10"><Map className='map'/></div>
+  {/* <MapGL
+          {...viewport}
+          width="100%"
+          height="100%"
+          mapStyle="mapbox://styles/mapbox/dark-v9"
+          onViewportChange={this._onViewportChange}
+          mapboxApiAccessToken={MAPBOX_TOKEN}
+        > </MapGL> */}
+  </>;
+  const aboutText = (
+    <>
+      <img
+        className="hidden md:block h-64 mt-16 md:mt-6"
+        src="/up_to_us_logo_white.svg"
+      />
+      <h1 className="text-2xl md:text-4xl mt-20 md:mt-16">WHO WE ARE</h1>
+      <p className="px-0 lg:px-56 text-xl md:text-xl mt-2">
+        up to us is a collective of Gen Z creators fixing some of the biggest
+        problems facing our generation.
+      </p>
+      <h1 className="text-2xl md:text-4xl mt-12 md:mt-16">WHAT WE STAND FOR</h1>
+      <p className="text-xl md:text-xl description mt-2 pb-4">
+        we don’t want to let our future be decided by others. we want to make a
+        change by turning our voices into votes. our generation will save the
+        world.<br></br>it’s up to us.
+      </p>
+    </>
+  );
+
+  return visible ? mapView : aboutText;
+};
 
 export default function Home() {
   return (
@@ -13,26 +56,15 @@ export default function Home() {
       <main>
         <section style={{ backgroundImage: "url('hero.png')" }}>
           <Navbar />
-
-          <div className="p-12 mx-auto text-white flex flex-col items-center text-center">
-            {/* <div className='rainbowText'>999,999</div> */}
-            <img
-              className="hidden md:block h-64 mt-16 md:mt-6"
-              src="/up_to_us_logo_white.svg"
-            />
-            <h1 className="text-2xl md:text-4xl mt-20 md:mt-16">WHO WE ARE</h1>
-            <p className="px-0 lg:px-56 text-xl md:text-2xl mt-2">
-              up to us is a collective of Gen Z creators fixing some of the
-              biggest problems facing our generation.
-            </p>
-            <h1 className="text-2xl md:text-4xl mt-12 md:mt-16">
-              WHAT WE STAND FOR
-            </h1>
-            <p className="text-xl md:text-2xl description mt-2 pb-4">
-              we don’t want to let our future be decided by others. we want to
-              make a change by turning our voices into votes. our generation
-              will save the world.<br></br>it’s up to us.
-            </p>
+          {/* bruh */}
+          {/* <div className="p-12 mt-4mx-auto text-white flex flex-col items-center text-center w-5/6 z-20">
+            <div className='rainbowText'>Bruh</div>
+          </div> */}
+          <div className="h-full w-full relative">
+            <div className='rainbowText z-40 absolute flex flex-col text-center'>
+              <p>21,732</p>   
+            </div>
+            <Map cHeight="450px" className='map'/>
           </div>
         </section>
         <section className="mx-auto flex flex-col items-center justify-center">

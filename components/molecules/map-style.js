@@ -1,6 +1,6 @@
 const MAX_ZOOM_LEVEL = 9;
 
-const heatmapLayer = {
+export const heatmapLayer = {
   maxzoom: MAX_ZOOM_LEVEL,
   type: 'heatmap',
   paint: {
@@ -35,5 +35,3 @@ const heatmapLayer = {
     'heatmap-opacity': ['interpolate', ['linear'], ['zoom'], 7, 1, 9, 0]
   }
 };
-
- export default heatmapLayer;
