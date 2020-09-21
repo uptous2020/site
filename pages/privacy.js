@@ -17,7 +17,7 @@ export default function Privacy() {
             <h1 className="text-white text-2xl md:text-4xl mt-20 md:mt-16">
               PRIVACY POLICY
             </h1>
-            <h5 className="text-white text-base md:text-base mt-5 md:mt-2">
+            <h5 className="text-white text-base md:text-base mt-3 md:mt-2">
               Effective September 22, 2020
             </h5>
           </div>

@@ -17,6 +17,9 @@ export default function Teslagiveaway() {
             <h1 className="text-white text-2xl md:text-4xl mt-20 md:mt-16">
               TESLA SWEEPSTAKE RULES
             </h1>
+            <h5 className="text-white text-base md:text-base mt-3 md:mt-2">
+              Official Rules
+            </h5>
           </div>
           <div>
             <h5 className="text-white text-left text-lg mx-20 my-4" >
