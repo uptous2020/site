@@ -147,7 +147,7 @@ export default function Teslagiveaway() {
             RULES/WHO WON?:
             </h6>
             <h6 className="text-white text-left text-lg mx-20 my-4" >
-            A copy of these Official Rules will be available during the Sweepstakes Period at <a href="https://www.2020upto.us/teslagiveaway">Up to Us x Cheeky Boyo</a>. For information on who won the Sweepstakes, please send an email with the subject line “Up to Us x Cheeky Boyos Check Your Registration Sweepstakes – Who Won?” to sweepstakes@2020upto.us for receipt no later than six (6) months after the end of the Sweepstakes Period. 
+            A copy of these Official Rules will be available during the Sweepstakes Period at <a href="/teslagiveaway">Up to Us x Cheeky Boyos</a>. For information on who won the Sweepstakes, please send an email with the subject line “Up to Us x Cheeky Boyos Check Your Registration Sweepstakes – Who Won?” to sweepstakes@2020upto.us for receipt no later than six (6) months after the end of the Sweepstakes Period. 
             </h6>
             <h6 className="text-white text-left text-lg mx-20 my-4" >
             THE SPONSOR OF THIS SWEEPSTAKES IS: 
