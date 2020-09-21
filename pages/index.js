@@ -10,9 +10,13 @@ const LandingContent = (props) => {
   const { visible } = props;
   
   const mapView = <>
-          <div className="h-full w-full relative">
-            <div className='rainbowText z-40 absolute flex flex-col text-center'>
-              <p>21,732</p>   
+          <div className="h-full w-full relative mt-5" >
+            <div className='z-40 flex flex-col text-center' style={{paddingTop:250,paddingBottom:200}}>
+              <p className='rainbowText'>21,732</p>   
+              <p className='text-white' style={{fontSize:40}}>REGISTERED TO VOTE</p>
+              <div className='inline mt-4'>
+                <a className='p-3 pl-5 pr-5 text-white inline-block' style={{backgroundColor:'#E69538'}}>Check your status</a>
+              </div>
             </div>
             <Map cHeight="800px" className='map'/>
           </div>
@@ -54,7 +58,7 @@ export default function Home() {
         <section style={{ backgroundImage: "url('hero.png')" }}>
           <Navbar />
           {/* bruh */}
-          <LandingContent visible={false}/>
+          <LandingContent visible={true}/>
           {/* <div className="h-full w-full relative">
             <div className='rainbowText z-40 absolute flex flex-col text-center'>
               <p>21,732</p>   
