@@ -11,7 +11,7 @@ export default function Teslagiveaway() {
         <link rel="icon" href="/faviconuptous.ico" />
       </Head>
       <main>
-        <section className="body" style={{ backgroundImage: "url('hero.png')" }}>
+        <section className="body " style={{ backgroundImage: "url('hero.png')" }}>
           <Navbar />
           <div className="p-6 text-white flex flex-col items-center text-center">
             <h1 className="text-white text-2xl md:text-4xl mt-20 md:mt-16">

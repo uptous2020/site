@@ -13,11 +13,11 @@ export default function Rules() {
       <main>
         <section className="body h-auto" style={{ backgroundImage: "url('hero.png')" }}>
           <Navbar />
-          <div className="p-6 text-white flex flex-row items-center text-center">
-            <h1 className="text-white max-w-sm bg-orange-500 text-2xl md:text-xl mt-40 md:mt-16">
-              <a href="/teslagiveaway">Up to Us x Cheeky Boyos Tesla Giveaway</a>
+          <div className="p-6 flex flex-row justify-center items-center text-center">
+            <h1 className="text-black hover:text-orange-500 max-w-sm bg-white text-xl md:text-xl mt-40 mx-10 p-4 md:mt-16">
+              <a href="/teslagiveaway">Up to Us x Cheeky Boyos Giveaway</a>
             </h1>
-            <h1 className="text-white text-2xl md:text-4xl my-20 md:mt-16">
+            <h1 className="text-black hover:text-orange-500 max-w-sm bg-white text-xl md:text-xl mt-40 mx-10 p-4 md:mt-16">
               <a href="/checkandchat">Check and Chat Promotion</a>
             </h1>
           </div>
