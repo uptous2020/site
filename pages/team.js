@@ -16,7 +16,7 @@ const SocialLink = ({link,icon,alt})=>(
 
 const alts = ['LinkedIn','Instagram','TikTok','GitHub','Twitter']
 const icons = ['linkedin_black.svg','instagram_black.svg','tiktok_black.svg','github_black.svg','twitter_black.svg']
-const profilePics = ['conor.jpg','avarose.jpg','SamS.png','emilyds.png','B.jpg','alexr.jpg','hanna.JPG','shreya.png','alex.png','josh_svoboda_square.jpg','lindseykennedy.jpg','rosendo.jpg','shianne.jpg','angelo.webp','aaron.jpg','nik.png','anisha.jpg','eshita.jpg','ali.jpg','katie.jpg','Long.jpg','Jimbo.jpg','benji.jpg'].map(e=>`profiles/${e.length ? e : 'conor.jpg'}`)
+const profilePics = ['conor.jpg','avarose.jpg','SamS.png','emilyds.png','B.jpg','alexr.jpg','hanna.jpg','shreya.png','alex.png','josh_svoboda_square.jpg','lindseykennedy.jpg','rosendo.jpg','shianne.jpg','angelo.webp','aaron.jpg','nik.png','anisha.jpg','eshita.jpg','ali.jpg','katie.jpg','Long.jpg','Jimbo.jpg','benji.jpg'].map(e=>`profiles/${e.length ? e : 'conor.jpg'}`)
 const transformationFunction = [link=>link,name=>`https://www.instagram.com/${name}`,name=>`https://www.tiktok.com/${name}`,name=>`https://github.com/${name}`,name=>`https://twitter.com/${name}`]
 const components = alts.map((alt,i)=>(link)=>()=><SocialLink link={transformationFunction[i](link)} icon={icons[i]} alt={alt}/>)
 

@@ -20,10 +20,10 @@ export default function Rules() {
           </h1>
           <div className="p-6 flex flex-col xl:flex-row lg:flex-col justify-center items-center text-center">
             <h1 className="mt-32 xl:mt-20 lg:mt-20 mx-10 md:mt-16 lg:mb-20 xl:mb-20">
-              <a className="text-black hover:bg-orange-100 hover:text-white max-w-md rounded-md p-6 bg-white text-xl md:text-xl " href="/teslagiveaway">Up to Us x Cheeky Boyos</a>
+              <a className="text-black hover:bg-orange-100 hover:text-white max-w-md rounded-md p-6 bg-white text-xl md:text-xl " href="/teslagiveaway">Tesla Giveaway</a>
             </h1>
             <h1 className="mt-20 mb-8 lg:mb-20 xl:mb-20 lg:mt-20 xl:mt-20 mx-10 md:mt-16">
-              <a className="text-black hover:bg-orange-100 hover:text-white max-w-md rounded-md bg-white text-xl md:text-xl p-6 " href="/checkandchat">Check and Chat Promotion</a>
+              <a className="text-black hover:bg-orange-100 hover:text-white max-w-md rounded-md bg-white text-xl md:text-xl p-6 " href="/checkandchat">Check and Chat</a>
             </h1>
           </div>
           </div>
