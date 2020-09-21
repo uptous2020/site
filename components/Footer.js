@@ -12,14 +12,14 @@ const Footer = () => {
             © 2020 Up To Us
           </p>
           <p className="justify-center invisible text-center text-white ml-6 lg:visible xl:visible sm:invisible md:invisible"> | </p>
-          {/* <li>
+          <li>
             <Link href="/rules">
               <a className=" text-white no-underline hover:text-gray-200 hover:text-underline">
                 Rules
               </a>
             </Link>
           </li>
-          <p className="justify-center invisible text-center text-white ml-6 lg:visible xl:visible sm:invisible md:invisible"> | </p> */}
+          <p className="justify-center invisible text-center text-white ml-6 lg:visible xl:visible sm:invisible md:invisible"> | </p>
           <li>
             <Link href="/teslagiveaway">
               <a className=" text-white no-underline hover:text-gray-200 hover:text-underline">
