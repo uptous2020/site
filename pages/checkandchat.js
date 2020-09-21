@@ -10,8 +10,7 @@ export default function Checkandchat() {
         <title>Up To Us</title>
         <link rel="icon" href="/faviconuptous.ico" />
       </Head>
-      <main>
-        <section className="body" style={{ backgroundImage: "url('hero.png')" }}>
+      <main className="body" style={{ backgroundImage: "url('hero.png')" }}>
           <Navbar />
           <div className="p-6 text-white flex flex-col items-center text-center">
             <h1 className="text-white text-2xl md:text-4xl mt-20 md:mt-16">
@@ -144,10 +143,9 @@ export default function Checkandchat() {
           <h5 className="text-white text-left text-lg mx-20 my-4" >
             THE SPONSOR OF THIS PROMOTION IS 
           </h5>
-          <h6 className="text-white text-left text-lg mx-20 my-4" >
+          <h6 className="text-white text-left text-lg mx-20 py-4" >
             Up to Us, Inc., 206 Ave A, Suite 4A, New York, NY 10009
           </h6>
-        </section>
         <Footer />
       </main>
     </div>

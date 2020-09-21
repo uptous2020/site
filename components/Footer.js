@@ -14,11 +14,12 @@ const Footer = () => {
           <p className="justify-center invisible text-center text-white ml-6 lg:visible xl:visible sm:invisible md:invisible"> | </p>
           {/* <li>
             <Link href="/rules">
-              <a className=" text-white mr-2 md:mr-10 no-underline hover:text-gray-200 hover:text-underline">
+              <a className=" text-white no-underline hover:text-gray-200 hover:text-underline">
                 Rules
               </a>
             </Link>
-          </li> */}
+          </li>
+          <p className="justify-center invisible text-center text-white ml-6 lg:visible xl:visible sm:invisible md:invisible"> | </p> */}
           <li>
             <Link href="/teslagiveaway">
               <a className=" text-white no-underline hover:text-gray-200 hover:text-underline">
