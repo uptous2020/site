@@ -17,12 +17,12 @@ export default function Checkandchat() {
             <h1 className="text-white text-2xl md:text-4xl mt-20 md:mt-16">
               Check and Chat Promotion
             </h1>
-            <h5 className="text-white text-base md:text-base mt-3 md:mt-2">
+            <h5 className="text-white text-base md:text-base mt-4 md:mt-2">
               Official Rules
             </h5>
           </div>
           <div>
-            <h5 className="text-white text-left text-lg mx-20 my-4" >
+            <h5 className="text-white text-left text-lg mx-20 mb-4" >
               VOTER REGISTRATION IS NOT REQUIRED TO EARN ENTRY INTO THIS PROMOTION. 
               NO PURCHASE NECESSARY TO ENTER OR WIN. A PURCHASE WILL NOT INCREASE YOUR CHANCES OF WINNING. VOID WHERE PROHIBITED BY LAW.
             </h5>
