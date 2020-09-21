@@ -11,6 +11,7 @@ export default function Rules() {
         <link rel="icon" href="/faviconuptous.ico" />
       </Head>
       <main>
+      
         <section className="body h-auto" style={{ backgroundImage: "url('hero.png')" }}>
           <Navbar />
           <div className="p-6 flex flex-col justify-center items-center text-center">

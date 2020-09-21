@@ -19,7 +19,7 @@ const Footer = () => {
               </a>
             </Link>
           </li>
-          <p className="justify-center invisible text-center text-white ml-6 lg:visible xl:visible sm:invisible md:invisible"> | </p>
+          {/* <p className="justify-center invisible text-center text-white ml-6 lg:visible xl:visible sm:invisible md:invisible"> | </p>
           <li>
             <Link href="/teslagiveaway">
               <a className=" text-white no-underline hover:text-gray-200 hover:text-underline">
@@ -34,7 +34,7 @@ const Footer = () => {
                 Check and Chat
               </a>
             </Link>
-          </li>
+          </li> */}
           <p className="justify-center invisible text-center text-white ml-6 lg:visible xl:visible sm:invisible md:invisible"> | </p>
           <li>
             <Link href="/privacy">
