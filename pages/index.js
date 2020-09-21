@@ -4,26 +4,21 @@ import Map from "../components/molecules/map";
 import Navbar from "../components/Navbar.js";
 import MapGL, { Source, Layer } from "react-map-gl";
 
-const MAPBOX_TOKEN =
-  "pk.eyJ1IjoibmRuZWlnaGJvciIsImEiOiJja2Y5eWkzY3MwOGQ5MnVxam40NGh2dmZuIn0.osqI6UBYhSjjLjPJP7gtmQ"; 
-
 
 const LandingContent = (props) => {
   const { visible } = props;
   
   const mapView = <>
-  <div className="w-full h-20 mt-10"><Map className='map'/></div>
-  {/* <MapGL
-          {...viewport}
-          width="100%"
-          height="100%"
-          mapStyle="mapbox://styles/mapbox/dark-v9"
-          onViewportChange={this._onViewportChange}
-          mapboxApiAccessToken={MAPBOX_TOKEN}
-        > </MapGL> */}
+          <div className="h-full w-full relative">
+            <div className='rainbowText z-40 absolute flex flex-col text-center'>
+              <p>21,732</p>   
+            </div>
+            <Map cHeight="800px" className='map'/>
+          </div>
   </>;
   const aboutText = (
     <>
+      <div className="p-12 mx-auto text-white flex flex-col items-center text-center">
       <img
         className="hidden md:block h-64 mt-16 md:mt-6"
         src="/up_to_us_logo_white.svg"
@@ -39,6 +34,7 @@ const LandingContent = (props) => {
         change by turning our voices into votes. our generation will save the
         world.<br></br>it’s up to us.
       </p>
+      </div>
     </>
   );
 
@@ -57,15 +53,13 @@ export default function Home() {
         <section style={{ backgroundImage: "url('hero.png')" }}>
           <Navbar />
           {/* bruh */}
-          {/* <div className="p-12 mt-4mx-auto text-white flex flex-col items-center text-center w-5/6 z-20">
-            <div className='rainbowText'>Bruh</div>
-          </div> */}
-          <div className="h-full w-full relative">
+          <LandingContent visible={false}/>
+          {/* <div className="h-full w-full relative">
             <div className='rainbowText z-40 absolute flex flex-col text-center'>
               <p>21,732</p>   
             </div>
             <Map cHeight="450px" className='map'/>
-          </div>
+          </div> */}
         </section>
         <section className="mx-auto flex flex-col items-center justify-center">
           <h1 className="md:text-4xl md:mt-16 text-2xl mt-12 ">WHAT WE DO:</h1>

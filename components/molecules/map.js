@@ -33,7 +33,7 @@ export default class Map extends Component {
         cHeight: props.cHeight,
         latitude: 40,
         longitude: -100,
-        zoom: 3,
+        zoom: 4,
         bearing: 0,
         pitch: 0,
       },
