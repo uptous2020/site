@@ -10,7 +10,7 @@ export default function Privacy() {
         <title>Up To Us</title>
         <link rel="icon" href="/faviconuptous.ico" />
       </Head>
-      <main className="body h-auto" style={{ backgroundImage: "url('hero.png')" }}>
+      <main className="body" style={{ backgroundImage: "url('hero.png')" }}>
           <Navbar />
           <div className="p-6 flex flex-col justify-center text-center">
           <h1 className="text-white text-2xl md:text-4xl mt-32 md:mt-24">
