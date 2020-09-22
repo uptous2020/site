@@ -50,6 +50,7 @@ export default function Home() {
   return (
     <div>
       <Head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>Up To Us</title>
         <link rel="icon" href="/faviconuptous.ico" />
       </Head>
