@@ -13,7 +13,7 @@ const cheekyObj =   {
     "influencerName": "The Cheeky Boyos",
     "socialLink": "https://www.tiktok.com/@cheekyboyos?language=en&u_code=d37chme9dc9fk2&utm_campaign=client_share&app=musically&utm_medium=ios&user_id=6625415756434046982&tt_from=copy&utm_source=copy&source=h5_m",
     "influencerPhoto": "https://static-content.vercel.app/images/cheeky_boyos_outvote_profile.png",
-    "contestName": "https://www.outvote.io/campaigns/up-to-us/check_registration?referral_hash=e5f49ef4d3d4519c91ff52240e9c19f1b6fb048d",
+    "contestName": "https://www.outvote.io/campaigns/up-to-us-cheeky-boyos/check_registration",
     "isVisible": "TRUE"
 };
 

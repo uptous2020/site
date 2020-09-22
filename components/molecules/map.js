@@ -5,7 +5,7 @@ import { json as requestJson } from "d3-request";
 import { heatmapLayer } from "./map-style";
 
 const MAPBOX_TOKEN =
-  "pk.eyJ1IjoibmRuZWlnaGJvciIsImEiOiJja2Y5eWkzY3MwOGQ5MnVxam40NGh2dmZuIn0.osqI6UBYhSjjLjPJP7gtmQ"; 
+  "pk.eyJ1IjoibmRuZWlnaGJvciIsImEiOiJja2ZkbW9nNWEwMjdrMnRzaDFscW1xODZpIn0.sxWbKo2bfrpeC7C6GA_reQ"; 
 
 function filterFeaturesByDay(featureCollection, time) {
   const date = new Date(time);
@@ -51,7 +51,7 @@ export default class Map extends Component {
 
   componentDidMount() {
     requestJson(
-      "https://docs.mapbox.com/mapbox-gl-js/assets/earthquakes.geojson",
+      "https://raw.githubusercontent.com/uptous2020/dataTransformation/master/citystatetransformed.json?token=ADYEB7W7NU52WYXM2KCBSBC7NGYM",
       (error, response) => {
         if (!error) {
           // Note: In a real application you would do a validation of JSON data before doing anything with it,
