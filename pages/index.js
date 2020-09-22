@@ -27,8 +27,8 @@ const LandingContent = (props) => {
             <div className='map-bg-overlay z-40 flex flex-col text-center w-full' style={{backgroundImage:'url(hero-transparent.png)'}}>
               <h1 className='text-6xl md:text-7xl lg:text-8xl rainbowText tracking-widest'>{numberOfSignup.toLocaleString()}</h1>
               <h2 className='text-lg md:text-2xl lg:text-4xl text-white tracking-widest'>CHECKED THEIR REGISTRATION</h2>
-              <div className='inline mt-16'>
-                <a className='p-3 pl-5 pr-5 text-white inline-block' style={{backgroundColor:'#E69538'}} href='https://www.outvote.io/campaigns/up-to-us/check_registration'>Check your status</a>
+              <div className='inline mt-12'>
+                <a className='p-3 pl-5 pr-5 rounded-md text-white inline-block' style={{backgroundColor:'#E69538'}} href='https://www.outvote.io/campaigns/up-to-us/check_registration'>Check your status</a>
               </div>
             </div>
             <div className="-mt-8">
