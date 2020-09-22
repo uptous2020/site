@@ -7,6 +7,20 @@ export default function Rules() {
   return (
     <div>
       <Head>
+      <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-178646695-1"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'UA-178646695-1');
+              `,
+          }}
+        />
         <title>Up To Us</title>
         <link rel="icon" href="/faviconuptous.ico" />
       </Head>
