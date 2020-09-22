@@ -1,12 +1,22 @@
 import React from "react";
-
-const ContestLink = ({ link, description, influencerPhoto }) => {
+import RightArrow from "./RightArrow.js"
+{/* /public/profiles/benji.jpg */}
+const ContestLink = ({
+  link,
+  description,
+    influencerPhoto,
+    bgColor = "black",
+    
+}) => { 
   return (
-    <div className="contest-link">
-      <span style="height: 100px; border-radius: 50px; background-color: white" />
-      <h3 className="contest-link description">
+    <div className={`mx-4 bg-${bgColor} rounded-lg`}>
+    <div className="mx-4 my-2 flex flex-row items-center">
+      <img className="h-16 w-16 md:h-20 md:w-20 rounded-full m-2" src="profiles/benji.jpg" />
+      <p className="mx-2 w-64 mr-0 md:text-left text-white">
         Win a Tesla from the Cheeky Boyos
-      </h3>
+      </p>
+              <RightArrow color={bgColor == "black" ? "#E69538" : "#000000"}/>
+      </div>
     </div>
   );
 };
