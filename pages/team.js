@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import data from './teamcsv.json'
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -7,22 +6,22 @@ import Footer from '../components/Footer';
 const SocialLink = ({link,icon,alt})=>(
   <div className="text-center py-2 m-2">
       <a href={link}>
-        <img src={icon} alt={alt}></img>
+        <img src={icon} alt={alt} />
       </a>
   </div>  
-)
+);
 
 
 
-const alts = ['LinkedIn','Instagram','TikTok','GitHub','Twitter']
-const icons = ['linkedin_black.svg','instagram_black.svg','tiktok_black.svg','github_black.svg','twitter_black.svg']
-const profilePics = ['conor.jpg','avarose.jpg','SamS.png','emilyds.png','B.jpg','alexr.jpg','hanna.jpg','shreya.png','alex.png','josh_svoboda_square.jpg','lindseykennedy.jpg','rosendo.jpg','shianne.jpg','angelo.webp','Jimbo.jpg','Long.jpg','benji.jpg','aaron.jpg','nik.png','anisha.jpg','eshita.jpg','ali.jpg','katie.jpg'].map(e=>`profiles/${e.length ? e : 'conor.jpg'}`)
-const transformationFunction = [link=>link,name=>`https://www.instagram.com/${name}`,name=>`https://www.tiktok.com/${name}`,name=>`https://github.com/${name}`,name=>`https://twitter.com/${name}`]
-const components = alts.map((alt,i)=>(link)=>()=><SocialLink link={transformationFunction[i](link)} icon={icons[i]} alt={alt}/>)
+const alts = ['LinkedIn','Instagram','TikTok','GitHub','Twitter'];
+const icons = ['linkedin_black.svg','instagram_black.svg','tiktok_black.svg','github_black.svg','twitter_black.svg'];
+const profilePics = ['conor.jpg','avarose.jpg','SamS.jpg','emilyds.jpg','B.jpg','alexr.jpg','hanna.jpg','shreya.jpg','alex.jpg','josh_svoboda_square.jpg','lindseykennedy.jpg','rosendo.jpg','shianne.jpg','angelo.webp','Jimbo.jpg','Long.jpg','benji.jpg','aaron.jpg','nik.jpg','anisha.jpg','eshita.jpg','ali.jpg','katie.jpg'].map(e=>`profiles/${e.length ? e : 'conor.jpg'}`);
+const transformationFunction = [link=>link,name=>`https://www.instagram.com/${name}`,name=>`https://www.tiktok.com/${name}`,name=>`https://github.com/${name}`,name=>`https://twitter.com/${name}`];
+const components = alts.map((alt,i)=>(link)=>()=><SocialLink link={transformationFunction[i](link)} icon={icons[i]} alt={alt}/>);
 
 const TeamMember = ({teamObject,profilePic})=>{
-  const {Name,Role,Bio} = teamObject
-  const SocialLinkComponent = alts.map(e=>[e,teamObject[e]]).filter(tuple=>tuple[1].length).map(([alt,link])=>components[alts.indexOf(alt)](link))
+  const {Name,Role,Bio} = teamObject;
+  const SocialLinkComponent = alts.map(e=>[e,teamObject[e]]).filter(tuple=>tuple[1].length).map(([alt,link])=>components[alts.indexOf(alt)](link));
   return (
   <div className="flex flex-col items-center">
     <div className="w-40 h-40 m-4">
@@ -30,7 +29,7 @@ const TeamMember = ({teamObject,profilePic})=>{
         src={profilePic}
         className="flex text-center"
         Image
-      ></img>
+      />
     </div>
 
     <h2 className="">{Name}</h2>
@@ -42,7 +41,7 @@ const TeamMember = ({teamObject,profilePic})=>{
       {SocialLinkComponent.map((SocialLink,i)=><SocialLink key={i}/>)}
     </div>
   </div>)
-}
+};
 
 export default function About() {
   return (
