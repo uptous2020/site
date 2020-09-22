@@ -13,7 +13,7 @@ const cheekyObj =   {
     "influencerPhoto": "https://static-content.vercel.app/images/cheeky_boyos_outvote_profile.png",
     "contestName": "https://www.outvote.io/campaigns/up-to-us/check_registration?referral_hash=e5f49ef4d3d4519c91ff52240e9c19f1b6fb048d",
     "isVisible": "TRUE"
-  }
+};
 
 
 const LandingContent = (props) => {

@@ -11,9 +11,9 @@ const ContestLink = ({
   return (
     <div className={`mx-4 bg-${bgColor} hover:bg-gray-400 text-white hover:text-black rounded-lg`}>
       <a href={contestName}>
-        <div className="mx-4 my-2 flex flex-row items-center">
+        <div className="mx-4 flex flex-row items-center">
           <img
-            className="h-16 w-16 md:h-20 md:w-20 rounded-full m-2"
+            className="h-16 w-16 md:h-20 md:w-20 rounded-full m-4"
             src={influencerPhoto}
           />
           <p className="mx-2 w-64 mr-0 md:text-left">
