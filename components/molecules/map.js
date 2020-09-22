@@ -31,9 +31,9 @@ export default class Map extends Component {
     this.state = {
       viewport: {
         cHeight: props.cHeight,
-        latitude: 40,
+        latitude: 38,
         longitude: -100,
-        zoom: 4,
+        zoom: 3.75,
         bearing: 0,
         pitch: 0,
       },

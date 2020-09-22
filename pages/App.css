@@ -5,14 +5,14 @@
 
     background: linear-gradient(
       to right,
-      #f00 0%,
-      #f80 14.28%,
-      #dd0 28.56%,
-      #0d0 42.85%,
-      #0dd 57.14%,
-      #00f 71.42%,
-      #e0e 85.71%,
-      #f00 100%
+      #FE8787 0%,
+      #FFAC4C 14.28%,
+      #FEED45 28.56%,
+      #DEFF98 42.85%,
+      #ADFFFF 57.14%,
+      #835B6E 71.42%,
+      #e26B6C 85.71%,
+      #FE8787 100%
     )
     0% center / 200% auto;
     -webkit-text-fill-color: transparent;

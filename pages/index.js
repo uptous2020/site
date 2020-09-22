@@ -3,8 +3,6 @@ import Link from "next/link";
 import Map from "../components/molecules/map";
 import Navbar from "../components/Navbar.js";
 import Footer from "../components/Footer.js";
-import MapGL, { Source, Layer } from "react-map-gl";
-
 
 const LandingContent = (props) => {
   const { visible } = props;
@@ -12,13 +10,15 @@ const LandingContent = (props) => {
   const mapView = <>
           <div className="h-full w-full relative mt-5" >
             <div className='z-40 flex flex-col text-center' style={{paddingTop:250,paddingBottom:200}}>
-              <p className='rainbowText'>21,732</p>   
-              <p className='text-white' style={{fontSize:40}}>REGISTERED TO VOTE</p>
-              <div className='inline mt-4'>
+              <h1 className='rainbowText tracking-widest sm:text-sm'>21,732</h1>   
+              <h2 className='text-white tracking-widest' style={{fontSize:40}}>REGISTERED TO VOTE</h2>
+              <div className='inline mt-16'>
                 <a className='p-3 pl-5 pr-5 text-white inline-block' style={{backgroundColor:'#E69538'}}>Check your status</a>
               </div>
             </div>
-            <Map cHeight="800px" className='map'/>
+            <div className="-mt-8 bg-gradient-to-r from-orange-400 via-red-500 to-pink-500">
+              <Map cHeight="600px" className='map'/>
+            </div>
           </div>
   </>;
   const aboutText = (
