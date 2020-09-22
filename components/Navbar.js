@@ -15,7 +15,7 @@ export default function Navbar() {
     );
   })
   return (
-    <nav className="flex p-0 pr-6 mt-0 fixed w-full z-10 top-0" style={{ backgroundImage: "url('hero.png')" }}>
+    <nav className="flex p-0 pr-6 mt-0 fixed justify-center w-full z-10 top-0" style={{ backgroundImage: "url('hero.png')" }}>
     <div className="flex md:flex-row flex-col justify-between">
       <div className="flex justify-center md:justify-start ">
         <img className="object-center mt-1 pt-3 md:pb-0 pb-2 ml-6 w-8 h-12" src="/logowhite.svg" href="2020upto.us"></img>
