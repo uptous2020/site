@@ -21,7 +21,7 @@ const Footer = () => {
           </li>
           {/* <p className="justify-center invisible text-center text-white ml-6 lg:visible xl:visible sm:invisible md:visible"> | </p>
           <li>
-            <Link href="/teslagiveaway">
+            <Link href="/uptousxcheekyboyos">
               <a className=" text-white no-underline hover:text-gray-200 hover:text-underline">
                 Tesla Giveaway
               </a>
