@@ -105,12 +105,18 @@ export default function Home() {
 
         <section>
           <div className="mx-auto mb-8 flex flex-col items-center justify-center">
-            <h1 className="md:text-4xl md:mt-16 text-2xl mt-12" >
+            <h1 className="md:text-4xl md:mt-16 text-xl mt-8 mb-8 px-6 md:px-0 " >
+              Check Your Registration Status
+            </h1>
+            <p className="text-left pr-12 pl-8 md:pr-0 md:pl-0">
+            Use one of the links below to enter for a chance to win a prize*^
+            </p>
+            {/* <h1 className="md:text-4xl md:mt-16 text-2xl mt-12" >
               Check Your Registration Status
             </h1>
             <p className="text-center md:text-left">
             Use one of the links below to enter for a chance to win a prize*^
-            </p>
+            </p> */}
           </div>
 
           <div className="flex flex-col items-center mb-12">
