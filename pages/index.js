@@ -108,7 +108,7 @@ export default function Home() {
               Check Your Registration Status
             </h1>
             <p className="text-center md:text-left">
-              Enter to win by checking out some of these prizes
+            and be entered to win some of these prizes
             </p>
           </div>
 
