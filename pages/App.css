@@ -1,44 +1,69 @@
-.rainbowText{
-    font-size: 128px;
-    font: Helvetica;
+.rainbowText {
     text-transform: uppercase;
 
     background: linear-gradient(
-      to right,
-      #FE8787 0%,
-      #FFAC4C 14.28%,
-      #FEED45 28.56%,
-      #DEFF98 42.85%,
-      #ADFFFF 57.14%,
-      #835B6E 71.42%,
-      #e26B6C 85.71%,
-      #FE8787 100%
-    )
-    0% center / 200% auto;
+            to right,
+            #FE8787 0%,
+            #FFAC4C 14.28%,
+            #FEED45 28.56%,
+            #DEFF98 42.85%,
+            #ADFFFF 57.14%,
+            #835B6E 71.42%,
+            #e26B6C 85.71%,
+            #FE8787 100%
+    ) 0% center / 200% auto;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     text-fill-color: transparent;
-    background-clip: text;
     animation: example 4s linear infinite;
 }
 
 @keyframes example {
-    to { background-position-x: 200%; }
-  }
-  
+    to {
+        background-position-x: 200%;
+    }
+}
 
-  .map {
+.map {
     width: 100vw;
     height: 100vh;
-  }
-  
-  .control-panel {
+}
+
+.map-bg-overlay {
+    z-index:1;
+    position:absolute;
+    padding-top:250px;
+    padding-bottom:435px;
+    background-position:0 12px;
+}
+
+/* Required as .mapboxgl-map doesn't exist in compile time */
+/* Writing media queries like it's 1999, and cause of my bundlephobia */
+/* purgecss start ignore */
+.mapboxgl-map, .map-topheader {
+    margin-top: 250px;
+}
+
+@media only screen and (max-width: 1023px) {
+    .mapboxgl-map, .map-topheader {
+        margin-top: 180px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .mapboxgl-map, .map-topheader {
+        margin-top: 120px;
+    }
+}
+/* purgecss end ignore */
+
+.control-panel {
     position: absolute;
     top: 0;
     right: 0;
     max-width: 320px;
     background: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     padding: 12px 24px;
     margin: 20px;
     font-size: 13px;
@@ -46,20 +71,21 @@
     color: #6b6b76;
     outline: none;
     text-transform: uppercase;
-  }
-  
-  label {
+    /*margin-top: 250px;*/
+}
+
+label {
     display: inline-block;
     width: 150px;
-  }
-  
-  input {
+}
+
+input {
     margin-left: 20px;
-  }
-  
-  .input.disabled {
+}
+
+.input.disabled {
     opacity: .5;
     cursor: not-allowed;
-  }
+}
   
   

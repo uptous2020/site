@@ -9,15 +9,15 @@ const LandingContent = (props) => {
   
   const mapView = <>
           <div className="h-full w-full relative mt-5" >
-            <div className='z-40 flex flex-col text-center' style={{paddingTop:250,paddingBottom:200}}>
-              <h1 className='rainbowText tracking-widest sm:text-sm'>21,732</h1>   
-              <h2 className='text-white tracking-widest' style={{fontSize:40}}>REGISTERED TO VOTE</h2>
+            <div className='map-bg-overlay z-40 flex flex-col text-center w-full' style={{backgroundImage:'url(hero-transparent.png)'}}>
+              <h1 className='text-6xl md:text-7xl lg:text-8xl rainbowText tracking-widest'>21,732</h1>
+              <h2 className='text-lg md:text-2xl lg:text-4xl text-white tracking-widest'>REGISTERED TO VOTE</h2>
               <div className='inline mt-16'>
                 <a className='p-3 pl-5 pr-5 text-white inline-block' style={{backgroundColor:'#E69538'}}>Check your status</a>
               </div>
             </div>
-            <div className="-mt-8 bg-gradient-to-r from-orange-400 via-red-500 to-pink-500">
-              <Map cHeight="600px" className='map'/>
+            <div className="-mt-8">
+              <Map cHeight="800px" className='map'/>
             </div>
           </div>
   </>;
@@ -50,12 +50,13 @@ export default function Home() {
   return (
     <div>
       <Head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>Up To Us</title>
         <link rel="icon" href="/faviconuptous.ico" />
       </Head>
 
       <main>
-        <section style={{ backgroundImage: "url('hero.png')" }}>
+        <section>
           <Navbar />
           {/* bruh */}
           <LandingContent visible={true}/>
@@ -66,7 +67,7 @@ export default function Home() {
             <Map cHeight="450px" className='map'/>
           </div> */}
         </section>
-        <section className="mx-auto flex flex-col items-center justify-center">
+        <section className="map-topheader mx-auto flex flex-col items-center justify-center">
           <h1 className="md:text-4xl md:mt-16 text-2xl mt-12 ">WHAT WE DO:</h1>
           <div className="my-10 md:my-16 flex flex-col items-center md:flex-row-reverse">
             <img className="w-36 ml-10 h-auto" src="/inspire.svg" />
