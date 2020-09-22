@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Navbar from "../components/Navbar.js";
 import Footer from "../components/Footer.js";
 
-export default function Teslagiveaway() {
+export default function uptousxcheekyboyos() {
   return (
     <div>
       <Head>
@@ -15,7 +15,7 @@ export default function Teslagiveaway() {
           <Navbar />
           <div className="p-6 text-white flex flex-col items-center text-center">
             <h1 className="text-white text-2xl md:text-4xl mt-20 md:mt-16">
-              Tesla Giveaway
+              Up to Us x Cheeky Boyos
             </h1>
             <h5 className="text-white text-base md:text-base mt-4 md:mt-2">
               Official Rules
@@ -36,7 +36,7 @@ export default function Teslagiveaway() {
               SWEEPSTAKES OVERVIEW
             </h6>
             <h6 className="text-white text-left text-lg mx-20 my-4" >
-            The  Up to Us x Cheeky Boyos Check Your Registration Sweepstakes (“Sweepstakes”) is sponsored by Up to Us, Inc. (“Sponsor”). The Sweepstakes begins at 12:00:00 a.m. Eastern Time (“ET”) on September 22, 2020, and ends at 02:59:59 a.m. ET on October 5, 2020 (the “Sweepstakes Period”). Eligible participants may enter the Sweepstakes by visiting <a href="https://www.outvote.io/campaigns/up-to-us-cheeky-boyos/check_registration">Up To Us x Cheeky Boyos</a> (“Entry Site”) and checking their voter registration status or completing another Entry Activity (defined below) during the Sweepstakes Period. You do not need to actually register to vote or assist in Sponsor’s Get Out The Vote (GOTV) efforts to enter this Sweepstakes. Eligible participants must simply follow the rules to earn a standard entry, as set forth below.  Following the close of the Sweepstakes Period, one (1) winner will be selected in a random drawing from among all eligible entries received, as more fully described below.
+            The  Up to Us x Cheeky Boyos Check Your Registration Sweepstakes (“Sweepstakes”) is sponsored by Up to Us, Inc. (“Sponsor”). The Sweepstakes begins at 12:00:00 a.m. Eastern Time (“ET”) on September 22, 2020, and ends at 02:59:59 a.m. ET on October 5, 2020 (the “Sweepstakes Period”). Eligible participants may enter the Sweepstakes by visiting <a href="https://www.outvote.io/campaigns/up-to-us-cheeky-boyos/check_registration">https://www.outvote.io/campaigns/up-to-us-cheeky-boyos/check_registration</a> (“Entry Site”) and checking their voter registration status or completing another Entry Activity (defined below) during the Sweepstakes Period. You do not need to actually register to vote or assist in Sponsor’s Get Out The Vote (GOTV) efforts to enter this Sweepstakes. Eligible participants must simply follow the rules to earn a standard entry, as set forth below.  Following the close of the Sweepstakes Period, one (1) winner will be selected in a random drawing from among all eligible entries received, as more fully described below.
             </h6>
           </div>
           <h6 className="text-white text-left text-lg mx-20 my-4" >
@@ -147,7 +147,7 @@ export default function Teslagiveaway() {
             RULES/WHO WON?:
             </h6>
             <h6 className="text-white text-left text-lg mx-20 my-4" >
-            A copy of these Official Rules will be available during the Sweepstakes Period at <a href="/teslagiveaway">Up to Us x Cheeky Boyos</a>. For information on who won the Sweepstakes, please send an email with the subject line “Up to Us x Cheeky Boyos Check Your Registration Sweepstakes – Who Won?” to sweepstakes@2020upto.us for receipt no later than six (6) months after the end of the Sweepstakes Period. 
+            A copy of these Official Rules will be available during the Sweepstakes Period at <a href="/uptousxcheekyboyos">www.2020upto.us/uptousxcheekyboyos</a>. For information on who won the Sweepstakes, please send an email with the subject line “Up to Us x Cheeky Boyos Check Your Registration Sweepstakes – Who Won?” to sweepstakes@2020upto.us for receipt no later than six (6) months after the end of the Sweepstakes Period. 
             </h6>
             <h6 className="text-white text-left text-lg mx-20 my-4" >
             THE SPONSOR OF THIS SWEEPSTAKES IS: 

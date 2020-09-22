@@ -19,13 +19,12 @@ export default function Rules() {
               Sweepstakes Rules
           </h1>
           <div className="p-6 flex flex-col xl:flex-row lg:flex-col justify-center items-center text-center">
-            <h1 className="mb-24 mt-10 md:mt-16 md:mb-16 lg:mt-24 lg:mx-12 md:text-xl">
-            {/* mt-32 xl:mt-20 lg:mt-20 mx-10 md:mt-16 lg:mb-20 xl:mb-20 */}
-              <a className="text-black hover:bg-orange-100 hover:text-white max-w-sm xl:max-w-md lg:max-w-md rounded-md p-6 bg-white text-xl md:text-xl " href="/teslagiveaway">Tesla Giveaway</a>
-            </h1>
-            <h1 className="lg:mx-12 md:my-20 lg:pt-8 md:text-xl">
+            <h5 className="mb-24 mt-10 md:mt-16 md:mb-16 lg:mt-24 lg:mx-12 ">
+              <a className="text-black hover:bg-orange-100 hover:text-white max-w-sm xl:max-w-md lg:max-w-md rounded-md px-2 py-6 bg-white md:p-6 lg:p-6 xl:p-6 text-sm md:text-xl " href="/uptousxcheekyboyos">Up to Us x Cheeky Boyos</a>
+            </h5>
+            <h5 className="lg:mx-12 md:my-20 lg:pt-8 md:text-xl">
               <a className="text-black hover:bg-orange-100 hover:text-white max-w-sm xl:max-w-md lg:max-w-md rounded-md bg-white text-xl md:text-xl p-6 " href="/checkandchat">Check &amp; Chat</a>
-            </h1>
+            </h5>
           </div>
           </div>
         </section>
