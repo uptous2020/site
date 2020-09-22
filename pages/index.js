@@ -28,7 +28,7 @@ const LandingContent = (props) => {
               <h1 className='text-6xl md:text-7xl lg:text-8xl rainbowText tracking-widest'>{numberOfSignup.toLocaleString()}</h1>
               <h2 className='text-lg md:text-2xl lg:text-4xl text-white tracking-widest'>REGISTERED TO VOTE</h2>
               <div className='inline mt-16'>
-                <a className='p-3 pl-5 pr-5 text-white inline-block' style={{backgroundColor:'#E69538'}}>Check your status</a>
+                <a className='p-3 pl-5 pr-5 text-white inline-block' style={{backgroundColor:'#E69538'}} href='https://www.outvote.io/campaigns/up-to-us/check_registration'>Check your status</a>
               </div>
             </div>
             <div className="-mt-8">
@@ -104,7 +104,7 @@ export default function Home() {
 
         <section>
           <div className="mx-auto mb-8 flex flex-col items-center justify-center">
-            <h1 className=" md:text-4xl md:mt-16 text-2xl mt-12">
+            <h1 className="md:text-4xl md:mt-16 text-2xl mt-12" >
               Check Your Registration Status
             </h1>
             <p className="text-center md:text-left">
