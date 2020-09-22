@@ -18,12 +18,12 @@ export default function Navbar() {
     return (
         <nav className="flex p-0 mt-0 fixed justify-center w-full z-10 top-0"
              style={{backgroundImage: "url('hero.png')"}}>
-            <div className="flex md:flex-row flex-col justify-between">
-                <div className="flex justify-center md:justify-between md:pr-20">
-                    <img className="mt-3 w-8 h-12" src="/logowhite.svg" href="2020upto.us"></img>
+            <div className="w-full flex md:flex-row flex-col justify-between">
+                <div className=" flex justify-center md:justify-between md:pr-20">
+                    <img className="mt-3 w-8 h-12 ml-10" src="/logowhite.svg" href="2020upto.us"></img>
                     <div>
                         <a className="inline-block text-white text-3xl md:mr-0 no-underline hover:text-gray-200 hover:text-underline py-6 px-1 "
-                           href="https://2020upto.us">up to us</a>
+                           href="/">up to us</a>
                     </div>
                 </div>
                 <div className="flex">
@@ -66,7 +66,7 @@ export default function Navbar() {
                                 </li>)
                             )
                         } */}
-                        <li className="text-orange-100 no-underline mr-10 mb-4 md:mr-0 hover:text-gray-200 hover:text-underline">
+                        <li className="text-orange-100 no-underline mr-10 mb-4 hover:text-gray-200 hover:text-underline">
                             <script
                                 type="text/javascript"
                                 defer

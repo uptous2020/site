@@ -10,18 +10,18 @@ export default function Rules() {
         <title>Up To Us</title>
         <link rel="icon" href="/faviconuptous.ico" />
       </Head>
-      <main>
+      <main className="body h-auto" style={{ backgroundImage: "url('hero.png')" }}>
       
-        <section className="body h-auto lg:pb-48 xl:pb-56" style={{ backgroundImage: "url('hero.png')" }}>
+        {/* <section className="body h-auto lg:pb-48 xl:pb-56" style={{ backgroundImage: "url('hero.png')" }}> */}
           <Navbar />
           <div className="p-6 flex flex-col justify-center items-center text-center">
-            <h1 className="text-white text-2xl md:text-4xl mt-20 md:mt-16">
-              Check &amp; Chat
+            <h1 className="text-white text-2xl md:text-4xl mt-20 md:mt-24">
+            Check &amp; Chat
             </h1>
-            <h5 className="text-white text-base md:text-base mt-4 md:mt-2">
+            <h5 className="text-white text-base md:text-base mt-4 md:mt-6">
               Official Rules
             </h5>
-            <h5 className="text-white text-left text-md md:text-lg mx-4 mt-8 md:mx-20 mb-4" >
+            <h5 className="text-white text-left text-md md:text-lg mx-4 mt-6 md:mx-20 mb-4" >
               VOTER REGISTRATION IS NOT REQUIRED TO EARN ENTRY INTO THIS PROMOTION.
               NO PURCHASE NECESSARY TO ENTER OR WIN. A PURCHASE WILL NOT INCREASE YOUR CHANCES OF WINNING. VOID WHERE PROHIBITED BY LAW. 
             </h5>
@@ -146,7 +146,7 @@ export default function Rules() {
             Up to Us, Inc., 206 Ave A, Suite 4A, New York, NY 10009
           </h6>
           </div>
-        </section>
+        {/* </section> */}
         <Footer/>
       </main>
     </div>

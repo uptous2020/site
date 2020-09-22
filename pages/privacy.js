@@ -10,18 +10,18 @@ export default function Privacy() {
         <title>Up To Us</title>
         <link rel="icon" href="/faviconuptous.ico" />
       </Head>
-      <main>
+      <main className="body h-auto" style={{ backgroundImage: "url('hero.png')" }}>
       
-        <section className="body h-auto lg:pb-48 xl:pb-56" style={{ backgroundImage: "url('hero.png')" }}>
+        {/* <section className="body h-auto" style={{ backgroundImage: "url('hero.png')" }}> */}
           <Navbar />
-          <div className="p-6 flex flex-col justify-center items-center text-center">
-          <h1 className="text-white text-2xl md:text-4xl mt-32 md:mt-16">
+          <div className="p-6 flex flex-col justify-center text-left">
+          <h1 className="text-white text-2xl md:text-4xl mt-32 md:mt-24">
                Privacy Policy
              </h1>
              <h5 className="text-white text-sm md:text-base mt-4 md:mt-2">
                Effective September 21, 2020
              </h5>
-             <h5 className="text-white text-left text-md md:text-lg mx-4 mt-8 md:mx-20 mb-4" >
+             <h5 className="text-white text-left text-md md:text-lg mx-4 mt-4 md:mx-20 mb-4" >
           This Up to Us Privacy Policy applies to any website, mobile application, and other online service owned or operated by Up to Us, Inc. (“Up to Us”) that posts a link to or includes this Privacy Policy (collectively, the “Services”). This Privacy Policy applies to information we collect through the Services and information we collect offline, which we may combine with online data. This Privacy Policy describes our information collection practices, such as the types of information we may collect regarding visitors to the Services and how we may use or share that information.
           </h5>
           {/* <a name="audience"></a> */}
@@ -201,7 +201,7 @@ export default function Privacy() {
           If you have questions or concerns about Up to Us's Privacy Policy or data collection or use, please send an email to support@2020upto.us.
           </h6>
           </div>
-        </section>
+        {/* </section> */}
         <Footer/>
       </main>
     </div>
