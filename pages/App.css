@@ -25,7 +25,6 @@
     }
 }
 
-
 .map {
     width: 100vw;
     height: 100vh;
@@ -39,9 +38,12 @@
     background-position:0 12px;
 }
 
+/* Required as .mapboxgl-map doesn't exist in compile time */
+/* purgecss start ignore */
 .mapboxgl-map, .map-topheader {
     margin-top: 250px;
 }
+/* purgecss end ignore */
 
 .control-panel {
     position: absolute;
