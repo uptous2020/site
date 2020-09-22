@@ -11,7 +11,7 @@ module.exports = {
                     ],
                     defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
                     safelist: {
-                        standard: [/orange$/, /black$/],
+                        deep: [/orange$/, /black$/],
                     }
                 }
             }
