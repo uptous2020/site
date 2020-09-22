@@ -44,14 +44,13 @@ export default class Map extends Component {
       earthquakes: null,
     };
 
-
     this._handleChangeDay = this._handleChangeDay.bind(this);
     this._handleChangeAllDay = this._handleChangeAllDay.bind(this);
   }
 
   componentDidMount() {
     requestJson(
-      "https://raw.githubusercontent.com/uptous2020/dataTransformation/master/citystatetransformed.json?token=ADYEB7W7NU52WYXM2KCBSBC7NGYM",
+      "https://static-content.vercel.app/geodata/citystatetransformed.json",
       (error, response) => {
         if (!error) {
           // Note: In a real application you would do a validation of JSON data before doing anything with it,
