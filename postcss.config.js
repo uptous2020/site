@@ -9,7 +9,8 @@ module.exports = {
                 './components/**/*.js',
                 './pages/**/*.js'
                 ],
-                defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
+                defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
+                safelist: ['bg-orange-600', 'bg-black']
             }
             }
         : {})
