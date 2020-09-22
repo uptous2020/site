@@ -58,7 +58,7 @@ export default function About() {
         >
           <Navbar />
           <div className="p-6 text-white flex flex-col items-center text-center mb-20">
-            <h1 className="text-white text-2xl md:text-4xl mt-20 md:mt-16">
+            <h1 className="text-white text-2xl md:text-4xl mt-20 md:mt-16 pt-10 pb-10">
               TEAM
             </h1>
           </div>
