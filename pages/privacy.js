@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Navbar from "../components/Navbar.js";
 import Footer from "../components/Footer.js";
 
-export default function Rules() {
+export default function Privacy() {
   return (
     <div>
       <Head>
