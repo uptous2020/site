@@ -4,6 +4,18 @@ import Map from "../components/molecules/map";
 import Navbar from "../components/Navbar.js";
 import Footer from "../components/Footer.js";
 
+import ContestLink from "../components/ContestLink";
+import contests from "./contests.json"
+
+const cheekyObj =   {
+    "influencerName": "The Cheeky Boyos",
+    "socialLink": "https://www.tiktok.com/@cheekyboyos?language=en&u_code=d37chme9dc9fk2&utm_campaign=client_share&app=musically&utm_medium=ios&user_id=6625415756434046982&tt_from=copy&utm_source=copy&source=h5_m",
+    "influencerPhoto": "https://static-content.vercel.app/images/cheeky_boyos_outvote_profile.png",
+    "contestName": "https://www.outvote.io/campaigns/up-to-us/check_registration?referral_hash=e5f49ef4d3d4519c91ff52240e9c19f1b6fb048d",
+    "isVisible": "TRUE"
+  }
+
+
 const LandingContent = (props) => {
   const { visible } = props;
   
@@ -59,7 +71,9 @@ export default function Home() {
         <section>
           <Navbar />
           {/* bruh */}
+
           <LandingContent visible={true}/>
+
           {/* <div className="h-full w-full relative">
             <div className='rainbowText z-40 absolute flex flex-col text-center'>
               <p>21,732</p>   
@@ -67,7 +81,38 @@ export default function Home() {
             <Map cHeight="450px" className='map'/>
           </div> */}
         </section>
+
         <section className="map-topheader mx-auto flex flex-col items-center justify-center">
+
+        {/* <section>
+          <div className="mx-auto mb-8 flex flex-col items-center justify-center">
+            <h1 className="md:text-4xl md:mt-16 text-2xl mt-12">
+              Check Your Registration Status
+            </h1>
+            <p className="text-center md:text-left">
+              and be entered to win some of these prizes
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <div className="mb-4">
+              <ContestLink bgColor="orange-600" description="Win a Tesla from the Cheeky Boyos" {...cheekyObj}/>
+            </div>
+            <div className="grid gap-4 items-center sm:grid-cols-1 md:grid-cols-2">
+              {contests.filter(({isVisible}) => {
+                if (isVisible == "FALSE") {
+                  return false
+                }
+                return true
+              }).map((contestObj, i) => (
+                  <ContestLink key={i} {...contestObj} />
+                )
+              )
+              }
+            </div>
+          </div>
+        </section> */}
+
           <h1 className="md:text-4xl md:mt-16 text-2xl mt-12 ">WHAT WE DO:</h1>
           <div className="my-10 md:my-16 flex flex-col items-center md:flex-row-reverse">
             <img className="w-36 ml-10 h-auto" src="/inspire.svg" />
@@ -106,7 +151,7 @@ export default function Home() {
           </div>
           <br></br>
         </section>
-        <Footer/>
+        <Footer />
       </main>
     </div>
   );

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import {useState, useEffect} from 'react'
 
 export default function Navbar() {
+
     const [currentPage, setCurrentPage] = useState("/")
     const pages = ["/team", "/contact"];
 
@@ -74,4 +75,5 @@ export default function Navbar() {
             {/* JSX */}
         </nav>
     )
+
 }

@@ -44,6 +44,7 @@ export default class Map extends Component {
       earthquakes: null,
     };
 
+
     this._handleChangeDay = this._handleChangeDay.bind(this);
     this._handleChangeAllDay = this._handleChangeAllDay.bind(this);
   }
