@@ -10,8 +10,8 @@ module.exports = {
                         './pages/**/*.js'
                     ],
                     defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
-                    safelist: {
-                        deep: [/orange$/, /black$/],
+                    whitelist: {
+                        standard: [/orange$/, /black$/],
                     }
                 }
             }
