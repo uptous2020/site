@@ -4,6 +4,7 @@ import Map from "../components/molecules/map";
 import Navbar from "../components/Navbar.js";
 import Footer from "../components/Footer.js";
 import MapGL, { Source, Layer } from "react-map-gl";
+import ContestLink from "../components/ContestLink";
 
 
 const LandingContent = (props) => {
@@ -54,13 +55,37 @@ export default function Home() {
         <section style={{ backgroundImage: "url('hero.png')" }}>
           <Navbar />
           {/* bruh */}
-          <LandingContent visible={false}/>
+          <LandingContent visible={false} />
           {/* <div className="h-full w-full relative">
             <div className='rainbowText z-40 absolute flex flex-col text-center'>
               <p>21,732</p>   
             </div>
             <Map cHeight="450px" className='map'/>
           </div> */}
+        </section>
+        <section>
+        <div className="mx-auto mb-8 flex flex-col items-center justify-center">
+        <h1 className="md:text-4xl md:mt-16 text-2xl mt-12">Check Your Registration Status</h1>
+        <p className="text-center md:text-left">and be entered to win some of these prizes</p>
+        </div>
+
+        <div className="flex flex-col items-center">
+        <div className="mb-4">
+          <ContestLink bgColor="orange-600"/>
+          </div>
+          <div className="grid gap-4 items-center sm:grid-cols-1 md:grid-cols-2">
+            <ContestLink />
+            <ContestLink />
+            <ContestLink />
+            <ContestLink />
+            <ContestLink />
+            <ContestLink />
+            <ContestLink />
+            <ContestLink />
+            <ContestLink />
+            <ContestLink />
+          </div>
+          </div>
         </section>
         <section className="mx-auto flex flex-col items-center justify-center">
           <h1 className="md:text-4xl md:mt-16 text-2xl mt-12 ">WHAT WE DO:</h1>
@@ -101,7 +126,7 @@ export default function Home() {
           </div>
           <br></br>
         </section>
-        <Footer/>
+        <Footer />
       </main>
     </div>
   );
