@@ -14,7 +14,7 @@ export default function Checkandchat() {
           <Navbar />
           <div className="p-6 text-white flex flex-col items-center text-center">
             <h1 className="text-white text-2xl md:text-4xl mt-20 md:mt-16">
-              Check and Chat
+              Check &amp; Chat
             </h1>
             <h5 className="text-white text-base md:text-base mt-4 md:mt-2">
               Official Rules
