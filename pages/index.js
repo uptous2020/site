@@ -104,7 +104,7 @@ export default function Home() {
 
         <section>
           <div className="mx-auto mb-8 flex flex-col items-center justify-center">
-            <h1 className="md:text-4xl md:mt-16 text-2xl mt-12">
+            <h1 className=" md:text-4xl md:mt-16 text-2xl mt-12">
               Check Your Registration Status
             </h1>
             <p className="text-center md:text-left">
@@ -114,7 +114,7 @@ export default function Home() {
 
           <div className="flex flex-col items-center mb-12">
             <div className="mb-4">
-              <ContestLink bgColor="orange-600" description="Win a Tesla from the Cheeky Boyos" {...cheekyObj}/>
+              <ContestLink bgColor="orange-600" description="Win a Tesla from the Cheeky Boyos*" {...cheekyObj}/>
             </div>
             <div className="grid gap-4 items-center sm:grid-cols-1 md:grid-cols-2">
               {contests.filter(({isVisible}) => {

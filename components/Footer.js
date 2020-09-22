@@ -11,7 +11,7 @@ const Footer = () => {
           <p className="justify-center text-center text-white">
             © 2020 Up To Us
           </p>
-        {/*   
+          
         <p className="justify-center invisible text-center text-white ml-6 lg:visible xl:visible sm:invisible md:visible"> | </p>
           <li>
             <Link href="/rules">
@@ -20,7 +20,7 @@ const Footer = () => {
               </a>
             </Link>
           </li>
-          <p className="justify-center invisible text-center text-white ml-6 lg:visible xl:visible sm:invisible md:visible"> | </p>
+          {/* <p className="justify-center invisible text-center text-white ml-6 lg:visible xl:visible sm:invisible md:visible"> | </p>
           <li>
             <Link href="/uptousxcheekyboyos">
               <a className=" text-white no-underline hover:text-gray-200 hover:text-underline">
@@ -35,7 +35,7 @@ const Footer = () => {
                 Check and Chat
               </a>
             </Link>
-          </li> 
+          </li>  */}
           <p className="justify-center invisible text-center text-white ml-6 lg:visible xl:visible sm:invisible md:visible"> | </p>
           <li>
             <Link href="/privacy">
@@ -43,7 +43,7 @@ const Footer = () => {
                 Privacy Policy
               </a>
             </Link>
-          </li> */}
+          </li>
         </div>
         <div className="flex justify-center">
           <div className="text-center px-4 pt-6 pb-2 m-2">

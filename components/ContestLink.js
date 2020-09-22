@@ -18,7 +18,7 @@ const ContestLink = ({
           />
           <p className="mx-2 w-64 mr-0 md:text-left">
             {
-              description == undefined ? `Win a chat with ${influencerName}` : description 
+              description == undefined ? `Win a chat with ${influencerName}^` : description 
             }
           </p>
           <RightArrow color={bgColor === "black" ? "#E69538" : "#000000"} />

@@ -11,10 +11,13 @@ export default function About() {
         <link rel="icon" href="/faviconuptous.ico" />
       </Head>
       <main>
-        <section className="body" style={{ backgroundImage: "url('hero.png')" }}>
+        <section
+          className="body"
+          style={{ backgroundImage: "url('hero.png')" }}
+        >
           <Navbar />
           <div className="p-12 mx-auto text-white flex flex-col items-center text-center">
-            <img className="hidden md:block h-64 mt-16 md:mt-6" src="/up_to_us_logo_white.svg" />
+            <img className="hidden md:block h-64 mt-20" src="/up_to_us_logo_white.svg" />
             <h1 className="text-2xl md:text-4xl mt-20 md:mt-16">
               WHO WE ARE
             </h1>
@@ -37,7 +40,7 @@ export default function About() {
             <img className="w-36 ml-10 h-auto" src="/inspire.svg" />
             <div className="md:pr-4=">
               <h2 className="text-3xl md:text-4xl pt-2 text-center md:text-left">INSPIRE</h2>
-              <p className="w-64 text-center md:text-left">building a new way to register & motivate Gen Z to vote</p>
+              <p className="w-64 text-center md:text-left">building a new way to register &amp; motivate Gen Z to vote</p>
             </div>
           </div>
           <div className="my-2 flex flex-col items-center md:flex-row">
@@ -51,13 +54,13 @@ export default function About() {
             <img className="w-36 h-auto" src="/educate.svg" />
             <div className="md:pr-10">
               <h2 className="text-3xl md:text-4xl pt-2  text-center md:text-left">EDUCATE</h2>
-              <p className="w-64 text-center md:text-left">providing content that leads to direct action & steers the conversation</p>
+              <p className="w-64 text-center md:text-left">providing content that leads to direct action &amp; steers the conversation</p>
             </div>
           </div>
           <br></br>
         </section>
-        <Footer />
-      </main>
+        </main>
+      <Footer />
     </div>
   )
 }
