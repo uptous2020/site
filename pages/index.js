@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar.js";
 import Footer from "../components/Footer.js";
 import MapGL, { Source, Layer } from "react-map-gl";
 import ContestLink from "../components/ContestLink";
+import contests from "./contests.json"
 
 
 const LandingContent = (props) => {
@@ -64,27 +65,31 @@ export default function Home() {
           </div> */}
         </section>
         <section>
-        <div className="mx-auto mb-8 flex flex-col items-center justify-center">
-        <h1 className="md:text-4xl md:mt-16 text-2xl mt-12">Check Your Registration Status</h1>
-        <p className="text-center md:text-left">and be entered to win some of these prizes</p>
-        </div>
+          <div className="mx-auto mb-8 flex flex-col items-center justify-center">
+            <h1 className="md:text-4xl md:mt-16 text-2xl mt-12">
+              Check Your Registration Status
+            </h1>
+            <p className="text-center md:text-left">
+              and be entered to win some of these prizes
+            </p>
+          </div>
 
-        <div className="flex flex-col items-center">
-        <div className="mb-4">
-          <ContestLink bgColor="orange-600"/>
-          </div>
-          <div className="grid gap-4 items-center sm:grid-cols-1 md:grid-cols-2">
-            <ContestLink />
-            <ContestLink />
-            <ContestLink />
-            <ContestLink />
-            <ContestLink />
-            <ContestLink />
-            <ContestLink />
-            <ContestLink />
-            <ContestLink />
-            <ContestLink />
-          </div>
+          <div className="flex flex-col items-center">
+            <div className="mb-4">
+              <ContestLink bgColor="orange-600" />
+            </div>
+            <div className="grid gap-4 items-center sm:grid-cols-1 md:grid-cols-2">
+              {contests.filter(({isVisible}) => {
+                if (isVisible == "FALSE") {
+                  return false
+                }
+                return true
+              }).map((contestObj, i) => (
+                  <ContestLink key={i} {...contestObj} />
+                )
+              )
+              }
+            </div>
           </div>
         </section>
         <section className="mx-auto flex flex-col items-center justify-center">
