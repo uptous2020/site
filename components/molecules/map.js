@@ -50,7 +50,7 @@ export default class Map extends Component {
 
   componentDidMount() {
     requestJson(
-      "https://raw.githubusercontent.com/uptous2020/dataTransformation/master/citystatetransformed.json?token=ADYEB7TQVMLLOJROSP6NKOS7NIPHU",
+      "https://static-content.vercel.app/geodata/citystatetransformed.json",
       (error, response) => {
         if (!error) {
           // Note: In a real application you would do a validation of JSON data before doing anything with it,
