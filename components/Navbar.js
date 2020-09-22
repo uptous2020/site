@@ -20,14 +20,14 @@ export default function Navbar() {
              style={{backgroundImage: "url('hero.png')"}}>
             <div className="w-full flex md:flex-row flex-col justify-between">
                 <div className=" flex justify-center md:justify-between md:pr-20">
-                    <img className="mt-3 w-8 h-12 ml-10" src="/logowhite.svg" href="2020upto.us"></img>
+                    <img className="mt-4 w-8 h-10 ml-10" src="/logowhite.svg" href="2020upto.us"></img>
                     <div>
-                        <a className="inline-block text-white text-3xl md:mr-0 no-underline hover:text-gray-200 hover:text-underline py-6 px-1 "
+                        <a className="inline-block text-white text-xl md:mr-0 no-underline hover:text-gray-200 hover:text-underline py-6 px-1 "
                            href="/">up to us</a>
                     </div>
                 </div>
                 <div className="flex">
-                    <ul className="self-center flex flex-row justify-evenly md:justify-between text-sm md:text-base">
+                    <ul className="self-center flex flex-row mt-4 justify-evenly md:justify-between text-sm md:text-base">
                         <li>
                           <Link href="/about">
                             <a className=" text-white no-underline md:ml-4 mr-3 ml-10 md:mr-10 hover:text-gray-200 hover:text-underline">
