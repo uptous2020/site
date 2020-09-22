@@ -1,3 +1,5 @@
+import {useState,useEffect} from 'react';
+import axios from 'axios';
 import Head from "next/head";
 import Link from "next/link";
 import Map from "../components/molecules/map";
@@ -13,16 +15,17 @@ const cheekyObj =   {
     "influencerPhoto": "https://static-content.vercel.app/images/cheeky_boyos_outvote_profile.png",
     "contestName": "https://www.outvote.io/campaigns/up-to-us/check_registration?referral_hash=e5f49ef4d3d4519c91ff52240e9c19f1b6fb048d",
     "isVisible": "TRUE"
-  }
+};
 
 
 const LandingContent = (props) => {
-  const { visible } = props;
+  const { visible,numberOfSignup } = props;
+
   
   const mapView = <>
           <div className="h-full w-full relative mt-5" >
             <div className='map-bg-overlay z-40 flex flex-col text-center w-full' style={{backgroundImage:'url(hero-transparent.png)'}}>
-              <h1 className='text-6xl md:text-7xl lg:text-8xl rainbowText tracking-widest'>21,732</h1>
+              <h1 className='text-6xl md:text-7xl lg:text-8xl rainbowText tracking-widest'>{numberOfSignup.toLocaleString()}</h1>
               <h2 className='text-lg md:text-2xl lg:text-4xl text-white tracking-widest'>REGISTERED TO VOTE</h2>
               <div className='inline mt-16'>
                 <a className='p-3 pl-5 pr-5 text-white inline-block' style={{backgroundColor:'#E69538'}}>Check your status</a>
@@ -58,7 +61,22 @@ const LandingContent = (props) => {
   return visible ? mapView : aboutText;
 };
 
+const url = 'https://ndneighbor-datatransformation.zeet.app/numberOfRegistration'
+// const url = 'http://localhost:8000/numberOfRegistration'
+const getRequest = ()=>axios.get(url);
+
 export default function Home() {
+  const [numberOfSignup,setNumberOfSignup] = useState(0);
+
+  const getData = async ()=>{
+    const {data} = await getRequest();
+    setNumberOfSignup(data.number)
+  }
+
+  useEffect(()=>{
+    getData()
+  })
+
   return (
     <div>
       <Head>
@@ -72,7 +90,7 @@ export default function Home() {
           <Navbar />
           {/* bruh */}
 
-          <LandingContent visible={true}/>
+          <LandingContent visible={true} numberOfSignup={numberOfSignup}/>
 
           {/* <div className="h-full w-full relative">
             <div className='rainbowText z-40 absolute flex flex-col text-center'>

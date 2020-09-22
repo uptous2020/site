@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Navbar from "../components/Navbar.js";
 import Footer from "../components/Footer.js";
 
-export default function Teslagiveaway() {
+export default function uptousxcheekyboyos() {
   return (
     <div>
       <Head>

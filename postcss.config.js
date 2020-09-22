@@ -4,13 +4,16 @@ module.exports = {
         autoprefixer: {},
         ...(process.env.NODE_ENV === 'production'
         ? {
-            '@fullhuman/postcss-purgecss': {
-                content: [
-                './components/**/*.js',
-                './pages/**/*.js'
-                ],
-                defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
-            }
+                '@fullhuman/postcss-purgecss': {
+                    content: [
+                        './components/**/*.js',
+                        './pages/**/*.js'
+                    ],
+                    defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
+                    whitelist: {
+                        standard: [/orange$/, /black$/],
+                    }
+                }
             }
         : {})
     }
