@@ -9,7 +9,7 @@ const ContestLink = ({
   influencerName,
 }) => {
   return (
-    <div className={`mx-4 bg-${bgColor} rounded-lg`}>
+    <div className={`mx-4 bg-black rounded-lg`}>
       <a href={contestLink}>
         <div className="mx-4 my-2 flex flex-row items-center">
           <img
@@ -21,7 +21,7 @@ const ContestLink = ({
               description == undefined ? `Win a chat with ${influencerName}` : description 
             }
           </p>
-          <RightArrow color={bgColor == "black" ? "#E69538" : "#000000"} />
+          <RightArrow color={"black"} />
         </div>
       </a>
     </div>
