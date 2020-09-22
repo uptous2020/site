@@ -10,9 +10,9 @@ export default function Rules() {
         <title>Up To Us</title>
         <link rel="icon" href="/faviconuptous.ico" />
       </Head>
-      <main>
+      <main className="body h-auto lg:pb-48 xl:pb-56" style={{ backgroundImage: "url('hero.png')" }}>
       
-        <section className="body h-auto lg:pb-48 xl:pb-56" style={{ backgroundImage: "url('hero.png')" }}>
+        
           <Navbar />
           <div className="p-6 flex flex-col justify-center items-center text-center">
           <h1 className="text-white text-xl md:text-4xl mt-24 pt-2 md:mt-16 ">
@@ -27,7 +27,6 @@ export default function Rules() {
             </h5>
           </div>
           </div>
-        </section>
         <Footer/>
       </main>
     </div>
