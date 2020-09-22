@@ -71,7 +71,7 @@ export default function Home() {
             <Map cHeight="450px" className='map'/>
           </div> */}
         </section>
-        <section>
+        {/* <section>
           <div className="mx-auto mb-8 flex flex-col items-center justify-center">
             <h1 className="md:text-4xl md:mt-16 text-2xl mt-12">
               Check Your Registration Status
@@ -98,7 +98,7 @@ export default function Home() {
               }
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="mx-auto flex flex-col items-center justify-center">
           <h1 className="md:text-4xl md:mt-16 text-2xl mt-12 ">WHAT WE DO:</h1>
           <div className="my-10 md:my-16 flex flex-col items-center md:flex-row-reverse">
