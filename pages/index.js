@@ -3,7 +3,7 @@ import Link from "next/link";
 import Map from "../components/molecules/map";
 import Navbar from "../components/Navbar.js";
 import Footer from "../components/Footer.js";
-import MapGL, { Source, Layer } from "react-map-gl";
+
 import ContestLink from "../components/ContestLink";
 import contests from "./contests.json"
 
@@ -15,15 +15,22 @@ const cheekyObj =   {
     "isVisible": "TRUE"
   }
 
+
 const LandingContent = (props) => {
   const { visible } = props;
   
   const mapView = <>
-          <div className="h-full w-full relative">
-            <div className='rainbowText z-40 absolute flex flex-col text-center'>
-              <p>21,732</p>   
+          <div className="h-full w-full relative mt-5" >
+            <div className='map-bg-overlay z-40 flex flex-col text-center w-full' style={{backgroundImage:'url(hero-transparent.png)'}}>
+              <h1 className='text-6xl md:text-7xl lg:text-8xl rainbowText tracking-widest'>21,732</h1>
+              <h2 className='text-lg md:text-2xl lg:text-4xl text-white tracking-widest'>REGISTERED TO VOTE</h2>
+              <div className='inline mt-16'>
+                <a className='p-3 pl-5 pr-5 text-white inline-block' style={{backgroundColor:'#E69538'}}>Check your status</a>
+              </div>
             </div>
-            <Map cHeight="800px" className='map'/>
+            <div className="-mt-8">
+              <Map cHeight="800px" className='map'/>
+            </div>
           </div>
   </>;
   const aboutText = (
@@ -55,15 +62,18 @@ export default function Home() {
   return (
     <div>
       <Head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>Up To Us</title>
         <link rel="icon" href="/faviconuptous.ico" />
       </Head>
 
       <main>
-        <section style={{ backgroundImage: "url('hero.png')" }}>
+        <section>
           <Navbar />
           {/* bruh */}
-          <LandingContent visible={false} />
+
+          <LandingContent visible={true}/>
+
           {/* <div className="h-full w-full relative">
             <div className='rainbowText z-40 absolute flex flex-col text-center'>
               <p>21,732</p>   
@@ -71,6 +81,9 @@ export default function Home() {
             <Map cHeight="450px" className='map'/>
           </div> */}
         </section>
+
+        <section className="map-topheader mx-auto flex flex-col items-center justify-center">
+
         {/* <section>
           <div className="mx-auto mb-8 flex flex-col items-center justify-center">
             <h1 className="md:text-4xl md:mt-16 text-2xl mt-12">
@@ -99,7 +112,7 @@ export default function Home() {
             </div>
           </div>
         </section> */}
-        <section className="mx-auto flex flex-col items-center justify-center">
+
           <h1 className="md:text-4xl md:mt-16 text-2xl mt-12 ">WHAT WE DO:</h1>
           <div className="my-10 md:my-16 flex flex-col items-center md:flex-row-reverse">
             <img className="w-36 ml-10 h-auto" src="/inspire.svg" />
