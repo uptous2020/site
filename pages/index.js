@@ -27,9 +27,10 @@ const LandingContent = (props) => {
             <div className='map-bg-overlay z-40 flex flex-col text-center w-full' style={{backgroundImage:'url(hero-transparent.png)'}}>
               <h1 className='text-6xl md:text-7xl lg:text-8xl rainbowText tracking-widest'>{numberOfSignup.toLocaleString()}</h1>
               <h2 className='text-lg md:text-2xl lg:text-4xl text-white tracking-widest'>CHECKED THEIR REGISTRATION</h2>
-              <div className='inline mt-12'>
+              <div className='inline mt-8'>
                 <a className='p-3 pl-5 pr-5 rounded-md text-white inline-block' style={{backgroundColor:'#E69538'}} href='https://www.outvote.io/campaigns/up-to-us/check_registration'>Check your status</a>
               </div>
+              <p className='mt-4 text-center text-white p-4'>Use a link below and you could win cool prizes (like a Tesla)*^</p>
             </div>
             <div className="-mt-8">
               <Map cHeight="800px" className='map'/>
@@ -108,7 +109,7 @@ export default function Home() {
               Check Your Registration Status
             </h1>
             <p className="text-center md:text-left">
-            and be entered to win some of these prizes
+            Use one of the links below to enter for a chance to win a prize*^
             </p>
           </div>
 
@@ -154,19 +155,18 @@ export default function Home() {
                 audiences to take action
               </p>
             </div>
-          </div>
+          </div> */}
           <div className="my-16 flex flex-col items-center md:flex-row-reverse">
-            <img className="w-36 h-auto" src="/educate.svg" />
             <div className="md:pr-10">
-              <h2 className="text-3xl md:text-4xl pt-2  text-center md:text-left">
-                EDUCATE
-              </h2>
-              <p className="w-64 text-center md:text-left">
-                providing content that leads to direct action & steers the
-                conversation
+              <p className="text-sm mb-8 w-256 text-center px-16">
+              * Up to Us x Cheeky Boyos Sweepstakes: VOTER REGISTRATION NOT REQ’D TO ENTER. NO PURCH. NEC.; REG./PURCH. WILL NOT INCREASE CHANCES OF WINNING. 48 US & DC (excl. NY & FL) age 18+ only. Begins 12:00:00am ET on 9/22/20; ends 2:59:59am ET on 10/5/20. SUBJ. TO RULES AT 2020upto.us/uptousxcheekyboyos. Must participate thru outvote.io/campaigns/up-to-us-cheeky-boyos/check_registration to be eligible. Limit 1 std. & 500 bonus entries/person. Prize ARV: $46790. Odds of winning depend on # of elig. entries recv’d. Void where prohib. Sponsor: Up to Us, Inc., 206 Ave A #4A, NY, NY 10009
+
+              </p>
+              <p className='text-sm w-256 text-center px-16'>
+              ^ Check & Chat Promotion: VOTER REGISTRATION NOT REQ’D TO ENTER. NO PURCH. NEC.; REG./PURCH. WILL NOT INCREASE CHANCES OF WINNING. Subj. to rules at 2020upto.us/checkandchat. 50 US & DC age 18+ only. Promotion consists of multiple separate sweepstakes: one for each influencer. Each sweepstakes begins when influencer posts link to individ. entry page & ends 2:59:59am ET on 10/1/20. Use the links above to access specific influencer’s sweepstakes entry page. Entry into 1 sweeps ≠ entry into any other sweeps in this promotion. Limit 1 std. & 500 bonus entries/person. Must respond to prize notice within 6 hours. Prize has no retail value & may be awarded as social DM or audio/video chat. See rules for details. Odds of winning depend on # of elig. entries recv’d for appl. sweepstakes. Void where prohib. Sponsor: Up to Us, Inc., 206 Ave A #4A, NY, NY 10009
               </p>
             </div>
-          </div> */}
+          </div> 
           <br></br>
         </section>
         <Footer />
