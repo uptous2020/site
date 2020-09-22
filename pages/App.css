@@ -38,9 +38,22 @@
 }
 
 /* Required as .mapboxgl-map doesn't exist in compile time */
+/* Writing media queries like it's 1999, and cause of my bundlephobia */
 /* purgecss start ignore */
 .mapboxgl-map, .map-topheader {
     margin-top: 250px;
+}
+
+@media only screen and (max-width: 1023px) {
+    .mapboxgl-map, .map-topheader {
+        margin-top: 180px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .mapboxgl-map, .map-topheader {
+        margin-top: 120px;
+    }
 }
 /* purgecss end ignore */
 
