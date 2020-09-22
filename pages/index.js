@@ -84,17 +84,17 @@ export default function Home() {
 
         <section className="map-topheader mx-auto flex flex-col items-center justify-center">
 
-        {/* <section>
+        <section>
           <div className="mx-auto mb-8 flex flex-col items-center justify-center">
             <h1 className="md:text-4xl md:mt-16 text-2xl mt-12">
               Check Your Registration Status
             </h1>
             <p className="text-center md:text-left">
-              and be entered to win some of these prizes
+              Enter to win by checking out some of these prizes
             </p>
           </div>
 
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center mb-12">
             <div className="mb-4">
               <ContestLink bgColor="orange-600" description="Win a Tesla from the Cheeky Boyos" {...cheekyObj}/>
             </div>
@@ -111,9 +111,9 @@ export default function Home() {
               }
             </div>
           </div>
-        </section> */}
+        </section>
 
-          <h1 className="md:text-4xl md:mt-16 text-2xl mt-12 ">WHAT WE DO:</h1>
+          {/* <h1 className="md:text-4xl md:mt-16 text-2xl mt-12 ">WHAT WE DO:</h1>
           <div className="my-10 md:my-16 flex flex-col items-center md:flex-row-reverse">
             <img className="w-36 ml-10 h-auto" src="/inspire.svg" />
             <div className="md:pr-4=">
@@ -148,7 +148,7 @@ export default function Home() {
                 conversation
               </p>
             </div>
-          </div>
+          </div> */}
           <br></br>
         </section>
         <Footer />
