@@ -30,7 +30,7 @@ const LandingContent = (props) => {
               <div className='inline mt-8'>
                 <a className='p-3 pl-5 pr-5 rounded-md text-white inline-block' style={{backgroundColor:'#E69538'}} href='https://www.outvote.io/campaigns/up-to-us-cheeky-boyos/check_registration'>Check your status</a>
               </div>
-              <p className='mt-4 text-center text-white p-4'>Use a link below and you could win cool prizes (like a Tesla)*^</p>
+              <p className='mt-4 text-center text-white p-4'>Get help finding the easiest and safest way to vote in your state</p>
             </div>
             <div className="-mt-8">
               <Map cHeight="800px" className='map'/>
@@ -118,22 +118,22 @@ export default function Home() {
         <section className="map-topheader mx-auto flex flex-col items-center justify-center">
 
         <section>
-          <div className="mx-auto mb-8 flex flex-col items-center justify-center">
+          {/* <div className="mx-auto mb-8 flex flex-col items-center justify-center">
             <h1 className="md:text-4xl md:mt-16 text-xl mt-8 mb-8 px-6 md:px-0 " >
               Check Your Registration Status
             </h1>
             <p className="text-left pr-12 pl-8 md:pr-0 md:pl-0">
             Use one of the links below to enter for a chance to win a prize*^
-            </p>
+            </p> */}
             {/* <h1 className="md:text-4xl md:mt-16 text-2xl mt-12" >
               Check Your Registration Status
             </h1>
             <p className="text-center md:text-left">
             Use one of the links below to enter for a chance to win a prize*^
             </p> */}
-          </div>
+          {/* </div> */}
 
-          <div className="flex flex-col items-center mb-12">
+          {/* <div className="flex flex-col items-center mb-12">
             <div className="mb-4">
               <ContestLink bgColor="orange-600" description="Win a Tesla from the Cheeky Boyos*" {...cheekyObj}/>
             </div>
@@ -149,7 +149,7 @@ export default function Home() {
               )
               }
             </div>
-          </div>
+          </div> */}
         </section>
 
           {/* <h1 className="md:text-4xl md:mt-16 text-2xl mt-12 ">WHAT WE DO:</h1>
@@ -176,7 +176,7 @@ export default function Home() {
               </p>
             </div>
           </div> */}
-          <div className="my-16 flex flex-col items-center md:flex-row-reverse">
+          {/* <div className="my-16 flex flex-col items-center md:flex-row-reverse">
             <div className="md:pr-10">
               <p className="text-sm mb-8 w-256 text-center px-16">
               * Up to Us x Cheeky Boyos Sweepstakes: VOTER REGISTRATION NOT REQ’D TO ENTER. NO PURCH. NEC.; REG./PURCH. WILL NOT INCREASE CHANCES OF WINNING. 48 US & DC (excl. NY & FL) age 18+ only. Begins 12:00:00am ET on 9/22/20; ends 2:59:59am ET on 10/5/20. SUBJ. TO RULES AT 2020upto.us/uptousxcheekyboyos. Must participate thru outvote.io/campaigns/up-to-us-cheeky-boyos/check_registration to be eligible. Limit 1 std. & 500 bonus entries/person. Prize ARV: $46790. Odds of winning depend on # of elig. entries recv’d. Void where prohib. Sponsor: Up to Us, Inc., 206 Ave A #4A, NY, NY 10009
@@ -186,8 +186,8 @@ export default function Home() {
               ^ Check & Chat Promotion: VOTER REGISTRATION NOT REQ’D TO ENTER. NO PURCH. NEC.; REG./PURCH. WILL NOT INCREASE CHANCES OF WINNING. Subj. to rules at 2020upto.us/checkandchat. 50 US & DC age 18+ only. Promotion consists of multiple separate sweepstakes: one for each influencer. Each sweepstakes begins when influencer posts link to individ. entry page & ends 2:59:59am ET on 10/1/20. Use the links above to access specific influencer’s sweepstakes entry page. Entry into 1 sweeps ≠ entry into any other sweeps in this promotion. Limit 1 std. & 500 bonus entries/person. Must respond to prize notice within 6 hours. Prize has no retail value & may be awarded as social DM or audio/video chat. See rules for details. Odds of winning depend on # of elig. entries recv’d for appl. sweepstakes. Void where prohib. Sponsor: Up to Us, Inc., 206 Ave A #4A, NY, NY 10009
               </p>
             </div>
-          </div> 
-          <br></br>
+          </div>  */}
+          {/* <br></br> */}
         </section>
         <Footer />
       </main>
