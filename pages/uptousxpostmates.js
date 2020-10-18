@@ -30,9 +30,6 @@ export default function Rules() {
           <h1 className="text-white text-2xl md:text-4xl mt-20 md:mt-24">
               Up to Us x Postmates
             </h1>
-            <h5 className="text-white text-center text-xl md:text-2xl mx-4 mt-6 md:mx-20 mb-2">
-              Terms &amp; Conditions
-            </h5>
           </div>
           <h5 className="text-white text-center text-md md:text-lg mx-4 mt-6 md:mx-20 mb-8" >
             
@@ -69,7 +66,10 @@ export default function Rules() {
             <h6 className="text-white text-center text-md md:text-lg mx-4 md:mx-20 my-4" >
             No, you do not need to vote to receive the award.
             </h6>
-            <h6 className="text-white text-center text-md md:text-lg mx-4 md:mx-20 my-4 mt-16" >
+            <h5 className="text-white text-center text-xl md:text-2xl mx-4 mt-16 md:mx-20">
+              Terms &amp; Conditions
+            </h5>
+            <h6 className="text-white text-center text-md md:text-lg mx-4 md:mx-20 my-4 mt-8" >
             Voting not required in order to claim benefit. The qualifying cart size for Unlimited Free Delivery is applied by the market that you sign up in and may vary by location. Additional fees may vary and may apply. Limit 1 use per customer. Offer only valid through Tuesday, November 3, 2020 at 11:59 pm PT. Customers with multiple Postmates accounts may be excluded from this promotion. Offer is not shareable or transferable. Offer cannot be redeemed for cash or like exchanges. Postmates reserves the right to modify or terminate this offer at any time without notice. By tapping 'Try Free for 30 Days,' you acknowledge and agree that after 30 days, you will be charged $9.99 every month until you cancel. Cancel any time before the end of your trial and you won’t be charged.
             </h6>
             
