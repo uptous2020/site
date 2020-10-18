@@ -34,10 +34,13 @@ export default function Rules() {
           </h1>
           <div className="p-6 flex flex-col xl:flex-row lg:flex-col justify-center items-center text-center">
             <h5 className="mb-24 mt-10 md:mt-16 md:mb-16 lg:mt-24 lg:mx-12 ">
-              <a className="text-black hover:bg-orange-100 hover:text-white max-w-sm xl:max-w-md lg:max-w-md rounded-md px-2 py-6 bg-white md:p-6 lg:p-6 xl:p-6 text-sm md:text-xl " href="/uptousxcheekyboyos">Up to Us x Cheeky Boyos</a>
+              <a className="text-black hover:bg-orange-100 hover:text-white max-w-sm rounded-md px-2 py-6 bg-white md:p-6 lg:p-6 xl:p-6 text-sm md:text-xl " href="/uptousxpostmates">Up to Us x Postmates</a>
+            </h5>
+            <h5 className="mb-24 mt-10 md:mt-16 md:mb-16 lg:mt-24 lg:mx-12 ">
+              <a className="text-black hover:bg-orange-100 hover:text-white max-w-sm rounded-md px-2 py-6 bg-white md:p-6 lg:p-6 xl:p-6 text-sm md:text-xl " href="/checkandchat">Check &amp; Chat</a>
             </h5>
             <h5 className="lg:mx-12 md:my-20 lg:pt-8 md:text-xl">
-              <a className="text-black hover:bg-orange-100 hover:text-white max-w-sm xl:max-w-md lg:max-w-md rounded-md bg-white text-xl md:text-xl p-6 " href="/checkandchat">Check &amp; Chat</a>
+              <a className="text-black hover:bg-orange-100 hover:text-white max-w-sm rounded-md bg-white text-xl md:text-xl p-6 " href="/uptousxcheekyboyos">Up to Us x Cheeky Boyos</a>
             </h5>
           </div>
           </div>
