@@ -26,12 +26,12 @@ const LandingContent = (props) => {
           <div className="h-full w-full relative mt-5" >
             <div className='map-bg-overlay z-40 flex flex-col text-center w-full' style={{backgroundImage:'url(hero-transparent.png)'}}>
               <h1 className='text-6xl md:text-7xl lg:text-8xl rainbowText tracking-widest'>{numberOfSignup.toLocaleString()}</h1>
-              <h2 className='text-lg md:text-2xl lg:text-4xl text-white tracking-widest'>GOT READY TO VOTE</h2>
+              <h2 className='text-lg md:text-2xl lg:text-4xl text-white tracking-widest'>READY TO VOTE IN THE 2020 ELECTION</h2>
               <div className='inline mt-8'>
                 <a className='p-3 pl-5 pr-5 rounded-md text-white inline-block' style={{backgroundColor:'#E69538'}} href='https://www.outvote.io/campaigns/up-to-us-x-postmates/ready_to_vote?postmates_enabled=true'>Get Ready to Vote</a>
               </div>
               {/* https://www.outvote.io/campaigns/up-to-us/check_registration */}
-              <p className='mt-4 text-center text-white p-4'>Get help finding the easiest and safest way to vote in your state</p>
+              <p className='mt-4 text-center text-white p-4'>Find the easiest and safest way to vote in your state</p>
             </div>
             <div className="-mt-8">
               <Map cHeight="800px" className='map'/>
