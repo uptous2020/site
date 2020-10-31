@@ -15,8 +15,10 @@
     "dotenv": "^8.2.0",
     "mapbox-gl": "^1.12.0",
     "next": "^9.5.1",
+    "next-images": "^1.6.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-gif-player": "^0.4.2",
     "react-map-gl": "^5.2.8",
     "react-mapbox-gl": "^4.8.6",
     "tailwindcss": "^1.6.2"
