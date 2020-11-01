@@ -31,7 +31,7 @@ const LandingContent = (props) => {
           className="map-bg-overlay z-40 flex flex-col text-center w-full"
           style={{ backgroundImage: "url(hero-transparent.png)" }}
         >
-          <h1 className="text-6xl md:text-7xl lg:text-8xl rainbowText tracking-widest">
+          <h1 className="text-3xl md:text-7xl lg:text-8xl rainbowText tracking-widest">
             Patience
           </h1>
           <h2 className="text-lg md:text-2xl lg:text-4xl text-white tracking-widest">
@@ -66,21 +66,21 @@ const LandingContent = (props) => {
           }}
         />
         <Navbar />
-        <div className="p-12 mx-auto text-white flex flex-col items-center text-center">
-          <h1 className="mt-16 text-6xl md:text-7xl lg:text-8xl rainbowText tracking-widest">
+        <div className="p-12 mt-16 mx-auto text-white flex flex-col items-center text-center">
+          <h1 className="mt-16 text-3xl md:text-7xl lg:text-8xl rainbowText tracking-widest">
             Patience
           </h1>
           <h2 className="text-lg md:text-2xl lg:text-4xl text-white tracking-widest">
             The results might take awhile.
           </h2>
         </div>
-        <div className="p-12 mx-auto text-white flex flex-col w-2/3">
-          <h1 className="text-2xl md:text-4xl mt-20 md:mt-16">WHO WE ARE</h1>
+        <div className="p-12 mx-auto text-white flex flex-col w-5/6 md:w-2/3">
+          <h1 className="text-xl md:text-4xl mt-4 md:mt-16">WHO WE ARE</h1>
           <p className="text-xl md:text-2xl description mt-2 pb-4">
             up to us is a collective of Gen Z creators fixing some of the
             biggest problems facing our generation.
           </p>
-          <h1 className="text-2xl md:text-4xl mt-12 md:mt-16">
+          <h1 className="text-xl md:text-4xl mt-12 md:mt-16">
             WHAT WE STAND FOR
           </h1>
           <p className="text-xl md:text-2xl description mt-2 pb-4">
@@ -204,7 +204,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           </div> */}
           </section>
           <section className="mx-auto flex flex-col items-center justify-center mb-8">
-            <h1 className="-mt-32 mb-8 text-center w-2/3 text-2xl">Graphics</h1>
+            <h1 className="-mt-48 mb-8 text-center w-2/3 text-2xl">Graphics</h1>
             <div className="mx-auto sm:grid grid-cols-1 w-full md: grid-cols-3 w-2/3">
               <div className="flex flex-col items-center">
                 <div className="w-2/3 h-2/3 m-4">
@@ -214,7 +214,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                     Image
                   ></img>
                 </div>
-                <h3 className="mb-4">Download Link</h3>
+                <h3 className="mb-4">Download</h3>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-2/3 h-2/3 m-4">
@@ -224,7 +224,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                     Image
                   ></img>
                 </div>
-                <h3 className="mb-4">Download Link</h3>
+                <h3 className="mb-4">Download</h3>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-2/3 h-2/3 m-4">
@@ -234,7 +234,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                     Image
                   ></img>
                 </div>
-                <h3 className="mb-4">Download Link</h3>
+                <h3 className="mb-4">Download</h3>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-2/3 h-2/3 m-4">
@@ -244,7 +244,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                     Image
                   ></img>
                 </div>
-                <h3 className="mb-4">Download Link</h3>
+                <h3 className="mb-4">Download</h3>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-2/3 h-2/3 m-4">
@@ -254,12 +254,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                     Image
                   ></img>
                 </div>
-                <h3 className="mb-4">Download Link</h3>
+                <h3 className="mb-4">Download</h3>
               </div>
             </div>
           </section>
           <section className="mx-auto flex flex-col items-center justify-center mb-20">
-            <h1 className="mt-24 mb-8 text-center w-2/3 text-2xl">Videos</h1>
+            <h1 className="mt-8 mb-8 text-center w-2/3 text-2xl">Videos</h1>
             <div className="mx-auto sm:grid grid-cols-1 w-full md: grid-cols-3 w-2/3">
               <div className="flex flex-col items-center">
                 <div className="w-2/3 h-2/3 m-4">
@@ -269,7 +269,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                     autoplay
                   />
                 </div>
-                <h3 className="mb-4">Download Link</h3>
+                <h3 className="mb-4">Download</h3>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-2/3 h-2/3 m-4">
@@ -279,7 +279,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                     autoplay
                   />
                 </div>
-                <h3 className="mb-4">Download Link</h3>
+                <h3 className="mb-4">Download</h3>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-2/3 h-2/3 m-4">
@@ -289,7 +289,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                     autoPlay
                   />
                 </div>
-                <h3 className="mb-4">Download Link</h3>
+                <h3 className="mb-4">Download</h3>
               </div>
 
               {/* <h1 className="md:text-4xl md:mt-16 text-2xl mt-12 ">WHAT WE DO:</h1>
