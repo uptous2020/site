@@ -11,17 +11,17 @@ const LandingContent = (props) => {
       <div className="h-full w-full relative mt-5">
         <div
           className="map-bg-overlay z-40 flex flex-col text-center w-full"
-          style={{ backgroundImage: "url(hero-transparent.png)" }}
+          style={{ backgroundImage: "url(USBackground.png)" }}
         >
           <h1 className="text-3xl md:text-7xl lg:text-8xl text-black tracking-widest">
             Patience
           </h1>
-          <h2 className="text-lg md:text-2xl lg:text-4xl text-white tracking-widest">
+          <h2 className="text-lg md:text-2xl lg:text-4xl text-black tracking-widest">
             The results might take awhile.
           </h2>
           <div className="inline mt-8">
             <a
-              className="p-3 pl-5 pr-5 rounded-md text-white inline-block"
+              className="p-3 pl-5 pr-5 rounded-md text-black inline-block"
               style={{ backgroundColor: "#E69538" }}
               href="https://www.outvote.io/campaigns/up-to-us-x-postmates/ready_to_vote?postmates_enabled=true"
             >
@@ -29,7 +29,7 @@ const LandingContent = (props) => {
             </a>
           </div>
           {/* https://www.outvote.io/campaigns/up-to-us/check_registration */}
-          <p className="mt-4 text-center text-white p-4">
+          <p className="mt-4 text-center text-black p-4">
             Find the easiest and safest way to vote in your state
           </p>
         </div>
@@ -39,7 +39,10 @@ const LandingContent = (props) => {
   );
   const aboutText = (
     <>
-      <section className="body" style={{ backgroundImage: "url('hero.png')" }}>
+      <section
+        className="body"
+        style={{ backgroundImage: "url(USBackground.png)" }}
+      >
         {/* google tag manager */}
         <noscript
           dangerouslySetInnerHTML={{
@@ -48,32 +51,33 @@ const LandingContent = (props) => {
           }}
         />
         {/*<Navbar /> */}
-        <div className="p-12 mx-auto text-white flex flex-col items-center text-center">
-          <h1 className="mt-16 text-3xl md:text-7xl lg:text-8xl text-black tracking-widest">
+        <div className="p-12 mx-auto text-black flex flex-col items-center text-center">
+          <h1 className="mt-4 text-3xl md:text-7xl lg:text-7xl text-black tracking-widest">
             Patience
           </h1>
-          <h2 className="text-lg md:text-2xl lg:text-4xl text-white tracking-widest">
-            The results might take awhile.
+          <h2 className="text-lg font-snazzy md:text-2xl lg:text-4xl text-black tracking-widest w-7/8">
+            What’s normal in an unusual year? <br /> Counting every American’s
+            vote.
           </h2>
         </div>
-        <div className="p-12 mx-auto text-white flex flex-col w-5/6 md:w-2/3">
-          <h1 className="text-lg md:text-4xl mt-4 md:mt-16">WHO WE ARE</h1>
-          <p className="text-md md:text-2xl description mt-2 pb-4">
+        <div className="p-12 mx-auto text-black flex flex-col w-7/8 text-center lg:w-2/3 md:text-left">
+          <h1 className="font-snazzy font-bold text-lg md:text-2xl mt-4 md:mt-8">
+            WHO WE ARE
+          </h1>
+          <p className="text-md md:text-xl description mt-2 pb-4">
             We are a group of Gen Z voters fixing some of the biggest problems
             facing our generation.
           </p>
-          <h1 className="text-lg md:text-4xl mt-12 md:mt-16">
+          <h1 className="font-snazzy font-bold text-lg md:text-2xl mt-12 md:mt-16">
             WHAT WE STAND FOR
           </h1>
-          <p className="text-md md:text-2xl description mt-2 pb-4">
-            We are part of the UNITED States of America - let’s not lose sight
-            of our common purpose. No matter who wins, we believe in good
-            sportsmanship, standing by American democracy and ensuring that
-            every citizen’s vote is counted, including those who choose to vote
-            by mail.
-          </p>
-          <p className="mt-12 text-md md:text-2xl description mt-2 pb-4">
-            What’s normal in an unusual year? Counting every American’s vote.
+          <p className="text-md md:text-xl description mt-2 pb-4">
+            We are part of the{" "}
+            <span className="font-snazzy underline">United</span> States of
+            America - let’s not lose sight of our common purpose. No matter who
+            wins, we believe in good sportsmanship, standing by American
+            democracy and ensuring that every citizen’s vote is counted,
+            including those who choose to vote by mail.
           </p>
         </div>
       </section>
@@ -207,26 +211,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                 <div className="w-2/3 h-2/3 m-4">
                   <img
                     src="/content/VoterFraudIllo-UFO.png"
-                    className="flex text-center"
-                    Image
-                  ></img>
-                </div>
-                <h3 className="mb-4">Download</h3>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="w-2/3 h-2/3 m-4">
-                  <img
-                    src="/content/VoterFraudIllo-LIGHTNING.png"
-                    className="flex text-center"
-                    Image
-                  ></img>
-                </div>
-                <h3 className="mb-4">Download</h3>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="w-2/3 h-2/3 m-4">
-                  <img
-                    src="/content/VoterFraudIllo-SHARK.png"
                     className="flex text-center"
                     Image
                   ></img>
