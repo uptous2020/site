@@ -1,108 +1,152 @@
-import {useState,useEffect} from 'react';
-import axios from 'axios';
+import { useState, useEffect } from "react";
+import axios from "axios";
 import Head from "next/head";
 import Link from "next/link";
+
 import Map from "../components/molecules/map";
 import Navbar from "../components/Navbar.js";
 import Footer from "../components/Footer.js";
 
 import ContestLink from "../components/ContestLink";
-import contests from "./contests.json"
+import contests from "./contests.json";
 
-const cheekyObj =   {
-    "influencerName": "The Cheeky Boyos",
-    "socialLink": "https://www.tiktok.com/@cheekyboyos?language=en&u_code=d37chme9dc9fk2&utm_campaign=client_share&app=musically&utm_medium=ios&user_id=6625415756434046982&tt_from=copy&utm_source=copy&source=h5_m",
-    "influencerPhoto": "https://static-content.vercel.app/images/cheeky_boyos_outvote_profile.png",
-    "contestName": "https://www.outvote.io/campaigns/up-to-us-cheeky-boyos/check_registration",
-    "isVisible": "TRUE"
+const cheekyObj = {
+  influencerName: "The Cheeky Boyos",
+  socialLink:
+    "https://www.tiktok.com/@cheekyboyos?language=en&u_code=d37chme9dc9fk2&utm_campaign=client_share&app=musically&utm_medium=ios&user_id=6625415756434046982&tt_from=copy&utm_source=copy&source=h5_m",
+  influencerPhoto:
+    "https://static-content.vercel.app/images/cheeky_boyos_outvote_profile.png",
+  contestName:
+    "https://www.outvote.io/campaigns/up-to-us-cheeky-boyos/check_registration",
+  isVisible: "TRUE",
 };
 
-
 const LandingContent = (props) => {
-  const { visible,numberOfSignup } = props;
+  const { visible } = props;
 
-  
-  const mapView = <>
-          <div className="h-full w-full relative mt-5" >
-            <div className='map-bg-overlay z-40 flex flex-col text-center w-full' style={{backgroundImage:'url(hero-transparent.png)'}}>
-              <h1 className='text-6xl md:text-7xl lg:text-8xl rainbowText tracking-widest'>{numberOfSignup.toLocaleString()}</h1>
-              <h2 className='text-lg md:text-2xl lg:text-4xl text-white tracking-widest'>READY TO VOTE IN THE 2020 ELECTION</h2>
-              <div className='inline mt-8'>
-                <a className='p-3 pl-5 pr-5 rounded-md text-white inline-block' style={{backgroundColor:'#E69538'}} href='https://www.outvote.io/campaigns/up-to-us-x-postmates/ready_to_vote?postmates_enabled=true'>Get Ready to Vote</a>
-              </div>
-              {/* https://www.outvote.io/campaigns/up-to-us/check_registration */}
-              <p className='mt-4 text-center text-white p-4'>Find the easiest and safest way to vote in your state</p>
-            </div>
-            <div className="-mt-8">
-              <Map cHeight="800px" className='map'/>
-            </div>
+  const mapView = (
+    <>
+      <div className="h-full w-full relative mt-5">
+        <div
+          className="map-bg-overlay z-40 flex flex-col text-center w-full"
+          style={{ backgroundImage: "url(hero-transparent.png)" }}
+        >
+          <h1 className="text-3xl md:text-7xl lg:text-8xl rainbowText tracking-widest">
+            Patience
+          </h1>
+          <h2 className="text-lg md:text-2xl lg:text-4xl text-white tracking-widest">
+            The results might take awhile.
+          </h2>
+          <div className="inline mt-8">
+            <a
+              className="p-3 pl-5 pr-5 rounded-md text-white inline-block"
+              style={{ backgroundColor: "#E69538" }}
+              href="https://www.outvote.io/campaigns/up-to-us-x-postmates/ready_to_vote?postmates_enabled=true"
+            >
+              Get Ready to Vote
+            </a>
           </div>
-  </>;
+          {/* https://www.outvote.io/campaigns/up-to-us/check_registration */}
+          <p className="mt-4 text-center text-white p-4">
+            Find the easiest and safest way to vote in your state
+          </p>
+        </div>
+        <div className="-mt-8"></div>
+      </div>
+    </>
+  );
   const aboutText = (
     <>
-      <div className="p-12 mx-auto text-white flex flex-col items-center text-center">
-      <img
-        className="hidden md:block h-64 mt-16 md:mt-6"
-        src="/up_to_us_logo_white.svg"
-      />
-      <h1 className="text-2xl md:text-4xl mt-20 md:mt-16">WHO WE ARE</h1>
-      <p className="px-0 lg:px-56 text-xl md:text-xl mt-2">
-        up to us is a collective of Gen Z creators fixing some of the biggest
-        problems facing our generation.
-      </p>
-      <h1 className="text-2xl md:text-4xl mt-12 md:mt-16">WHAT WE STAND FOR</h1>
-      <p className="text-xl md:text-xl description mt-2 pb-4">
-        we don’t want to let our future be decided by others. we want to make a
-        change by turning our voices into votes. our generation will save the
-        world.<br></br>it’s up to us.
-      </p>
-      </div>
+      <section className="body" style={{ backgroundImage: "url('hero.png')" }}>
+        {/* google tag manager */}
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPBV7FT"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+          }}
+        />
+        <Navbar />
+        <div className="mt-8 p-12 mx-auto text-white flex flex-col items-center text-center">
+          <h1 className="mt-20 rainbowText text-3xl md:text-7xl lg:text-7xl text-white tracking-widest">
+            Patience
+          </h1>
+          <h2 className="text-lg font-snazzy md:text-2xl lg:text-4xl text-white tracking-widest w-7/8">
+            What’s normal in an unusual year? <br /> Counting every American’s
+            vote.
+          </h2>
+        </div>
+        <div className="-mt-12 p-12 mx-auto text-white flex flex-col w-7/8 text-center lg:w-2/3 md:text-left">
+          <h1 className="font-snazzy font-bold text-lg md:text-2xl md:mt-8">
+            WHO WE ARE
+          </h1>
+          <p className="text-md md:text-xl description mt-2 pb-4">
+            We are a group of Gen Z voters fixing some of the biggest problems
+            facing our generation.
+          </p>
+          <h1 className="font-snazzy font-bold text-lg md:text-2xl mt-8 md:mt-16">
+            WHAT WE STAND FOR
+          </h1>
+          <p className="text-md md:text-xl description mt-2 pb-4">
+            We are part of the{" "}
+            <span className="font-snazzy underline">United</span> States of
+            America, and have come together with a common purpose. We believe in
+            good sportsmanship, standing by American democracy and ensuring that
+            every citizen’s vote is counted, including those who choose to vote
+            by mail — no matter who wins.
+          </p>
+        </div>
+      </section>
     </>
   );
 
   return visible ? mapView : aboutText;
 };
 
-const url = 'https://ndneighbor-datatransformation.zeet.app/numberOfRegistration'
+const url =
+  "https://ndneighbor-datatransformation.zeet.app/numberOfRegistration";
 // const url = 'http://localhost:8000/numberOfRegistration'
-const getRequest = ()=>axios.get(url);
+const getRequest = () => axios.get(url);
 
 export default function Home() {
-  const [numberOfSignup,setNumberOfSignup] = useState(0);
+  const [numberOfSignup, setNumberOfSignup] = useState(0);
 
-  const getData = async ()=>{
-    const {data} = await getRequest();
-    setNumberOfSignup(data.number)
-  }
+  const getData = async () => {
+    const { data } = await getRequest();
+    setNumberOfSignup(data.number);
+  };
 
-  useEffect(()=>{
-    getData()
-  })
+  useEffect(() => {
+    getData();
+  });
 
   return (
     <div>
       <Head>
         {/* google tag manager */}
-        <script dangerouslySetInnerHTML={{__html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-WPBV7FT');`}} />
+          })(window,document,'script','dataLayer','GTM-WPBV7FT');`,
+          }}
+        />
         {/* google analytics */}
         <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-178646695-1"
-          />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-178646695-1"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
                     gtag('config', 'UA-178646695-1');
                 `,
-            }}
-          />
+          }}
+        />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>Up To Us</title>
         <link rel="icon" href="/faviconuptous.ico" />
@@ -111,14 +155,16 @@ export default function Home() {
       <main>
         <section className="body">
           {/* google tag manager */}
-          <noscript dangerouslySetInnerHTML={{ __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPBV7FT"
+          <noscript
+            dangerouslySetInnerHTML={{
+              __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPBV7FT"
 height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
-          }}
+            }}
           />
           <Navbar />
           {/* bruh */}
 
-          <LandingContent visible={true} numberOfSignup={numberOfSignup}/>
+          <LandingContent visible={false} numberOfSignup={numberOfSignup} />
 
           {/* <div className="h-full w-full relative">
             <div className='rainbowText z-40 absolute flex flex-col text-center'>
@@ -129,9 +175,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
         </section>
 
         <section className="map-topheader mx-auto flex flex-col items-center justify-center">
-
-        <section>
-          {/* <div className="mx-auto mb-8 flex flex-col items-center justify-center">
+          <section>
+            {/* <div className="mx-auto mb-8 flex flex-col items-center justify-center">
             <h1 className="md:text-4xl md:mt-16 text-xl mt-8 mb-8 px-6 md:px-0 " >
               Check Your Registration Status
             </h1>
@@ -144,9 +189,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
             <p className="text-center md:text-left">
             Use one of the links below to enter for a chance to win a prize*^
             </p> */}
-          {/* </div> */}
+            {/* </div> */}
 
-          {/* <div className="flex flex-col items-center mb-12">
+            {/* <div className="flex flex-col items-center mb-12">
             <div className="mb-4">
               <ContestLink bgColor="orange-600" description="Win a Tesla from the Cheeky Boyos*" {...cheekyObj}/>
             </div>
@@ -163,9 +208,146 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
               }
             </div>
           </div> */}
-        </section>
-
-          {/* <h1 className="md:text-4xl md:mt-16 text-2xl mt-12 ">WHAT WE DO:</h1>
+          </section>
+          <section className="mx-auto flex flex-col items-center justify-center mb-8">
+            <h1 className="-mt-16 lg:-mt-40 mb-8 text-center w-2/3 text-2xl">
+              Graphics
+            </h1>
+            <div className="mx-auto sm:grid grid-cols-1 w-full md: grid-cols-3 w-2/3">
+              <div className="flex flex-col items-center">
+                <div className="w-2/3 h-2/3 m-4">
+                  <img
+                    src="/content/VoterFraudIllo-BIGFOOT.png"
+                    className="flex text-center"
+                    Image
+                  ></img>
+                </div>
+                <a
+                  href="/content/VoterFraudIllo-BIGFOOT.png"
+                  className="mb-4"
+                  download="BigfootInfo"
+                >
+                  Download
+                </a>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-2/3 h-2/3 m-4">
+                  <img
+                    src="/content/VoterFraudIllo-UFO.png"
+                    className="flex text-center"
+                    Image
+                  ></img>
+                </div>
+                <a
+                  href="/content/VoterFraudIllo-UFO.png"
+                  className="mb-4"
+                  download="UFOInfo"
+                >
+                  Download
+                </a>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-2/3 h-2/3 m-4">
+                  <img
+                    src="/content/VoterFraudIllo-LIGHTNING.png"
+                    className="flex text-center"
+                    Image
+                  ></img>
+                </div>
+                <a
+                  href="/content/VoterFraudIllo-LIGHTNING.png"
+                  className="mb-4"
+                  download="LightningInfo"
+                >
+                  Download
+                </a>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-2/3 h-2/3 m-4">
+                  <img
+                    src="/content/VoterFraudIllo-SHARK.png"
+                    className="flex text-center"
+                    Image
+                  ></img>
+                </div>
+                <a
+                  href="/content/VoterFraudIllo-SHARK.png"
+                  className="mb-4"
+                  download="SharkInfo"
+                >
+                  Download
+                </a>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-2/3 h-2/3 m-4">
+                  <img
+                    src="/content/VoterFraudIllo-SELFIES.png"
+                    className="flex text-center"
+                    Image
+                  ></img>
+                </div>
+                <a
+                  href="/content/VoterFraudIllo-SELFIES.png"
+                  className="mb-4"
+                  download="SelfiesInfo"
+                >
+                  Download
+                </a>
+              </div>
+            </div>
+          </section>
+          <section className="mx-auto flex flex-col items-center justify-center mb-20">
+            <h1 className="mt-8 mb-8 text-center w-2/3 text-2xl">Videos</h1>
+            <div className="mx-auto sm:grid grid-cols-1 w-full md: grid-cols-3 w-2/3">
+              <div className="flex flex-col items-center">
+                <div className="w-2/3 h-2/3 m-4">
+                  <img
+                    src="/content/cookievote.gif"
+                    className="flex text-center"
+                    autoPlay
+                  />
+                </div>
+                <a
+                  href="/content/CookieVote.mp4"
+                  className="mb-4"
+                  download="CookieVote"
+                >
+                  Download
+                </a>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-2/3 h-2/3 m-4">
+                  <img
+                    src="/content/slothvote.gif"
+                    className="flex text-center"
+                    autoPlay
+                  />
+                </div>
+                <a
+                  href="/content/SlothVote.mp4"
+                  className="mb-4"
+                  download="SlothVote"
+                >
+                  Download
+                </a>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-2/3 h-2/3 m-4">
+                  <img
+                    src="/content/linevote.gif"
+                    className="flex text-center"
+                    autoPlay
+                  />
+                </div>
+                <a
+                  href="/content/LineVote.mp4"
+                  className="mb-4"
+                  download="LineVote"
+                >
+                  Download
+                </a>
+              </div>
+              {/* <h1 className="md:text-4xl md:mt-16 text-2xl mt-12 ">WHAT WE DO:</h1>
           <div className="my-10 md:my-16 flex flex-col items-center md:flex-row-reverse">
             <img className="w-36 ml-10 h-auto" src="/inspire.svg" />
             <div className="md:pr-4=">
@@ -189,7 +371,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
               </p>
             </div>
           </div> */}
-          {/* <div className="my-16 flex flex-col items-center md:flex-row-reverse">
+              {/* <div className="my-16 flex flex-col items-center md:flex-row-reverse">
             <div className="md:pr-10">
               <p className="text-sm mb-8 w-256 text-center px-16">
               * Up to Us x Cheeky Boyos Sweepstakes: VOTER REGISTRATION NOT REQ’D TO ENTER. NO PURCH. NEC.; REG./PURCH. WILL NOT INCREASE CHANCES OF WINNING. 48 US & DC (excl. NY & FL) age 18+ only. Begins 12:00:00am ET on 9/22/20; ends 2:59:59am ET on 10/5/20. SUBJ. TO RULES AT 2020upto.us/uptousxcheekyboyos. Must participate thru outvote.io/campaigns/up-to-us-cheeky-boyos/check_registration to be eligible. Limit 1 std. & 500 bonus entries/person. Prize ARV: $46790. Odds of winning depend on # of elig. entries recv’d. Void where prohib. Sponsor: Up to Us, Inc., 206 Ave A #4A, NY, NY 10009
@@ -200,7 +382,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
               </p>
             </div>
           </div>  */}
-          {/* <br></br> */}
+              {/* <br></br> */}
+            </div>
+          </section>
         </section>
         <Footer />
       </main>

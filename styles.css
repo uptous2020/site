@@ -1,17 +1,25 @@
 @font-face {
-  font-family: 'Monument';
-  src: url('assets/MonumentExtended-Regular.woff');
+  font-family: "Monument";
+  src: url("assets/MonumentExtended-Regular.woff");
 }
 @font-face {
-  font-family: 'Silka';
-  src: url('assets/silkamono-regular-webfont.woff');
+  font-family: "Silka";
+  src: url("assets/silkamono-regular-webfont.woff");
 }
 
-h1, h2, a, h5 { font-family: 'Monument' }
-p, h6 { font-family: 'Silka' }
+h1,
+h2,
+a,
+h5 {
+  font-family: "Monument";
+}
+p,
+h6 {
+  font-family: "Silka";
+}
 
 /*contact styling*/
-#contact{
+#contact {
   text-decoration: underline;
   background: linear-gradient(#ff7a01, #ff9900, #ffd509);
   background-clip: text;
@@ -23,4 +31,3 @@ p, h6 { font-family: 'Silka' }
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
-
