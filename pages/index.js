@@ -222,7 +222,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                     Image
                   ></img>
                 </div>
-                <h3 className="mb-4">Download</h3>
+                <a
+                  href="/content/VoterFraudIllo-BIGFOOT.png"
+                  className="mb-4"
+                  download="BigfootInfo"
+                >
+                  Download
+                </a>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-2/3 h-2/3 m-4">
@@ -232,7 +238,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                     Image
                   ></img>
                 </div>
-                <h3 className="mb-4">Download</h3>
+                <a
+                  href="/content/VoterFraudIllo-UFO.png"
+                  className="mb-4"
+                  download="UFOInfo"
+                >
+                  Download
+                </a>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-2/3 h-2/3 m-4">
@@ -242,7 +254,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                     Image
                   ></img>
                 </div>
-                <h3 className="mb-4">Download</h3>
+                <a
+                  href="/content/VoterFraudIllo-LIGHTNING.png"
+                  className="mb-4"
+                  download="LightningInfo"
+                >
+                  Download
+                </a>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-2/3 h-2/3 m-4">
@@ -252,7 +270,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                     Image
                   ></img>
                 </div>
-                <h3 className="mb-4">Download</h3>
+                <a
+                  href="/content/VoterFraudIllo-SHARK.png"
+                  className="mb-4"
+                  download="SharkInfo"
+                >
+                  Download
+                </a>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-2/3 h-2/3 m-4">
@@ -262,7 +286,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                     Image
                   ></img>
                 </div>
-                <h3 className="mb-4">Download</h3>
+                <a
+                  href="/content/VoterFraudIllo-SELFIES.png"
+                  className="mb-4"
+                  download="SelfiesInfo"
+                >
+                  Download
+                </a>
               </div>
             </div>
           </section>
@@ -277,7 +307,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                     autoPlay
                   />
                 </div>
-                <h3 className="mb-4">Download</h3>
+                <a
+                  href="/content/CookieVote.mp4"
+                  className="mb-4"
+                  download="CookieVote"
+                >
+                  Download
+                </a>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-2/3 h-2/3 m-4">
@@ -287,9 +323,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                     autoPlay
                   />
                 </div>
-                <h3 className="mb-4">Download</h3>
+                <a
+                  href="/content/SlothVote.mp4"
+                  className="mb-4"
+                  download="SlothVote"
+                >
+                  Download
+                </a>
               </div>
-
+              <div className="flex flex-col items-center">
+                <div className="w-2/3 h-2/3 m-4">
+                  <img
+                    src="/content/linevote.gif"
+                    className="flex text-center"
+                    autoPlay
+                  />
+                </div>
+                <a
+                  href="/content/LineVote.mp4"
+                  className="mb-4"
+                  download="LineVote"
+                >
+                  Download
+                </a>
+              </div>
               {/* <h1 className="md:text-4xl md:mt-16 text-2xl mt-12 ">WHAT WE DO:</h1>
           <div className="my-10 md:my-16 flex flex-col items-center md:flex-row-reverse">
             <img className="w-36 ml-10 h-auto" src="/inspire.svg" />

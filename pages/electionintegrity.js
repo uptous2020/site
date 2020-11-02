@@ -205,7 +205,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                     Image
                   ></img>
                 </div>
-                <h3 className="mb-4">Download</h3>
+                <a
+                  href="/content/VoterFraudIllo-BIGFOOT.png"
+                  className="mb-4"
+                  download="BigfootInfo"
+                >
+                  Download
+                </a>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-2/3 h-2/3 m-4">
@@ -215,7 +221,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                     Image
                   ></img>
                 </div>
-                <h3 className="mb-4">Download</h3>
+                <a
+                  href="/content/VoterFraudIllo-UFO.png"
+                  className="mb-4"
+                  download="UFOInfo"
+                >
+                  Download
+                </a>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-2/3 h-2/3 m-4">
@@ -225,7 +237,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                     Image
                   ></img>
                 </div>
-                <h3 className="mb-4">Download</h3>
+                <a
+                  href="/content/VoterFraudIllo-SELFIES.png"
+                  className="mb-4"
+                  download="SelfiesInfo"
+                >
+                  Download
+                </a>
               </div>
             </div>
           </section>
