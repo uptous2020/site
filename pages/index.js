@@ -347,6 +347,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                   Download
                 </a>
               </div>
+              <div className="flex flex-col items-center">
+                <div className="w-2/3 h-2/3 m-4">
+                  <img
+                    src="/content/whiskyvote.gif"
+                    className="flex text-center"
+                    autoPlay
+                  />
+                </div>
+                <a
+                  href="/content/WhiskeyVote.mp4"
+                  className="mb-4"
+                  download="WhiskeyVote"
+                >
+                  Download
+                </a>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-2/3 h-2/3 m-4">
+                  <img
+                    src="/content/hamiltonvote.gif"
+                    className="flex text-center"
+                    autoPlay
+                  />
+                </div>
+                <a
+                  href="/content/HamiltonVote.mp4"
+                  className="mb-4"
+                  download="HamiltonVote"
+                >
+                  Download
+                </a>
+              </div>
               {/* <h1 className="md:text-4xl md:mt-16 text-2xl mt-12 ">WHAT WE DO:</h1>
           <div className="my-10 md:my-16 flex flex-col items-center md:flex-row-reverse">
             <img className="w-36 ml-10 h-auto" src="/inspire.svg" />
