@@ -60,7 +60,7 @@ const LandingContent = (props) => {
             vote.
           </h2>
         </div>
-        <div className="p-12 mx-auto text-black flex flex-col w-7/8 text-center lg:w-2/3 md:text-left">
+        <div className="-mt-12 p-12 mx-auto text-black flex flex-col w-7/8 text-center lg:w-2/3 md:text-left">
           <h1 className="font-snazzy font-bold text-lg md:text-2xl mt-4 md:mt-8">
             WHO WE ARE
           </h1>

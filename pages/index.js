@@ -67,7 +67,7 @@ const LandingContent = (props) => {
         />
         <Navbar />
         <div className="mt-8 p-12 mx-auto text-white flex flex-col items-center text-center">
-          <h1 className="mt-16 rainbowText text-3xl md:text-7xl lg:text-7xl text-white tracking-widest">
+          <h1 className="mt-20 rainbowText text-3xl md:text-7xl lg:text-7xl text-white tracking-widest">
             Patience
           </h1>
           <h2 className="text-lg font-snazzy md:text-2xl lg:text-4xl text-white tracking-widest w-7/8">
@@ -75,7 +75,7 @@ const LandingContent = (props) => {
             vote.
           </h2>
         </div>
-        <div className="p-12 mx-auto text-white flex flex-col w-7/8 text-center lg:w-2/3 md:text-left">
+        <div className="-mt-12 p-12 mx-auto text-white flex flex-col w-7/8 text-center lg:w-2/3 md:text-left">
           <h1 className="font-snazzy font-bold text-lg md:text-2xl md:mt-8">
             WHO WE ARE
           </h1>
@@ -269,36 +269,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           <section className="mx-auto flex flex-col items-center justify-center mb-20">
             <h1 className="mt-8 mb-8 text-center w-2/3 text-2xl">Videos</h1>
             <div className="mx-auto sm:grid grid-cols-1 w-full md: grid-cols-3 w-2/3">
-              <div className="flex flex-col items-center">
-                <div className="w-2/3 h-2/3 m-4">
-                  <img
-                    src="/content/IMG_2968.gif"
-                    className="flex text-center"
-                    autoplay
-                  />
-                </div>
-                <h3 className="mb-4">Download</h3>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="w-2/3 h-2/3 m-4">
-                  <img
-                    src="/content/IMG_2969.gif"
-                    className="flex text-center"
-                    autoPlay
-                  />
-                </div>
-                <h3 className="mb-4">Download</h3>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="w-2/3 h-2/3 m-4">
-                  <img
-                    src="/content/IMG_2970.gif"
-                    className="flex text-center"
-                    autoPlay
-                  />
-                </div>
-                <h3 className="mb-4">Download</h3>
-              </div>
               <div className="flex flex-col items-center">
                 <div className="w-2/3 h-2/3 m-4">
                   <img
