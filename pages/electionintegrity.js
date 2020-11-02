@@ -1,28 +1,10 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Head from "next/head";
-import Link from "next/link";
-
-import Map from "../components/molecules/map";
-import Navbar from "../components/Navbar.js";
-import Footer from "../components/Footer.js";
-
-import ContestLink from "../components/ContestLink";
-import contests from "./contests.json";
-
-const cheekyObj = {
-  influencerName: "The Cheeky Boyos",
-  socialLink:
-    "https://www.tiktok.com/@cheekyboyos?language=en&u_code=d37chme9dc9fk2&utm_campaign=client_share&app=musically&utm_medium=ios&user_id=6625415756434046982&tt_from=copy&utm_source=copy&source=h5_m",
-  influencerPhoto:
-    "https://static-content.vercel.app/images/cheeky_boyos_outvote_profile.png",
-  contestName:
-    "https://www.outvote.io/campaigns/up-to-us-cheeky-boyos/check_registration",
-  isVisible: "TRUE",
-};
+import Footer from "../components/AltFooter.js";
 
 const LandingContent = (props) => {
-  const { visible, numberOfSignup } = props;
+  const { visible } = props;
 
   const mapView = (
     <>
@@ -31,7 +13,7 @@ const LandingContent = (props) => {
           className="map-bg-overlay z-40 flex flex-col text-center w-full"
           style={{ backgroundImage: "url(hero-transparent.png)" }}
         >
-          <h1 className="text-3xl md:text-7xl lg:text-8xl rainbowText tracking-widest">
+          <h1 className="text-3xl md:text-7xl lg:text-8xl text-black tracking-widest">
             Patience
           </h1>
           <h2 className="text-lg md:text-2xl lg:text-4xl text-white tracking-widest">
@@ -65,9 +47,9 @@ const LandingContent = (props) => {
           height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           }}
         />
-        <Navbar />
-        <div className="p-12 mt-16 mx-auto text-white flex flex-col items-center text-center">
-          <h1 className="mt-16 text-3xl md:text-7xl lg:text-8xl rainbowText tracking-widest">
+        {/*<Navbar /> */}
+        <div className="p-12 mx-auto text-white flex flex-col items-center text-center">
+          <h1 className="mt-16 text-3xl md:text-7xl lg:text-8xl text-black tracking-widest">
             Patience
           </h1>
           <h2 className="text-lg md:text-2xl lg:text-4xl text-white tracking-widest">
@@ -75,18 +57,23 @@ const LandingContent = (props) => {
           </h2>
         </div>
         <div className="p-12 mx-auto text-white flex flex-col w-5/6 md:w-2/3">
-          <h1 className="text-xl md:text-4xl mt-4 md:mt-16">WHO WE ARE</h1>
-          <p className="text-xl md:text-2xl description mt-2 pb-4">
-            up to us is a collective of Gen Z creators fixing some of the
-            biggest problems facing our generation.
+          <h1 className="text-lg md:text-4xl mt-4 md:mt-16">WHO WE ARE</h1>
+          <p className="text-md md:text-2xl description mt-2 pb-4">
+            We are a group of Gen Z voters fixing some of the biggest problems
+            facing our generation.
           </p>
-          <h1 className="text-xl md:text-4xl mt-12 md:mt-16">
+          <h1 className="text-lg md:text-4xl mt-12 md:mt-16">
             WHAT WE STAND FOR
           </h1>
-          <p className="text-xl md:text-2xl description mt-2 pb-4">
-            we don’t want to let our future be decided by others. we want to
-            make a change by turning our voices into votes. our generation will
-            save the world.<br></br>it’s up to us.
+          <p className="text-md md:text-2xl description mt-2 pb-4">
+            We are part of the UNITED States of America - let’s not lose sight
+            of our common purpose. No matter who wins, we believe in good
+            sportsmanship, standing by American democracy and ensuring that
+            every citizen’s vote is counted, including those who choose to vote
+            by mail.
+          </p>
+          <p className="mt-12 text-md md:text-2xl description mt-2 pb-4">
+            What’s normal in an unusual year? Counting every American’s vote.
           </p>
         </div>
       </section>
@@ -155,11 +142,9 @@ export default function Home() {
 height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
             }}
           />
-          <Navbar />
+          {/* <Navbar /> */}
           {/* bruh */}
-
           <LandingContent visible={false} numberOfSignup={numberOfSignup} />
-
           {/* <div className="h-full w-full relative">
             <div className='rainbowText z-40 absolute flex flex-col text-center'>
               <p>21,732</p>   
@@ -203,8 +188,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
             </div>
           </div> */}
           </section>
-          <section className="mx-auto flex flex-col items-center justify-center mb-8">
-            <h1 className="-mt-48 mb-8 text-center w-2/3 text-2xl">Graphics</h1>
+          <section className="mx-auto flex flex-col items-center justify-center mb-8 ">
+            <h1 className="-mt-16 lg:-mt-40 mb-8 text-center w-2/3 text-2xl">
+              Graphics
+            </h1>
             <div className="mx-auto sm:grid grid-cols-1 w-full md: grid-cols-3 w-2/3">
               <div className="flex flex-col items-center">
                 <div className="w-2/3 h-2/3 m-4">
@@ -256,78 +243,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                 </div>
                 <h3 className="mb-4">Download</h3>
               </div>
-            </div>
-          </section>
-          <section className="mx-auto flex flex-col items-center justify-center mb-20">
-            <h1 className="mt-8 mb-8 text-center w-2/3 text-2xl">Videos</h1>
-            <div className="mx-auto sm:grid grid-cols-1 w-full md: grid-cols-3 w-2/3">
-              <div className="flex flex-col items-center">
-                <div className="w-2/3 h-2/3 m-4">
-                  <img
-                    src="/content/IMG_2968.gif"
-                    className="flex text-center"
-                    autoplay
-                  />
-                </div>
-                <h3 className="mb-4">Download</h3>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="w-2/3 h-2/3 m-4">
-                  <img
-                    src="/content/IMG_2969.gif"
-                    className="flex text-center"
-                    autoPlay
-                  />
-                </div>
-                <h3 className="mb-4">Download</h3>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="w-2/3 h-2/3 m-4">
-                  <img
-                    src="/content/IMG_2970.gif"
-                    className="flex text-center"
-                    autoPlay
-                  />
-                </div>
-                <h3 className="mb-4">Download</h3>
-              </div>
-
-              {/* <h1 className="md:text-4xl md:mt-16 text-2xl mt-12 ">WHAT WE DO:</h1>
-          <div className="my-10 md:my-16 flex flex-col items-center md:flex-row-reverse">
-            <img className="w-36 ml-10 h-auto" src="/inspire.svg" />
-            <div className="md:pr-4=">
-              <h2 className="text-3xl md:text-4xl pt-2 text-center md:text-left">
-                INSPIRE
-              </h2>
-              <p className="w-64 text-center md:text-left">
-                building a new way to register & motivate Gen Z to vote
-              </p>
-            </div>
-          </div>
-          <div className="my-2 flex flex-col items-center md:flex-row">
-            <img className="w-36 h-auto" src="/activate.svg" />
-            <div className="md:pl-10">
-              <h2 className="text-3xl md:text-4xl pt-2 text-center md:text-left">
-                ACTIVATE
-              </h2>
-              <p className="w-64 text-center md:text-left">
-                working with the most influential creators to activate their
-                audiences to take action
-              </p>
-            </div>
-          </div> */}
-              {/* <div className="my-16 flex flex-col items-center md:flex-row-reverse">
-            <div className="md:pr-10">
-              <p className="text-sm mb-8 w-256 text-center px-16">
-              * Up to Us x Cheeky Boyos Sweepstakes: VOTER REGISTRATION NOT REQ’D TO ENTER. NO PURCH. NEC.; REG./PURCH. WILL NOT INCREASE CHANCES OF WINNING. 48 US & DC (excl. NY & FL) age 18+ only. Begins 12:00:00am ET on 9/22/20; ends 2:59:59am ET on 10/5/20. SUBJ. TO RULES AT 2020upto.us/uptousxcheekyboyos. Must participate thru outvote.io/campaigns/up-to-us-cheeky-boyos/check_registration to be eligible. Limit 1 std. & 500 bonus entries/person. Prize ARV: $46790. Odds of winning depend on # of elig. entries recv’d. Void where prohib. Sponsor: Up to Us, Inc., 206 Ave A #4A, NY, NY 10009
-
-              </p>
-              <p className='text-sm w-256 text-center px-16'>
-              ^ Check & Chat Promotion: VOTER REGISTRATION NOT REQ’D TO ENTER. NO PURCH. NEC.; REG./PURCH. WILL NOT INCREASE CHANCES OF WINNING. Subj. to rules at 2020upto.us/checkandchat. 50 US & DC age 18+ only. Promotion consists of multiple separate sweepstakes: one for each influencer. Each sweepstakes begins when influencer posts link to individ. entry page & ends 2:59:59am ET on 10/1/20. Use the links above to access specific influencer’s sweepstakes entry page. Entry into 1 sweeps ≠ entry into any other sweeps in this promotion. Limit 1 std. & 500 bonus entries/person. Must respond to prize notice within 6 hours. Prize has no retail value & may be awarded as social DM or audio/video chat. See rules for details. Odds of winning depend on # of elig. entries recv’d for appl. sweepstakes. Void where prohib. Sponsor: Up to Us, Inc., 206 Ave A #4A, NY, NY 10009
-              </p>
-            </div>
-          </div>  */}
-              {/* <br></br> */}
             </div>
           </section>
         </section>
