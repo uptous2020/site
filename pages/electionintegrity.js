@@ -74,10 +74,10 @@ const LandingContent = (props) => {
           <p className="text-md md:text-xl description mt-2 pb-4">
             We are part of the{" "}
             <span className="font-snazzy underline">United</span> States of
-            America - let’s not lose sight of our common purpose. No matter who
-            wins, we believe in good sportsmanship, standing by American
-            democracy and ensuring that every citizen’s vote is counted,
-            including those who choose to vote by mail.
+            America, and have come together with a common purpose. We believe in
+            good sportsmanship, standing by American democracy and ensuring that
+            every citizen’s vote is counted, including those who choose to vote
+            by mail — no matter who wins.
           </p>
         </div>
       </section>

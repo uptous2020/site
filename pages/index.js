@@ -22,7 +22,7 @@ const cheekyObj = {
 };
 
 const LandingContent = (props) => {
-  const { visible, numberOfSignup } = props;
+  const { visible } = props;
 
   const mapView = (
     <>
@@ -66,27 +66,33 @@ const LandingContent = (props) => {
           }}
         />
         <Navbar />
-        <div className="p-12 mt-16 mx-auto text-white flex flex-col items-center text-center">
-          <h1 className="mt-16 text-3xl md:text-7xl lg:text-8xl rainbowText tracking-widest">
+        <div className="mt-8 p-12 mx-auto text-white flex flex-col items-center text-center">
+          <h1 className="mt-16 rainbowText text-3xl md:text-7xl lg:text-7xl text-white tracking-widest">
             Patience
           </h1>
-          <h2 className="text-lg md:text-2xl lg:text-4xl text-white tracking-widest">
-            The results might take awhile.
+          <h2 className="text-lg font-snazzy md:text-2xl lg:text-4xl text-white tracking-widest w-7/8">
+            What’s normal in an unusual year? <br /> Counting every American’s
+            vote.
           </h2>
         </div>
-        <div className="p-12 mx-auto text-white flex flex-col w-5/6 md:w-2/3">
-          <h1 className="text-xl md:text-4xl mt-4 md:mt-16">WHO WE ARE</h1>
-          <p className="text-xl md:text-2xl description mt-2 pb-4">
-            up to us is a collective of Gen Z creators fixing some of the
-            biggest problems facing our generation.
+        <div className="p-12 mx-auto text-white flex flex-col w-7/8 text-center lg:w-2/3 md:text-left">
+          <h1 className="font-snazzy font-bold text-lg md:text-2xl md:mt-8">
+            WHO WE ARE
+          </h1>
+          <p className="text-md md:text-xl description mt-2 pb-4">
+            We are a group of Gen Z voters fixing some of the biggest problems
+            facing our generation.
           </p>
-          <h1 className="text-xl md:text-4xl mt-12 md:mt-16">
+          <h1 className="font-snazzy font-bold text-lg md:text-2xl mt-8 md:mt-16">
             WHAT WE STAND FOR
           </h1>
-          <p className="text-xl md:text-2xl description mt-2 pb-4">
-            we don’t want to let our future be decided by others. we want to
-            make a change by turning our voices into votes. our generation will
-            save the world.<br></br>it’s up to us.
+          <p className="text-md md:text-xl description mt-2 pb-4">
+            We are part of the{" "}
+            <span className="font-snazzy underline">United</span> States of
+            America, and have come together with a common purpose. We believe in
+            good sportsmanship, standing by American democracy and ensuring that
+            every citizen’s vote is counted, including those who choose to vote
+            by mail — no matter who wins.
           </p>
         </div>
       </section>
@@ -204,7 +210,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           </div> */}
           </section>
           <section className="mx-auto flex flex-col items-center justify-center mb-8">
-            <h1 className="-mt-48 mb-8 text-center w-2/3 text-2xl">Graphics</h1>
+            <h1 className="-mt-16 lg:-mt-40 mb-8 text-center w-2/3 text-2xl">
+              Graphics
+            </h1>
             <div className="mx-auto sm:grid grid-cols-1 w-full md: grid-cols-3 w-2/3">
               <div className="flex flex-col items-center">
                 <div className="w-2/3 h-2/3 m-4">
@@ -285,6 +293,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                 <div className="w-2/3 h-2/3 m-4">
                   <img
                     src="/content/IMG_2970.gif"
+                    className="flex text-center"
+                    autoPlay
+                  />
+                </div>
+                <h3 className="mb-4">Download</h3>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-2/3 h-2/3 m-4">
+                  <img
+                    src="/content/cookievote.gif"
+                    className="flex text-center"
+                    autoPlay
+                  />
+                </div>
+                <h3 className="mb-4">Download</h3>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-2/3 h-2/3 m-4">
+                  <img
+                    src="/content/slothvote.gif"
                     className="flex text-center"
                     autoPlay
                   />
