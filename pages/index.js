@@ -1,25 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Head from "next/head";
-import Link from "next/link";
-
-import Map from "../components/molecules/map";
 import Navbar from "../components/Navbar.js";
 import Footer from "../components/Footer.js";
-
-import ContestLink from "../components/ContestLink";
-import contests from "./contests.json";
-
-const cheekyObj = {
-  influencerName: "The Cheeky Boyos",
-  socialLink:
-    "https://www.tiktok.com/@cheekyboyos?language=en&u_code=d37chme9dc9fk2&utm_campaign=client_share&app=musically&utm_medium=ios&user_id=6625415756434046982&tt_from=copy&utm_source=copy&source=h5_m",
-  influencerPhoto:
-    "https://static-content.vercel.app/images/cheeky_boyos_outvote_profile.png",
-  contestName:
-    "https://www.outvote.io/campaigns/up-to-us-cheeky-boyos/check_registration",
-  isVisible: "TRUE",
-};
 
 const LandingContent = (props) => {
   const { visible } = props;
@@ -46,7 +29,6 @@ const LandingContent = (props) => {
               Get Ready to Vote
             </a>
           </div>
-          {/* https://www.outvote.io/campaigns/up-to-us/check_registration */}
           <p className="mt-4 text-center text-white p-4">
             Find the easiest and safest way to vote in your state
           </p>
@@ -66,34 +48,66 @@ const LandingContent = (props) => {
           }}
         />
         <Navbar />
-        <div className="mt-8 p-12 mx-auto text-white flex flex-col items-center text-center">
+        <div className="mt-8 p-12 mx-auto text-white flex flex-col items-center">
           <h1 className="mt-20 rainbowText text-3xl md:text-7xl lg:text-7xl text-white tracking-widest">
             Patience
           </h1>
-          <h2 className="text-lg font-snazzy md:text-2xl lg:text-4xl text-white tracking-widest w-7/8">
+          <h2 className="text-lg font-snazzy mb-2 md:text-2xl lg:text-4xl text-white text-center tracking-widest w-7/8">
             What’s normal in an unusual year? <br /> Counting every American’s
             vote.
           </h2>
         </div>
-        <div className="-mt-12 p-12 mx-auto text-white flex flex-col w-7/8 text-center lg:w-2/3 md:text-left">
-          <h1 className="font-snazzy font-bold text-lg md:text-2xl md:mt-8">
-            WHO WE ARE
-          </h1>
+        <div className="-mt-12 p-12 mx-auto text-white flex flex-col w-7/8 lg:w-2/3 md:text-left">
+          <h3 className="font-bold text-lg md:text-2xl md:mt-8">
+            EVERY VOTE CAST ON OR BEFORE NOVEMBER 3 DESERVES TO BE COUNTED
+          </h3>
           <p className="text-md md:text-xl description mt-2 pb-4">
-            We are a group of Gen Z voters fixing some of the biggest problems
-            facing our generation.
+            It’s normal to count legitimate votes for days after the polls close
+            — it happens every election. This year more people voted by mail
+            than ever before, so it may take some time to count all the votes
+            and know the results.
           </p>
-          <h1 className="font-snazzy font-bold text-lg md:text-2xl mt-8 md:mt-16">
-            WHAT WE STAND FOR
-          </h1>
           <p className="text-md md:text-xl description mt-2 pb-4">
-            We are part of the{" "}
-            <span className="font-snazzy underline">United</span> States of
-            America, and have come together with a common purpose. We believe in
-            good sportsmanship, standing by American democracy and ensuring that
-            every citizen’s vote is counted, including those who choose to vote
-            by mail — no matter who wins.
+            Results may swing back and forth and either candidate could declare
+            a victory before we actually know the results. If this happens, we
+            must stay calm and let the Electoral College work so the will of the
+            people can be heard.
           </p>
+          <h3 className="font-bold text-lg md:text-2xl mt-4 md:mt-8">
+            FOR A WHILE, RESULTS MAY BE UNCLEAR
+          </h3>
+          <p className="text-md md:text-xl description mt-2 pb-4">
+            We are part of the United States of America, and have come together
+            with a common purpose. We believe in good sportsmanship, standing by
+            American democracy and ensuring that every citizen’s vote is
+            counted, including those who choose to vote by mail — no matter who
+            wins.
+          </p>
+          <h3 className="font-bold text-lg md:text-2xl mt-4 md:mt-8">
+            IT’S NORMAL AND HAS HAPPENED BEFORE
+          </h3>
+          <p className="text-md md:text-xl description mt-2 pb-4">
+            In 1960, 1968, 1976, 2000, 2004 and 2016 we did not know the
+            Presidential winner before midnight on election night. Electors
+            usually formally cast their votes about 30 days after Election Day,
+            and those can still take a few weeks to count. This year, it’s no
+            different.
+          </p>
+          <div className="flex-col justify-center flex flex-col items-center">
+            <div className="my-12 md:w-2/3 ">
+              <img
+                src="/content/white.png"
+                className="flex text-center"
+                autoPlay
+              />
+            </div>
+          </div>
+
+          {/*
+          In 1960, 1968, 1976, 2000, 2004 and 2016 we did not know the Presidential winner before midnight on election night. Electors usually formally cast their votes about 30 days after Election Day, and those can still take a few weeks to count. 
+          //
+          This year, it’s no different.
+          */}
         </div>
       </section>
     </>
@@ -165,55 +179,148 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           {/* bruh */}
 
           <LandingContent visible={false} numberOfSignup={numberOfSignup} />
-
-          {/* <div className="h-full w-full relative">
-            <div className='rainbowText z-40 absolute flex flex-col text-center'>
-              <p>21,732</p>   
-            </div>
-            <Map cHeight="450px" className='map'/>
-          </div> */}
         </section>
-
         <section className="map-topheader mx-auto flex flex-col items-center justify-center">
           <section>
-            {/* <div className="mx-auto mb-8 flex flex-col items-center justify-center">
-            <h1 className="md:text-4xl md:mt-16 text-xl mt-8 mb-8 px-6 md:px-0 " >
-              Check Your Registration Status
-            </h1>
-            <p className="text-left pr-12 pl-8 md:pr-0 md:pl-0">
-            Use one of the links below to enter for a chance to win a prize*^
-            </p> */}
-            {/* <h1 className="md:text-4xl md:mt-16 text-2xl mt-12" >
-              Check Your Registration Status
-            </h1>
-            <p className="text-center md:text-left">
-            Use one of the links below to enter for a chance to win a prize*^
-            </p> */}
-            {/* </div> */}
-
-            {/* <div className="flex flex-col items-center mb-12">
-            <div className="mb-4">
-              <ContestLink bgColor="orange-600" description="Win a Tesla from the Cheeky Boyos*" {...cheekyObj}/>
-            </div>
-            <div className="grid gap-4 items-center sm:grid-cols-1 md:grid-cols-2">
-              {contests.filter(({isVisible}) => {
-                if (isVisible == "FALSE") {
-                  return false
-                }
-                return true
-              }).map((contestObj, i) => (
-                  <ContestLink key={i} {...contestObj} />
-                )
-              )
-              }
-            </div>
-          </div> */}
+            <section className="mx-auto flex flex-col items-center justify-center mb-8">
+              <h1 className="-mt-16 lg:-mt-40 mb-8 text-center w-2/3 text-2xl">
+                Videos
+              </h1>
+              <div className="mx-auto sm:grid grid-cols-1 w-full md: grid-cols-3 w-2/3">
+                <div className="flex flex-col items-center">
+                  <div className="w-2/3 h-2/3 m-4">
+                    <img
+                      src="/content/cookievote.gif"
+                      className="flex text-center"
+                      autoPlay
+                    />
+                  </div>
+                  <a
+                    href="/content/CookieVote.mp4"
+                    className="mb-4"
+                    download="CookieVote"
+                  >
+                    Download
+                  </a>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="w-2/3 h-2/3 m-4">
+                    <img
+                      src="/content/slothvote.gif"
+                      className="flex text-center"
+                      autoPlay
+                    />
+                  </div>
+                  <a
+                    href="/content/SlothVote.mp4"
+                    className="mb-4"
+                    download="SlothVote"
+                  >
+                    Download
+                  </a>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="w-2/3 h-2/3 m-4">
+                    <img
+                      src="/content/linevote.gif"
+                      className="flex text-center"
+                      autoPlay
+                    />
+                  </div>
+                  <a
+                    href="/content/LineVote.mp4"
+                    className="mb-4"
+                    download="LineVote"
+                  >
+                    Download
+                  </a>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="w-2/3 h-2/3 m-4">
+                    <img
+                      src="/content/whiskeysquare.gif"
+                      className="flex text-center"
+                      autoPlay
+                    />
+                  </div>
+                  <a
+                    href="/content/WhiskeyVote.mp4"
+                    className="mb-4"
+                    download="WhiskeyVote"
+                  >
+                    Download
+                  </a>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="w-2/3 h-2/3 m-4">
+                    <img
+                      src="/content/hamiltonsquare.gif"
+                      className="flex text-center"
+                      autoPlay
+                    />
+                  </div>
+                  <a
+                    href="/content/HamiltonVote.mp4"
+                    className="mb-4"
+                    download="HamiltonVote"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </section>
           </section>
-          <section className="mx-auto flex flex-col items-center justify-center mb-8">
-            <h1 className="-mt-16 lg:-mt-40 mb-8 text-center w-2/3 text-2xl">
-              Graphics
-            </h1>
+          <section className="mx-auto flex flex-col items-center justify-center mb-20">
+            <h1 className="mt-8 mb-8 text-center w-2/3 text-2xl">Graphics</h1>
             <div className="mx-auto sm:grid grid-cols-1 w-full md: grid-cols-3 w-2/3">
+              <div className="flex flex-col items-center">
+                <div className="w-2/3 h-2/3 m-4">
+                  <img
+                    src="/content/VoterFraudFriday-10.png"
+                    className="flex text-center"
+                    Image
+                  ></img>
+                </div>
+                <a
+                  href="/content/VoterFraudFriday-10.png"
+                  className="mb-4"
+                  download="DrivingInfo"
+                >
+                  Download
+                </a>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-2/3 h-2/3 m-4">
+                  <img
+                    src="/content/VoterFraudFriday-11.png"
+                    className="flex text-center"
+                    Image
+                  ></img>
+                </div>
+                <a
+                  href="/content/VoterFraudFriday-11.png"
+                  className="mb-4"
+                  download="PowerballInfo"
+                >
+                  Download
+                </a>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-2/3 h-2/3 m-4">
+                  <img
+                    src="/content/VoterFraudSaturday-12.png"
+                    className="flex text-center"
+                    Image
+                  ></img>
+                </div>
+                <a
+                  href="/content/VoterFraudSaturday-12.png"
+                  className="mb-4"
+                  download="HurricaneInfo"
+                >
+                  Download
+                </a>
+              </div>
               <div className="flex flex-col items-center">
                 <div className="w-2/3 h-2/3 m-4">
                   <img
@@ -294,23 +401,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                   Download
                 </a>
               </div>
-            </div>
-          </section>
-          <section className="mx-auto flex flex-col items-center justify-center mb-20">
-            <h1 className="mt-8 mb-8 text-center w-2/3 text-2xl">Videos</h1>
-            <div className="mx-auto sm:grid grid-cols-1 w-full md: grid-cols-3 w-2/3">
               <div className="flex flex-col items-center">
                 <div className="w-2/3 h-2/3 m-4">
                   <img
-                    src="/content/cookievote.gif"
+                    src="/content/earhartvote.png"
                     className="flex text-center"
-                    autoPlay
-                  />
+                    Image
+                  ></img>
                 </div>
                 <a
-                  href="/content/CookieVote.mp4"
+                  href="/content/earhartvote.png"
                   className="mb-4"
-                  download="CookieVote"
+                  download="earheartvote"
                 >
                   Download
                 </a>
@@ -318,15 +420,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
               <div className="flex flex-col items-center">
                 <div className="w-2/3 h-2/3 m-4">
                   <img
-                    src="/content/slothvote.gif"
+                    src="/content/hamiltonvote.png"
                     className="flex text-center"
-                    autoPlay
-                  />
+                    Image
+                  ></img>
                 </div>
                 <a
-                  href="/content/SlothVote.mp4"
+                  href="/content/hamiltonvote.png"
                   className="mb-4"
-                  download="SlothVote"
+                  download="hamiltonvote"
                 >
                   Download
                 </a>
@@ -334,87 +436,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
               <div className="flex flex-col items-center">
                 <div className="w-2/3 h-2/3 m-4">
                   <img
-                    src="/content/linevote.gif"
+                    src="/content/whiskeyvote.png"
                     className="flex text-center"
-                    autoPlay
-                  />
+                    Image
+                  ></img>
                 </div>
                 <a
-                  href="/content/LineVote.mp4"
+                  href="/content/whiskeyvote.png"
                   className="mb-4"
-                  download="LineVote"
+                  download="whiskeyvote"
                 >
                   Download
                 </a>
               </div>
-              <div className="flex flex-col items-center">
-                <div className="w-2/3 h-2/3 m-4">
-                  <img
-                    src="/content/whiskyvote.gif"
-                    className="flex text-center"
-                    autoPlay
-                  />
-                </div>
-                <a
-                  href="/content/WhiskeyVote.mp4"
-                  className="mb-4"
-                  download="WhiskeyVote"
-                >
-                  Download
-                </a>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="w-2/3 h-2/3 m-4">
-                  <img
-                    src="/content/hamiltonvote.gif"
-                    className="flex text-center"
-                    autoPlay
-                  />
-                </div>
-                <a
-                  href="/content/HamiltonVote.mp4"
-                  className="mb-4"
-                  download="HamiltonVote"
-                >
-                  Download
-                </a>
-              </div>
-              {/* <h1 className="md:text-4xl md:mt-16 text-2xl mt-12 ">WHAT WE DO:</h1>
-          <div className="my-10 md:my-16 flex flex-col items-center md:flex-row-reverse">
-            <img className="w-36 ml-10 h-auto" src="/inspire.svg" />
-            <div className="md:pr-4=">
-              <h2 className="text-3xl md:text-4xl pt-2 text-center md:text-left">
-                INSPIRE
-              </h2>
-              <p className="w-64 text-center md:text-left">
-                building a new way to register & motivate Gen Z to vote
-              </p>
-            </div>
-          </div>
-          <div className="my-2 flex flex-col items-center md:flex-row">
-            <img className="w-36 h-auto" src="/activate.svg" />
-            <div className="md:pl-10">
-              <h2 className="text-3xl md:text-4xl pt-2 text-center md:text-left">
-                ACTIVATE
-              </h2>
-              <p className="w-64 text-center md:text-left">
-                working with the most influential creators to activate their
-                audiences to take action
-              </p>
-            </div>
-          </div> */}
-              {/* <div className="my-16 flex flex-col items-center md:flex-row-reverse">
-            <div className="md:pr-10">
-              <p className="text-sm mb-8 w-256 text-center px-16">
-              * Up to Us x Cheeky Boyos Sweepstakes: VOTER REGISTRATION NOT REQ’D TO ENTER. NO PURCH. NEC.; REG./PURCH. WILL NOT INCREASE CHANCES OF WINNING. 48 US & DC (excl. NY & FL) age 18+ only. Begins 12:00:00am ET on 9/22/20; ends 2:59:59am ET on 10/5/20. SUBJ. TO RULES AT 2020upto.us/uptousxcheekyboyos. Must participate thru outvote.io/campaigns/up-to-us-cheeky-boyos/check_registration to be eligible. Limit 1 std. & 500 bonus entries/person. Prize ARV: $46790. Odds of winning depend on # of elig. entries recv’d. Void where prohib. Sponsor: Up to Us, Inc., 206 Ave A #4A, NY, NY 10009
-
-              </p>
-              <p className='text-sm w-256 text-center px-16'>
-              ^ Check & Chat Promotion: VOTER REGISTRATION NOT REQ’D TO ENTER. NO PURCH. NEC.; REG./PURCH. WILL NOT INCREASE CHANCES OF WINNING. Subj. to rules at 2020upto.us/checkandchat. 50 US & DC age 18+ only. Promotion consists of multiple separate sweepstakes: one for each influencer. Each sweepstakes begins when influencer posts link to individ. entry page & ends 2:59:59am ET on 10/1/20. Use the links above to access specific influencer’s sweepstakes entry page. Entry into 1 sweeps ≠ entry into any other sweeps in this promotion. Limit 1 std. & 500 bonus entries/person. Must respond to prize notice within 6 hours. Prize has no retail value & may be awarded as social DM or audio/video chat. See rules for details. Odds of winning depend on # of elig. entries recv’d for appl. sweepstakes. Void where prohib. Sponsor: Up to Us, Inc., 206 Ave A #4A, NY, NY 10009
-              </p>
-            </div>
-          </div>  */}
-              {/* <br></br> */}
             </div>
           </section>
         </section>

@@ -6,6 +6,10 @@
   font-family: "Silka";
   src: url("assets/silkamono-regular-webfont.woff");
 }
+@font-face {
+  font-family: "Silka Bold";
+  src: url("assets/silkamono-bold-webfont.woff");
+}
 
 h1,
 h2,
@@ -16,6 +20,9 @@ h5 {
 p,
 h6 {
   font-family: "Silka";
+}
+h3 {
+  font-family: "Silka Bold";
 }
 
 /*contact styling*/
