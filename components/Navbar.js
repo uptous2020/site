@@ -62,7 +62,7 @@ export default function Navbar() {
         </div>
 
         <div className="flex justify-center">
-          <ul className="self-center flex flex-row mt-4 justify-evenly text-sm md:text-base">
+          <ul className="self-center flex flex-row mt-4 justify-evenly text-xs sm:text-sm">
             {currentPage === "/team" ? (
               <li className="">
                 <Link href="/team">
@@ -74,7 +74,7 @@ export default function Navbar() {
             ) : (
               <li>
                 <Link href="/team">
-                  <a className=" text-white no-underline mx-4 hover:text-gray-200 hover:text-underline sm:text-xs">
+                  <a className=" text-white no-underline mx-4 hover:text-gray-200 hover:text-underline">
                     TEAM
                   </a>
                 </Link>
