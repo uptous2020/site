@@ -29,7 +29,7 @@ export default function Navbar() {
               endDivID="second"
             >
               <img
-                className="mt-1 w-8 h-10 lg:ml-8 "
+                className="mt-1 w-8 h-10 lg:ml-8 lg:mr-2"
                 src="/logowhite.svg"
                 href="2020upto.us"
               ></img>
@@ -45,7 +45,7 @@ export default function Navbar() {
           ) : (
             <div className="flex justify-center md:justify-between">
               <img
-                className="mt-1 w-8 h-10 lg:ml-8 "
+                className="mt-1 w-8 h-10 lg:ml-8 lg:mr-2"
                 src="/logowhite.svg"
                 href="2020upto.us"
               ></img>
