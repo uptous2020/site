@@ -24,6 +24,9 @@ h6 {
 h3 {
   font-family: "Silka Bold";
 }
+* {
+  transition: 0.3s;
+}
 
 /*contact styling*/
 #contact {
@@ -36,5 +39,6 @@ h3 {
 /* purgecss start ignore */
 @tailwind base;
 @tailwind components;
+
 /* purgecss end ignore */
 @tailwind utilities;
