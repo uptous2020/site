@@ -4,7 +4,7 @@ import { HideBetween } from "react-hide-on-scroll";
 
 export default function Navbar() {
   const [currentPage, setCurrentPage] = useState("/");
-  const pages = ["/", "/team", "/contact", "/about"];
+  const pages = ["/", "/team", "/contact", "/ourwork"];
 
   useEffect(() => {
     // get the current route, log it to console for testing
@@ -80,9 +80,9 @@ export default function Navbar() {
                 </Link>
               </li>
             )}
-            {currentPage === "/about" ? (
+            {currentPage === "/ourwork" ? (
               <li>
-                <Link href="/about">
+                <Link href="/ourwork">
                   <a className=" text-white border-b-4 border-orange-600 mx-4 hover:text-gray-200 hover:text-underline">
                     OUR WORK
                   </a>
@@ -90,7 +90,7 @@ export default function Navbar() {
               </li>
             ) : (
               <li>
-                <Link href="/about">
+                <Link href="/ourwork">
                   <a className=" text-white no-underline mx-4 hover:text-gray-200 hover:text-underline">
                     OUR WORK
                   </a>
