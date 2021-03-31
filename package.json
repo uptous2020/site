@@ -24,6 +24,7 @@
     "react-map-gl": "^5.2.8",
     "react-mapbox-gl": "^4.8.6",
     "react-spring": "^9.0.0",
+    "react-ticker": "^1.2.2",
     "scroll-data-hook": "^1.0.4",
     "tailwindcss": "^1.6.2"
   },

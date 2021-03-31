@@ -2,24 +2,10 @@ import { useState, useEffect } from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar.js";
 import Footer from "../components/Footer.js";
-
-// const url =
-//   "https://ndneighbor-datatransformation.zeet.app/numberOfRegistration";
-// // const url = 'http://localhost:8000/numberOfRegistration'
-// const getRequest = () => axios.get(url);
+import ContestLink from "../components/ContestLink.js";
+import Ticker from "react-ticker";
 
 export default function Home() {
-  const [numberOfSignup, setNumberOfSignup] = useState(0);
-
-  // const getData = async () => {
-  //   const { data } = await getRequest();
-  //   setNumberOfSignup(data.number);
-  // };
-
-  // useEffect(() => {
-  //   getData();
-  // });
-
   return (
     <div>
       <Head>
@@ -70,24 +56,51 @@ export default function Home() {
             className="p-12 mx-auto text-white flex flex-col items-center text-center"
           >
             <img
-              className="md:block h-64 mt-20"
+              className="md:block h-48 mt-20"
               src="/up_to_us_logo_white.svg"
             />
             <h1 id="second" className="text-2xl md:text-4xl mt-20 md:mt-16">
               WHO WE ARE
             </h1>
-            <p className="px-0 lg:px-56 text-xl md:text-2xl mt-2">
+            <p className="px-0 lg:px-56 text-xl md:text-2xl mt-2 w-5/6">
               up to us is a collective of Gen Z creators fixing some of the
               biggest problems facing our generation.
             </p>
-            <h1 className="text-2xl md:text-4xl mt-12 md:mt-16">
-              WHAT WE STAND FOR
+            <h1 className="text-2xl md:text-4xl mt-12 md:mt-16 mb-2">
+              WHAT WE WORK ON:
             </h1>
-            <p className="text-xl md:text-2xl description mt-2 pb-4">
-              we don’t want to let our future be decided by others. we want to
-              make a change by turning our voices into votes. our generation
-              will save the world.<br></br>it’s up to us.
-            </p>
+            <div className="grid gap-4 items-center sm:grid-cols-1 md:grid-cols-2 m-2">
+              <ContestLink
+                key={1}
+                description="Voting & Democratic Participation"
+                photo="voting_democratic_participation_icon.svg"
+              />
+              <ContestLink
+                key={2}
+                description="Climate Change"
+                photo="climate_change_icon@2x 1.svg"
+              />
+              <ContestLink
+                key={3}
+                description="Economic Security"
+                photo="Layer 2.svg"
+              />
+              <ContestLink
+                key={4}
+                description="Racial & Gender Equity"
+                photo="racial_gender_equity_icon.svg"
+              />
+              <ContestLink
+                key={5}
+                description="Public Health"
+                photo="Layer 1.svg"
+              />
+              <ContestLink
+                key={6}
+                description="Truth & Fighting Disinformation"
+                photo="truth_disinformation_icon.svg"
+              />
+            </div>
           </div>
         </section>
         <section
@@ -132,6 +145,25 @@ export default function Home() {
           </div>
           <br></br>
         </section>
+        {/* <section>
+          <div className="my-4">
+            <h2 className="text-xl text-center">WE WORK WITH</h2>
+          </div>
+          <Ticker height={200}>
+            {({ index }) => (
+              <>
+                <image src="vote tripling 1.png"></image>
+                <img src="Hawkfish.png"></img>
+                <img src="rad logo 1.png"></img>
+                <img src="impactiv 1.png"></img>
+                <img src="flighthouse 1.png"></img>
+                <img src="99clip 1.png"></img>
+                <img src="Postmates-Logo.png"></img>
+                <img src="mb_mitmedialab_03.png"></img>
+              </>
+            )}
+          </Ticker>
+        </section> */}
       </main>
       <Footer />
     </div>
