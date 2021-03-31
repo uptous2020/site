@@ -33,9 +33,9 @@ export default function Navbar() {
                 src="/logowhite.svg"
                 href="2020upto.us"
               ></img>
-              <div>
+              <div className="whitespace-nowrap break-normal md:min-w-full">
                 <a
-                  className="ease-in-out inline-block text-white text-xl md:mr-0 no-underline hover:text-gray-200 hover:text-underline py-3 px-1 "
+                  className="ease-in-out inline-block text-white text-xl md:mr-0 no-underline hover:text-gray-200 hover:text-underline py-3 px-1 whitespace-nowrap break-normal"
                   href="/"
                 >
                   up to us
@@ -45,11 +45,11 @@ export default function Navbar() {
           ) : (
             <div className="flex justify-center md:justify-between">
               <img
-                className="mt-1 w-8 h-10 ml-8 "
+                className="mt-1 w-8 h-10 lg:ml-8 "
                 src="/logowhite.svg"
                 href="2020upto.us"
               ></img>
-              <div>
+              <div className="whitespace-nowrap break-normal md:min-w-full">
                 <a
                   className="ease-in-out inline-block text-white text-xl md:mr-0 no-underline hover:text-gray-200 hover:text-underline py-3 px-1 "
                   href="/"
@@ -83,16 +83,16 @@ export default function Navbar() {
             {currentPage === "/about" ? (
               <li>
                 <Link href="/about">
-                  <a className=" text-white border-b-4 border-orange-600 mx-4 hover:text-gray-200 hover:text-underline">
-                    OUR WORK
+                  <a className=" text-white border-b-4 border-orange-600 mx-4 hover:text-gray-200 text-center hover:text-underline">
+                    WORK
                   </a>
                 </Link>
               </li>
             ) : (
               <li>
                 <Link href="/about">
-                  <a className=" text-white no-underline mx-4 hover:text-gray-200 hover:text-underline">
-                    OUR WORK
+                  <a className=" text-white no-underline mx-4 hover:text-gray-200 text-center hover:text-underline">
+                    WORK
                   </a>
                 </Link>
               </li>
