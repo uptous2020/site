@@ -1,10 +1,10 @@
-import Head from "next/head";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { HideBetween } from "react-hide-on-scroll";
 
 export default function Navbar() {
   const [currentPage, setCurrentPage] = useState("/");
-  const pages = ["/team", "/contact"];
+  const pages = ["/", "/team", "/contact", "/about"];
 
   useEffect(() => {
     // get the current route, log it to console for testing
@@ -19,74 +19,109 @@ export default function Navbar() {
       className="flex p-0 mt-0 fixed justify-center w-full z-10 top-0 sm:w-100"
       style={{ backgroundImage: "url('hero.png')" }}
     >
-      <div className="w-full flex md:flex-row flex-col justify-between">
-        <div className=" flex justify-center md:justify-between md:pr-20">
-          <img
-            className="mt-4 w-8 h-10 ml-8"
-            src="/logowhite.svg"
-            href="2020upto.us"
-          ></img>
-          <div>
-            <a
-              className="inline-block text-white text-xl md:mr-0 no-underline hover:text-gray-200 hover:text-underline py-6 px-1 "
-              href="/"
+      <div className="w-full flex lg:flex-row flex-col justify-between py-3">
+        <div className="flex justify-center lg:justify-between">
+          {currentPage === "/" ? (
+            <HideBetween
+              className="transition-opacity duration-500 ease-in-out"
+              div
+              startDivID="first"
+              endDivID="second"
             >
-              up to us
-            </a>
-          </div>
+              <img
+                className="mt-1 w-8 h-10 lg:ml-8 "
+                src="/logowhite.svg"
+                href="2020upto.us"
+              ></img>
+              <div>
+                <a
+                  className="ease-in-out inline-block text-white text-xl md:mr-0 no-underline hover:text-gray-200 hover:text-underline py-3 px-1 "
+                  href="/"
+                >
+                  up to us
+                </a>
+              </div>
+            </HideBetween>
+          ) : (
+            <div className="flex justify-center md:justify-between">
+              <img
+                className="mt-1 w-8 h-10 ml-8 "
+                src="/logowhite.svg"
+                href="2020upto.us"
+              ></img>
+              <div>
+                <a
+                  className="ease-in-out inline-block text-white text-xl md:mr-0 no-underline hover:text-gray-200 hover:text-underline py-3 px-1 "
+                  href="/"
+                >
+                  up to us
+                </a>
+              </div>
+            </div>
+          )}
         </div>
-        <div className="flex">
-          <ul className="self-center flex flex-row mt-4 justify-evenly md:justify-between text-sm md:text-base">
-            <li>
-              <Link href="/about">
-                <a className=" text-white no-underline md:ml-4 mr-3 ml-10 md:mr-10 hover:text-gray-200 hover:text-underline">
-                  ABOUT
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/team">
-                <a className=" text-white no-underline md:ml-4 mr-3 md:mr-10 hover:text-gray-200 hover:text-underline">
-                  TEAM
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact">
-                <a className=" text-white no-underline md:ml-4 mr-3 md:mr-10 hover:text-gray-200 hover:text-underline">
-                  CONTACT
-                </a>
-              </Link>
-            </li>
 
-            {/* {
-                            pages.filter((page) => {
-                                if (page == currentPage) {
-                                    return false
-                                }
-                                return true
-                            }).map((pageRoute, ID) => (
-                                <li key={ID}>
-                                    <Link href={`${pageRoute}`}>
-                                        <a className=" text-white no-underline mr-2 md:mr-10 hover:text-gray-200 hover:text-underline">
-                                            {pageRoute.slice(1, pageRoute.length).toUpperCase()}
-                                        </a>
-                                    </Link>
-                                </li>)
-                            )
-                        } */}
-            <li className="text-orange-100 no-underline mr-10 mb-4 hover:text-gray-200 hover:text-underline">
+        <div className="flex justify-center">
+          <ul className="self-center flex flex-row mt-4 justify-evenly text-sm md:text-base">
+            {currentPage === "/team" ? (
+              <li className="">
+                <Link href="/team">
+                  <a className=" text-white border-b-4 border-orange-600 mx-4 hover:text-gray-200 hover:text-underline">
+                    TEAM
+                  </a>
+                </Link>
+              </li>
+            ) : (
+              <li>
+                <Link href="/team">
+                  <a className=" text-white no-underline mx-4 hover:text-gray-200 hover:text-underline sm:text-xs">
+                    TEAM
+                  </a>
+                </Link>
+              </li>
+            )}
+            {currentPage === "/about" ? (
+              <li>
+                <Link href="/about">
+                  <a className=" text-white border-b-4 border-orange-600 mx-4 hover:text-gray-200 hover:text-underline">
+                    OUR WORK
+                  </a>
+                </Link>
+              </li>
+            ) : (
+              <li>
+                <Link href="/about">
+                  <a className=" text-white no-underline mx-4 hover:text-gray-200 hover:text-underline">
+                    OUR WORK
+                  </a>
+                </Link>
+              </li>
+            )}
+            {currentPage === "/contact" ? (
+              <li>
+                <Link href="/contact">
+                  <a className=" text-white border-b-4 border-orange-600 mx-4 hover:text-gray-200 hover:text-underline">
+                    CONTACT
+                  </a>
+                </Link>
+              </li>
+            ) : (
+              <li>
+                <Link href="/contact">
+                  <a className=" text-white no-underline mx-4 hover:text-gray-200 hover:text-underline">
+                    CONTACT
+                  </a>
+                </Link>
+              </li>
+            )}
+            <li className=" text-white no-underline mx-4 mb-4 ">
               <script
                 type="text/javascript"
                 defer
                 src="https://donorbox.org/install-popup-button.js"
               />
               <a
-                className="dbox-donation-button"
-                style={{
-                  background:
-                    "#000000) no-repeat 37px;color: #E69538;text-decoration: none;font-family: 'Monument'",
-                }}
+                className="text-white bg-orange-600 p-2 rounded-md"
                 href="https://donorbox.org/up-to-us"
               >
                 DONATE
@@ -95,7 +130,6 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
-      {/* JSX */}
     </nav>
   );
 }
