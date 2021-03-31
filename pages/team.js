@@ -80,7 +80,7 @@ const TeamMember = ({ teamObject, profilePic }) => {
         <img src={profilePic} className="flex text-center" Image />
       </div>
       <h2 className="">{Name}</h2>
-      <h3 className="mb-4">{Role}</h3>
+      <h3 className="mb-4 w-3/5 text-center">{Role}</h3>
       <p className="mb-1 w-3/5 text-center">{Bio}</p>
       <div className="flex justify-center mb-4">
         {SocialLinkComponent.map((SocialLink, i) => (
@@ -111,7 +111,6 @@ export default function About() {
   return (
     <div>
       <Head>
-        {/* google tag manager */}
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -140,7 +139,7 @@ export default function About() {
       </Head>
       <main>
         <section
-          className="body"
+          className="body w-full"
           style={{ backgroundImage: "url('hero.png')" }}
         >
           {/* google tag manager */}
@@ -151,8 +150,8 @@ export default function About() {
             }}
           />
           <Navbar />
-          <div className="p-6 text-white flex flex-col items-center text-center mb-20">
-            <h1 className="text-white text-2xl md:text-6xl mt-20 md:mt-16 pt-10 pb-10">
+          <div className="text-white flex flex-col items-center text-center mb-20 w-full">
+            <h1 className="text-white text-4xl md:text-6xl xs:mt-40 sm:mt-40 lg:mt-20 pt-10 pb-10 text-center">
               TEAM
             </h1>
           </div>
@@ -168,10 +167,10 @@ export default function About() {
             </Link>
             <ArrowNarrowRightIcon className="h-10 w-10 text-orange-100" />
           </div>
-          <h1 className="text-black text-5xl md:text-6xl mt-20 md:mt-16 pt-10 pb-10">
+          <h1 className="text-black text-2xl md:text-6xl mt-20 md:mt-16 pt-10 pb-10">
             LEADERSHIP
           </h1>
-          <div className="mx-auto sm:grid grid-cols-1 w-full md: grid-cols-2 w-2/3">
+          <div className="mx-auto sm:grid grid-cols-1 w-full md:grid-cols-2">
             {data.map((member, i) => (
               <TeamMember
                 key={i}
@@ -180,7 +179,7 @@ export default function About() {
               />
             ))}
           </div>
-          <h1 className="text-black text-5xl md:text-6xl mt-20 md:mt-16 pt-10 pb-10">
+          <h1 className="text-black text-2xl md:text-6xl mt-20 md:mt-16 pt-10 pb-10">
             CONTRIBUTORS
           </h1>
           <div className="mx-auto sm:grid grid-cols-1 w-full md: grid-cols-2 w-2/3">
