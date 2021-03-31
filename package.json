@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@heroicons/react": "^1.0.0",
     "autoprefixer": "^9.8.6",
     "axios": "^0.21.1",
     "d3-request": "^1.0.6",

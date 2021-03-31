@@ -1,7 +1,10 @@
 import Head from "next/head";
 import data from "./teamcsv.json";
+import data2 from "./teamcsv2.json";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Link from "next/link";
+import { ArrowNarrowRightIcon } from "@heroicons/react/outline";
 
 const SocialLink = ({ link, icon, alt }) => (
   <div className="text-center py-2 m-2">
@@ -26,14 +29,19 @@ const profilePics = [
   "emilyds.jpg",
   "B.jpg",
   "alexr.jpg",
-  "hanna.jpg",
-  "shreya.jpg",
+  "coreywerner.jpg",
+].map((e) => `profiles/${e.length ? e : "conor.jpg"}`);
+
+const profilePics2 = [
+  "cullen.jpg",
   "alex.jpg",
+  "shreya.jpg",
   "josh_svoboda_square.jpg",
+  "angelo.webp",
   "lindseykennedy.jpg",
   "rosendo.jpg",
   "shianne.jpg",
-  "angelo.webp",
+  "hanna.jpg",
   "Jimbo.jpg",
   "Long.jpg",
   "benji.jpg",
@@ -43,7 +51,8 @@ const profilePics = [
   "eshita.jpg",
   "ali.jpg",
   "katie.jpg",
-].map((e) => `profiles/${e.length ? e : "conor.jpg"}`);
+].map((e) => `profiles/${e.length ? e : "hanna.jpg"}`);
+
 const transformationFunction = [
   (link) => link,
   (name) => `https://www.instagram.com/${name}`,
@@ -60,17 +69,16 @@ const components = alts.map((alt, i) => (link) => () => (
 ));
 
 const TeamMember = ({ teamObject, profilePic }) => {
-  const { Name, Role, Bio } = teamObject;
+  const { Name, Role, Bio, Vaccine, Voting } = teamObject;
   const SocialLinkComponent = alts
     .map((e) => [e, teamObject[e]])
-    .filter((tuple) => tuple[1].length)
+    .filter((tuple) => tuple[0].length)
     .map(([alt, link]) => components[alts.indexOf(alt)](link));
   return (
-    <div className="flex flex-col items-center">
+    <div className="mb-8 flex flex-col items-center">
       <div className="w-40 h-40 m-4">
         <img src={profilePic} className="flex text-center" Image />
       </div>
-
       <h2 className="">{Name}</h2>
       <h3 className="mb-4">{Role}</h3>
       <p className="mb-1 w-3/5 text-center">{Bio}</p>
@@ -78,6 +86,22 @@ const TeamMember = ({ teamObject, profilePic }) => {
         {SocialLinkComponent.map((SocialLink, i) => (
           <SocialLink key={i} />
         ))}
+      </div>
+      <div className="flex mx-4 justify-between mb-4 p-2">
+        {Vaccine === "" || Vaccine === undefined ? (
+          <div></div>
+        ) : (
+          <div className="mx-2 mr-8 text-center h-7 w-32 container mx-auto border-2 border-black rounded">
+            <p className="py-2">{Vaccine}</p>
+          </div>
+        )}
+        {Voting === "" || Voting === undefined ? (
+          <div></div>
+        ) : (
+          <div className="mx-2 text-center h-7 w-32 container mx-auto border-2 border-black rounded">
+            <p className="py-2">{Voting}</p>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -127,29 +151,44 @@ export default function About() {
             }}
           />
           <Navbar />
-          <div
-            id="first"
-            className="p-6 text-white flex flex-col items-center text-center mb-20"
-          >
-            <h1
-              id="second"
-              className="text-white text-2xl md:text-4xl mt-20 md:mt-16 pt-10 pb-10"
-            >
+          <div className="p-6 text-white flex flex-col items-center text-center mb-20">
+            <h1 className="text-white text-2xl md:text-6xl mt-20 md:mt-16 pt-10 pb-10">
               TEAM
             </h1>
           </div>
         </section>
         <section className="mx-auto flex flex-col items-center justify-center mb-20">
           <p className="mb-12 text-center w-2/3">
-            We're a collective of Gen Z leaders and creators getting Gen Z to
-            actually vote.
+            We're a collection of Gen Z leaders fixing some of the biggest
+            problems facing our generation.
           </p>
+          <div className="flex items-center border-orange-100 border-3 rounded-md px-4 py-1">
+            <Link href="/contact">
+              <a className="text-orange-100 pr-4">GET INVOLVED </a>
+            </Link>
+            <ArrowNarrowRightIcon className="h-10 w-10 text-orange-100" />
+          </div>
+          <h1 className="text-black text-5xl md:text-6xl mt-20 md:mt-16 pt-10 pb-10">
+            LEADERSHIP
+          </h1>
           <div className="mx-auto sm:grid grid-cols-1 w-full md: grid-cols-2 w-2/3">
             {data.map((member, i) => (
               <TeamMember
                 key={i}
                 teamObject={member}
                 profilePic={profilePics[i]}
+              />
+            ))}
+          </div>
+          <h1 className="text-black text-5xl md:text-6xl mt-20 md:mt-16 pt-10 pb-10">
+            CONTRIBUTORS
+          </h1>
+          <div className="mx-auto sm:grid grid-cols-1 w-full md: grid-cols-2 w-2/3">
+            {data2.map((member, i) => (
+              <TeamMember
+                key={i}
+                teamObject={member}
+                profilePic={profilePics2[i]}
               />
             ))}
           </div>
