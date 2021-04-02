@@ -69,7 +69,7 @@ export default function Home() {
             <h1 className="text-2xl md:text-4xl mt-12 md:mt-16 mb-2">
               WHAT WE WORK ON:
             </h1>
-            <div className="grid gap-4 items-center sm:grid-cols-1 md:grid-cols-2 m-2">
+            <div className="grid items-center sm:grid-cols-1 md:grid-cols-2 m-2">
               <ContestLink
                 key={1}
                 description="Voting & Democratic Participation"
@@ -115,7 +115,8 @@ export default function Home() {
                 INSPIRE
               </h2>
               <p className="w-64 text-center md:text-left">
-                building a new way to register &amp; motivate Gen Z to vote
+                Building a new way to mobilize Gen Z via gamification,
+                innovative campaigns, and high-impact partnerships.
               </p>
             </div>
           </div>
@@ -126,8 +127,8 @@ export default function Home() {
                 ACTIVATE
               </h2>
               <p className="w-64 text-center md:text-left">
-                working with the most influential creators to activate their
-                audiences to take action
+                Working with the most influential creators to activate their
+                audiences to solve pressing issues facing our generation.
               </p>
             </div>
           </div>
@@ -138,34 +139,88 @@ export default function Home() {
                 EDUCATE
               </h2>
               <p className="w-64 text-center md:text-left">
-                providing content that leads to direct action &amp; steers the
-                conversation
+                Creating and distributing educational content that leads to
+                direct action, steers the conversation, and combats
+                disinformation.
               </p>
             </div>
           </div>
           <br></br>
         </section>
-        {/* <section>
-          <div className="my-4">
-            <h2 className="text-xl text-center">WE WORK WITH</h2>
+        <section className="">
+          <div>
+            <div className="">
+              <h2 className="text-xl text-center">WE WORK WITH</h2>
+            </div>
+            <div className="w-2/3 my-4 m-auto">
+              <Ticker className="" height={200}>
+                {({ index }) => <ImageFromApi />}
+              </Ticker>
+            </div>
           </div>
-          <Ticker height={200}>
-            {({ index }) => (
-              <>
-                <image src="vote tripling 1.png"></image>
-                <img src="Hawkfish.png"></img>
-                <img src="rad logo 1.png"></img>
-                <img src="impactiv 1.png"></img>
-                <img src="flighthouse 1.png"></img>
-                <img src="99clip 1.png"></img>
-                <img src="Postmates-Logo.png"></img>
-                <img src="mb_mitmedialab_03.png"></img>
-              </>
-            )}
-          </Ticker>
-        </section> */}
+        </section>
       </main>
       <Footer />
     </div>
   );
 }
+
+const images = [
+  "vote tripling 1.png",
+  "Hawkfish.png",
+  "rad logo 1.png",
+  "impactiv 1.png",
+  "flighthouse 1.png",
+  "99clip 1.png",
+  "Postmates-Logo.png",
+  "mb_mitmedialab_03.png",
+];
+
+const ImageFromApi = () => {
+  const [image, setImage] = useState("");
+  const [loaded, setLoaded] = useState(false);
+  useEffect(() => {
+    getImageFromApi().then((image) => {
+      setImage(images[image]);
+      const img = new Image();
+      img.onload = () => {
+        setLoaded(true);
+      };
+      img.src = images[image];
+    });
+  }, []);
+
+  return (
+    <div
+      className="flex flex-row justify-center my-8"
+      style={{
+        width: "25vw",
+        height: "200px",
+      }}
+    >
+      <img src={image} className="h-10 my-2 transition duration-1000" alt="" />
+    </div>
+  );
+};
+
+function apiCall() {
+  const number = inc();
+  return new Promise((resolve) => {
+    window.setTimeout(() => {
+      resolve(number);
+    }, 100);
+  });
+}
+
+const imageNum = [0, 1, 2, 3, 4, 5, 6, 7];
+
+function inc() {
+  let temp = imageNum.shift();
+  imageNum.push(temp);
+  return temp;
+}
+
+const getImageFromApi = async (index) => {
+  const img = await apiCall();
+  return img;
+};
