@@ -20,32 +20,11 @@ export default function Navbar() {
       style={{ backgroundImage: "url('hero.png')" }}
     >
       <div className="w-full flex lg:flex-row flex-col justify-between py-3">
-        <div className="flex justify-center lg:justify-between">
-          {currentPage === "/" ? (
-            <HideBetween
-              className="transition-opacity duration-500 ease-in-out"
-              div
-              startDivID="first"
-              endDivID="second"
-            >
-              <img
-                className="mt-1 w-8 h-10 lg:ml-8 lg:mr-2"
-                src="/logowhite.svg"
-                href="2020upto.us"
-              ></img>
-              <div className="whitespace-nowrap break-normal md:min-w-full">
-                <a
-                  className="ease-in-out inline-block text-white text-xl md:mr-0 no-underline hover:text-gray-200 hover:text-underline py-3 px-1 whitespace-nowrap break-normal"
-                  href="/"
-                >
-                  up to us
-                </a>
-              </div>
-            </HideBetween>
-          ) : (
+        <div className="flex justify-center md:justify-between">
+          {currentPage !== "/" ? (
             <div className="flex justify-center md:justify-between">
               <img
-                className="mt-1 w-8 h-10 lg:ml-8 lg:mr-2"
+                className="mt-1 w-8 h-10 md:ml-8 lg:mr-2"
                 src="/logowhite.svg"
                 href="2020upto.us"
               ></img>
@@ -58,6 +37,27 @@ export default function Navbar() {
                 </a>
               </div>
             </div>
+          ) : (
+            <HideBetween
+              className="transition-opacity duration-500 ease-in-out"
+              div
+              startDivID="first"
+              endDivID="second"
+            >
+              <img
+                className="mt-1 w-8 h-10 md:ml-8 lg:mr-2"
+                src="/logowhite.svg"
+                href="2020upto.us"
+              ></img>
+              <div className="whitespace-nowrap break-normal md:min-w-full">
+                <a
+                  className="ease-in-out inline-block text-white text-xl md:mr-0 no-underline hover:text-gray-200 hover:text-underline py-3 px-1 whitespace-nowrap break-normal"
+                  href="/"
+                >
+                  up to us
+                </a>
+              </div>
+            </HideBetween>
           )}
         </div>
 
@@ -90,7 +90,6 @@ export default function Navbar() {
               </li>
             ) : (
               <li>
-
                 <Link href="/ourwork">
                   <a className=" text-white no-underline mx-4 hover:text-gray-200 text-center hover:text-underline">
                     WORK
