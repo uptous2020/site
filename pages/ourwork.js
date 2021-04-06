@@ -63,7 +63,7 @@ export default function Work() {
         <div className="flex justify-center">
           <div className="grid grid-cols-12 gap-4 sm:p-16 mt-16 mb-8 mx-8 md:mt-4 md:mx-0 max-w-6xl">
             <div className="col-span-12 bg-black md:p-20 sm:p-8 p-12">
-              <h1 className="text-white text-left text-sm lg:text-3xl md:text-xl md:mt-8 sm:pt-4 pt-10 pb-32 max-w-5xl">
+              <h1 className="text-white text-left text-sm lg:text-3xl md:text-xl md:mt-8 sm:pt-4 pt-10 pb-16 max-w-5xl">
                 Up to Us and MIT's Center for Constructive Communication are
                 collaborating to increase trust in COVID-19 vaccines and promote
                 equity in marginalized communities using a highly effective
@@ -72,7 +72,7 @@ export default function Work() {
               <div className="grid grid-cols-1 md:grid-cols-8 my-4 max-w-5xl">
                 <div className="col-span-2">
                   <SearchIcon className="h-12 md:h-20 md:w-20 md:my-8 text-teal-500" />
-                  <h1 className="text-teal-500 text-2xl my-2 md:my-8">
+                  <h1 className="text-teal-500 text-2xl my-2 md:my-4">
                     Identify
                   </h1>
                   <p className="text-white text-sm">
@@ -85,7 +85,7 @@ export default function Work() {
                 </div>
                 <div className="col-span-2">
                   <ChartBarIcon className="h-12 md:h-20 md:w-20 md:my-8 text-orange-100" />
-                  <h1 className="text-orange-100 text-2xl my-2 md:my-8">
+                  <h1 className="text-orange-100 text-2xl my-2 md:my-4">
                     Analyze
                   </h1>
                   <p className="text-white text-sm">
@@ -98,7 +98,7 @@ export default function Work() {
                 </div>
                 <div className="col-span-2">
                   <FireIcon className="h-12 md:h-20 md:w-20 md:my-8 text-blue-100" />
-                  <h1 className="text-blue-100 text-2xl my-2 md:my-8">
+                  <h1 className="text-blue-100 text-2xl my-2 md:my-4">
                     Deploy
                   </h1>
                   <p className="text-white text-sm">
@@ -161,7 +161,7 @@ export default function Work() {
                   <h1 className="text-white w-64 text-xl md:m-6">
                     High Reach Content
                   </h1>
-                  <img className="md:mt-56 mt-4" src="leo 1.png" />
+                  <img className="md:mt-8 mt-4" src="leo 1.png" />
                 </div>
                 <div className="md:col-start-5 md:col-end-11 md:m-3 lg:mt-12">
                   <p className="text-white text-left md:text-base text-sm my-3 lg:text-lg">
@@ -189,10 +189,7 @@ export default function Work() {
               <div className=" grid grid-cols-1 gap-8 md:grid-cols-12 md:p-0 p-6">
                 <div className=" md:col-start-1 md:col-end-5 ">
                   <h1 className="text-white w-8 text-xl md:m-6">Postmates</h1>
-                  <img
-                    className="md:mt-40 mt-4 md:ml-2"
-                    src="postmates 1.png"
-                  />
+                  <img className="md:mt-8 mt-4 md:ml-2" src="postmates 1.png" />
                 </div>
                 <div className="md:col-start-5 md:col-end-11 md:m-3 lg:mt-12">
                   <p className="text-white text-left md:text-base text-sm my-3 lg:text-lg">

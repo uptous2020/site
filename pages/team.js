@@ -1,6 +1,7 @@
 import Head from "next/head";
 import data from "./teamcsv.json";
 import data2 from "./teamcsv2.json";
+import data3 from "./teamexcep.json";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Link from "next/link";
@@ -75,30 +76,71 @@ const TeamMember = ({ teamObject, profilePic }) => {
     .filter((tuple) => tuple[0].length)
     .map(([alt, link]) => components[alts.indexOf(alt)](link));
   return (
-    <div className="mb-8 flex flex-col items-center">
+    <div className={`mb-8 flex flex-col items-center`}>
       <div className="w-40 h-40 m-4">
         <img src={profilePic} className="flex text-center" Image />
       </div>
       <h2 className="">{Name}</h2>
       <h3 className="mb-4 w-3/5 text-center">{Role}</h3>
       <p className="mb-1 w-3/5 text-center">{Bio}</p>
-      <div className="flex justify-center mb-4">
+      {/* <div className="flex justify-center mb-4">
         {SocialLinkComponent.map((SocialLink, i) => (
           <SocialLink key={i} />
         ))}
-      </div>
+      </div> */}
       <div className="flex mx-4 justify-between mb-4 p-2">
         {Vaccine === "" || Vaccine === undefined ? (
           <div></div>
         ) : (
-          <div className="mx-2 mr-8 text-center h-7 w-32 container mx-auto border-2 border-black rounded">
+          <div className="mx-2 text-center h-7 w-32 container border-2 border-black rounded">
             <p className="py-2">{Vaccine}</p>
           </div>
         )}
         {Voting === "" || Voting === undefined ? (
           <div></div>
         ) : (
-          <div className="mx-2 text-center h-7 w-32 container mx-auto border-2 border-black rounded">
+          <div className="mx-2 text-center h-7 w-32 container border-2 border-black rounded">
+            <p className="py-2">{Voting}</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+const TeamMember2 = ({ teamObject, profilePic }) => {
+  const { Name, Role, Bio, Vaccine, Voting } = teamObject;
+  const SocialLinkComponent = alts
+    .map((e) => [e, teamObject[e]])
+    .filter((tuple) => tuple[0].length)
+    .map(([alt, link]) => components[alts.indexOf(alt)](link));
+  return (
+    <div
+      className={`mb-8 flex flex-col items-center col-span-2 col-start-1 col-end-3`}
+    >
+      <div className="w-40 h-40 m-4">
+        <img src={profilePic} className="flex text-center" Image />
+      </div>
+      <h2 className="">{Name}</h2>
+      <h3 className="mb-4 w-3/5 text-center">{Role}</h3>
+      <p className="mb-1 w-2/5 text-center">{Bio}</p>
+      {/* <div className="flex justify-center mb-4">
+        {SocialLinkComponent.map((SocialLink, i) => (
+          <SocialLink key={i} />
+        ))}
+      </div> */}
+      <div className="flex mx-4 justify-between mb-4 p-2">
+        {Vaccine === "" || Vaccine === undefined ? (
+          <div></div>
+        ) : (
+          <div className="mx-2 text-center h-7 w-32 container border-2 border-black rounded">
+            <p className="py-2">{Vaccine}</p>
+          </div>
+        )}
+        {Voting === "" || Voting === undefined ? (
+          <div></div>
+        ) : (
+          <div className="mx-2 text-center h-7 w-32 container border-2 border-black rounded">
             <p className="py-2">{Voting}</p>
           </div>
         )}
@@ -173,18 +215,28 @@ export default function About() {
           <div className="mx-auto sm:grid grid-cols-1 w-full md:grid-cols-2">
             {data.map((member, i) => (
               <TeamMember
+                className=""
                 key={i}
                 teamObject={member}
                 profilePic={profilePics[i]}
+              />
+            ))}
+            {data3.map((member, i) => (
+              <TeamMember2
+                className="col-start-1 col-end-3"
+                key={i}
+                teamObject={member}
+                profilePic={profilePics[6]}
               />
             ))}
           </div>
           <h1 className="text-black text-2xl md:text-6xl mt-20 md:mt-16 pt-10 pb-10">
             CONTRIBUTORS
           </h1>
-          <div className="mx-auto sm:grid grid-cols-1 w-full md: grid-cols-2 w-2/3">
+          <div className="mx-auto sm:grid grid-cols-1 w-full md:grid-cols-2 w-2/3">
             {data2.map((member, i) => (
               <TeamMember
+                className=""
                 key={i}
                 teamObject={member}
                 profilePic={profilePics2[i]}

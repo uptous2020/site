@@ -198,7 +198,7 @@ const ImageFromApi = () => {
         height: "200px",
       }}
     >
-      <img src={image} className="h-10 my-2 transition duration-1000" alt="" />
+      <img src={image} className="h-12 my-2 transition duration-1000" alt="" />
     </div>
   );
 };
