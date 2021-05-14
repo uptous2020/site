@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <div>
       <Head>
+      <meta name="google-site-verification" content="GtWI5b6JEcnbvY2dwjJY27xwSCSIFQjBKCRoMOJODZE" />
         {/* google tag manager */}
         <script
           dangerouslySetInnerHTML={{
