@@ -35,6 +35,7 @@ const profilePics = [
 
 const profilePics2 = [
   "cullen.jpg",
+  "Madison.jpeg",
   "alex.jpg",
   "shreya.jpg",
   "josh_svoboda_square.jpg",
